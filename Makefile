@@ -7,7 +7,8 @@ SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = PokeNav
 SOURCEDIR     = source
 BUILDDIR      = build
-GH_PAGES_SOURCES = source Makefile CNAME .nojekyll
+GH_PAGES_SOURCES = source Makefile
+GH_PAGES_ADD =  CNAME .nojekyll
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -24,7 +25,7 @@ help:
 gh-pages:
 	git checkout gh-pages
 	rm -rf build _sources _static
-	git checkout master $(GH_PAGES_SOURCES)
+	git checkout master $(GH_PAGES_SOURCES) $(GH_PAGES_ADD)
 	git reset HEAD
 	make html
 	mv -fv build/html/* ./
