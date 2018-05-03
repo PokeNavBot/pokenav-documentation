@@ -16,6 +16,9 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+# At top on conf.py (with other import statements)
+from recommonmark.transform import AutoStructify
+from recommonmark.parser import CommonMarkParser
 
 # -- Project information -----------------------------------------------------
 
@@ -45,11 +48,14 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
+
+source_parsers = {'.md': CommonMarkParser}
+
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.md'
+source_suffix = ['.md', '.rst']
 
 # The master toctree document.
 master_doc = 'index'
@@ -86,7 +92,7 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static', 'CNAME']
+html_static_path = ['_static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -157,3 +163,12 @@ texinfo_documents = [
 
 
 # -- Extension configuration -------------------------------------------------
+# At the bottom of conf.py
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+        'url_resolver': lambda url: '/' + url,
+        'enable_eval_rst': True,
+        'auto_toc_tree_section': 'Contents',
+        }, True)
+    app.add_stylesheet('css/custom.css')
+    app.add_transform(AutoStructify)

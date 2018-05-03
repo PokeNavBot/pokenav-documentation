@@ -32,3 +32,7 @@ gh-pages:
 	rm -rf $(GH_PAGES_SOURCES) build
 	git add -A
 	git ci -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout master
+
+
+livehtml:
+	sphinx-autobuild -H 0.0.0.0 -p 9090 -b html -i *.swp $(SPHINXOPTS) source $(BUILDDIR)/html
