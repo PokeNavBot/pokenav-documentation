@@ -3,39 +3,71 @@
 ## Commands
 
 ```eval_rst
-.. csv-table:: Managing Your Trainer Profile
+.. csv-table:: Announcing and Coordinating Raids
    :header: "Command", "Who", "Where", "Description"
    :widths: 15, 10, 10, 20
 
-   ``$trainer``, Anyone, Guild / DM, "Displays YOUR trainer profile."
-   ``$trainer DiscordDude16``, Anyone, Guild / DM, "Displays **DiscordDude16**'s trainer profile."
-   ``$favorite Togepi``, Anyone, Guild / DM, "Sets **Togepi** as your favorite pokemon."
-   ``$goal catch shinies!``, Anyone, Guild / DM, "Sets your goal."
-   ``$xp 20000000``, Anyone, Guild / DM, "Sets your XP and level to 40."
-   ``$silphid SilphDude16``, Anyone, Guild / DM, "Sets your silph traveler id in your profile."
-   ``$silphcard``, Anyone, Guild / DM, "Displays your silphcard, if your silph id is set."
-   ``$silphcard DiscordDude16``, Anyone, Guild / DM, "Displays DiscordDude16's silph card, if his silph id is set."
-   ``$pokebattlerid 123456``, Anyone, Guild / DM, "Sets your pokebattler id for custom counters."
-   ``$quota``, Anyone, Guild / DM, "Gets your remaining monthly screenshot quota."
-   ``$team mystic``, Anyone, Guild, "Sets up your team / team role on the current server."
+   ``$raid latios Starbucks``, Anyone, Raid Lobby, "Starts a latios raid party for Starbucks."
+   ``$exraid mewtwo Burpee Park``, Anyone, EX Raid Lobby, "Starts a mewtwo ex raid party for Burpee Park"
+   ``$boss latios``, Creator / Moderator, Raid Party, "Changes the raid boss to latios."
+   ``$counters``, Creator / Moderator, Raid Party, "Gets the counters for the raid boss."
+   ``$counters windy``, Creator / Moderator, Raid Party, "Gets the counters for the raid boss in windy weather"
+   ``$end``, Creator / Moderator, Raid Party, "Immediatelly ends the raid."
+   ``$here``, Creator / Moderator, Raid Party, "Marks you as having arrived at the raid."
+   ``$here @IVpips @koshermuffin``, Creator / Moderator, Raid Party, "Marks IVpips and koshermuffin as having arrived at the raid."
+   ``$leave``, Creator / Moderator, Raid Party, "Leaves the raid party immediatelly."
+   ``$location address``, Creator / Moderator, Raid Party, "Sets the location of the raid."
+   ``$members``, Creator / Moderator, Raid Party, "Gets the list of members participating in the raid."
+   ``$reset``, Creator / Moderator, Raid Party, "Resets everyones arrival status."
+   ``$status``, Creator / Moderator, Raid Party, "Updates the public status of the raid party."
+   ``$where``, Creator / Moderator, Raid Party, "Gets the current location of the raid.."
 ```
 
+## Terminology
+
+#### (EX) Raid Lobby
+
+A channel that the discord server moderators have enabled to allow for raid or ex raid announcements. Raid commands are not allowed in a channel unless expicilty enabled by making it a raid lobby, allowing you to ignore PokeNav's raid coorindation features, if you so choose.
+
+A channel can be configured for Raids, EX Raids or Both. See community setup for details.
+
+#### Raid Party
+
+A channel / role that exists for the purposes of coordinating raids. Certain commands are only allowed inside a raid party's channel.
+
+
 ## Features
+
+```eval_rst
+
+.. note::
+    
+    Complete documentation coming shortly...
+```
+
+### Announcing a Raid
+
+### Joining a Raid
 
 ### Raid Screenshot Scanning
 
 ### EX Raid Screenshot Scanning
 
-### Leaving
+### Updating the Boss
 
-### Status
+### Leaving the Raid
 
-### Raid Boss Updates
+### Listing Raid Party Members
 
-### Here / Reset
+### Updating Status
 
-### Ending
+### Arriving at a Raid 
 
-### Location / Where
+### Ending a Raid
 
-### Counters
+### Setting a Location
+
+### Getting Counters
+
+### Promoting a Raid
+

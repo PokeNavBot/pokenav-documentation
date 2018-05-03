@@ -6,6 +6,11 @@
 Trainer's Guide
 ===================================
 
+.. note::
+    This guide is being actively updated over time. 
+    
+    Some sections may be incomplete but are being worked on in priority order.
+
 **Welcome, Trainer!**
 
 This is the official PokeNav Trainer's Guide!
@@ -33,7 +38,6 @@ It has many features, including:
 * Pokedex support
     * Beautiful pokedex pages for all released Pokemon
     * Personalized counter lookups via Pokebattler
-
 
 .. toctree::
    :maxdepth: 2
