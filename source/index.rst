@@ -48,4 +48,5 @@ It has many features, including:
    raids
    leaderboards
    pokedex
+   moderation
    patreon
