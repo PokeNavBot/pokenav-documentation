@@ -30,6 +30,7 @@ These commands can only be run in the moderation room, which is accessible to se
    ``$set-team-role mystic team-mystic``, Anyone, Mod Channel, "Sets the role used to track a members in-game team."
    ``$set-timezone US/Eastern``, Anyone, Mod Channel, "Sets the timezone localization for this server."
    ``$show-settings``, Anyone, Mod Channel, "Shows all your bot configuration settings for this server."
+   ``$toggle-auto-assign-team``, Anyone, Mod Channel, "Toggles whether  users will be auto assigned a team role when joining your community."
    ``$toggle-raid-roles``, Anyone, Mod Channel, "Toggles whether you allow announcing raids via role mentions."
    ``$toggle-restrict-status``, Anyone, Mod Channel, "Toggles whether you allow anyone to update the status in a raid."
 
@@ -48,3 +49,18 @@ These commands can only be run in the moderation room, which is accessible to se
 
 ### EX Raid Lobby
 
+### Auto Assign Team Roles
+
+Disabled by default, you can allow PokeNav to automatically assign members a team role if they already configured their team on another server. 
+
+When a user joins your server, if you have this setting enabled, they will automatically be added to the proper team role if one is set for your server.
+
+
+```eval_rst
+
+.. warning::
+    
+    This is disabled by default because doing so may allow malicious users to circumvent discord verification levels.
+
+    Be sure you have a good spam / moderation bot in your server before you enable this setting.
+```
