@@ -87,7 +87,13 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Leaderboards</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#profile-medals">Profile Medals</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#top">Top</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#leaderboard-qualifications">Leaderboard Qualifications</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#raids-created">Raids Created</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#raids-joined">Raids Joined</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -161,6 +167,10 @@
             
   <div class="section" id="leaderboards">
 <span id="leaderboards"></span><h1>Leaderboards<a class="headerlink" href="#leaderboards" title="Permalink to this headline">¶</a></h1>
+<p>Leaderboards are <strong>community specific</strong> accomplishments that give your profile a little flare and allow you to show
+off for being active in your discord server.</p>
+<p>Since leaderboards are community specific, they only show up in your trainer profile when displayed in a guild channel.</p>
+<p>This means your profile may look different depending on where the command was run.</p>
 <div class="section" id="commands">
 <span id="commands"></span><h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="colwidths-given docutils" id="id1">
@@ -184,17 +194,61 @@
 <td>Guild</td>
 <td>Shows the top 10 users in all leaderboards.</td>
 </tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$trainer</span></code></td>
+<td>Anyone</td>
+<td>Guild</td>
+<td>Shows your leaderboard scores in a guild.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$trainer</span> <span class="pre">Dude16</span></code></td>
+<td>Anyone</td>
+<td>Guild</td>
+<td>Shows Dude16’s scores in a guild.</td>
+</tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="features">
 <span id="features"></span><h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Complete documentation coming shortly…</p>
-</div>
+<div class="section" id="profile-medals">
+<span id="profile-medals"></span><h3>Profile Medals<a class="headerlink" href="#profile-medals" title="Permalink to this headline">¶</a></h3>
+<p>If you are in the top 10, a medal will display in your profile under the appropriate statistic.</p>
+<p>There are special medals for 1st, 2nd and 3rd place:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/3as9dBDQVvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
 <div class="section" id="top">
 <span id="top"></span><h3>Top<a class="headerlink" href="#top" title="Permalink to this headline">¶</a></h3>
+<p>The top command allows you to see an at a glance view of the top 10 trainers in all leaderboards:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/cfMz1_O9oMw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="leaderboard-qualifications">
+<span id="leaderboard-qualifications"></span><h3>Leaderboard Qualifications<a class="headerlink" href="#leaderboard-qualifications" title="Permalink to this headline">¶</a></h3>
+<p>To prevent easily manipulating the top 10, some qualification rules exist for each leaderboard:</p>
+<div class="section" id="raids-created">
+<span id="raids-created"></span><h4>Raids Created<a class="headerlink" href="#raids-created" title="Permalink to this headline">¶</a></h4>
+<p>For a raid to count towards <code class="docutils literal notranslate"><span class="pre">Raids</span> <span class="pre">Created</span></code>, the following must ALL be true:</p>
+<ul class="simple">
+<li>You must be the creator of the raid.</li>
+<li>The raid must end (<code class="docutils literal notranslate"><span class="pre">$end</span></code> or expiration of channel) with at least two people in the raid party.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You do not need to be a member of the raid when it ends.</p>
+</div>
+</div>
+<div class="section" id="raids-joined">
+<span id="raids-joined"></span><h4>Raids Joined<a class="headerlink" href="#raids-joined" title="Permalink to this headline">¶</a></h4>
+<p>For a raid to count towards <code class="docutils literal notranslate"><span class="pre">Raids</span> <span class="pre">Joined</span></code>, the following must ALL be true:</p>
+<ul class="simple">
+<li>You must be a member of the raid when it ends.</li>
+<li>The raid must end (<code class="docutils literal notranslate"><span class="pre">$end</span></code> or expiration of channel) with at least two people in the raid party.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You do not need to be the creator of the raid.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
