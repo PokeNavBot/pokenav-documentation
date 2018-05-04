@@ -10,7 +10,7 @@ If you want to test out PokeNav from a user's perspective, you can do so on the 
 
 ## Inviting PokeNav 
 
-To get an invite link to PokeNav, please visit the PokeNav Discord Server and request beta access.
+To get an invite link to PokeNav, please visit the [PokeNav Discord Server](https://discord.gg/7M9quNd) and request beta access.
 
 Once PokeNav is added to your server, it will immediately create a new channel called `#pokenav`. This is the moderation channel, it can be changed at any time, but a moderation channel must always exist. If you delete the moderation channel, PokeNav will attempt to recreate one within a few minutes. You must be an adminstrator or server owner to see #pokenav.
 
