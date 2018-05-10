@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Patreon and Support &mdash; PokeNav  documentation</title>
+  <title>Badges &mdash; PokeNav  documentation</title>
   
 
   
@@ -30,7 +30,8 @@
   <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Moderation" href="moderation.html" /> 
+    <link rel="next" title="Leaderboards" href="leaderboards.html" />
+    <link rel="prev" title="Raiding" href="raids.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,15 +84,19 @@
 <li class="toctree-l1"><a class="reference internal" href="community_setup.html">Community Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="raids.html">Raiding</a></li>
-<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Badges</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#earning-badges">Earning Badges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#checking-available-badges">Checking Available Badges</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pokedex.html">Pokedex</a></li>
 <li class="toctree-l1"><a class="reference internal" href="moderation.html">Moderation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Patreon and Support</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#patreon">Patreon</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#support">Support</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="patreon.html">Patreon and Support</a></li>
 </ul>
 
             
@@ -137,13 +142,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Patreon and Support</li>
+      <li>Badges</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/patreon.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/badges.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -156,16 +161,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="patreon-and-support">
-<span id="patreon-and-support"></span><h1>Patreon and Support<a class="headerlink" href="#patreon-and-support" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="patreon">
-<span id="patreon"></span><h2>Patreon<a class="headerlink" href="#patreon" title="Permalink to this headline">¶</a></h2>
-<p>PokeNav will always be free to use.</p>
-<p>In order to keep the operations cost reasonable, certain features might be limited to prevent abuse. Any user will have the option to increase those limits by <a class="reference external" href="https://www.patreon.com/PokeNavBot">supporting PokeNav on Patreon</a>.</p>
+  <div class="section" id="badges">
+<span id="badges"></span><h1>Badges<a class="headerlink" href="#badges" title="Permalink to this headline">¶</a></h1>
+<p>Badges allow community admins to create fun achievements for members to earn.</p>
+<p>These are entirely at community discretion.</p>
+<div class="section" id="commands">
+<span id="commands"></span><h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils" id="id1">
+<caption><span class="caption-text">Displaying and Checking Badges</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="27%" />
+<col width="18%" />
+<col width="18%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Who</th>
+<th class="head">Where</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$badges</span></code></td>
+<td>Anyone</td>
+<td>Guild / DM</td>
+<td>Displays a list of all the badges you’ve earn</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$badges</span> <span class="pre">Dude16</span></code></td>
+<td>Anyone</td>
+<td>Guild / DM</td>
+<td>Displays all the badges Dude16 has earned</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$available-badges</span></code></td>
+<td>Anyone</td>
+<td>Guild</td>
+<td>Lists all the available badges for the current community</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="section" id="support">
-<span id="support"></span><h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
-<p>If you need support, visit the <a class="reference external" href="https://discord.gg/7M9quNd">Official PokeNav Discord Server</a>!</p>
+<div class="section" id="features">
+<span id="features"></span><h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="earning-badges">
+<span id="earning-badges"></span><h3>Earning Badges<a class="headerlink" href="#earning-badges" title="Permalink to this headline">¶</a></h3>
+<p>Moderators on a server can use the <code class="docutils literal notranslate"><span class="pre">$grant-badge</span></code> command to grant you a badge you’ve earned. Once a badge is granted it will be displayed in your trainer profile. This only shows the last 8 badges earned as well as the badge count.</p>
+<p>To see a full list of all your badges, use the <code class="docutils literal notranslate"><span class="pre">$badges</span></code> command:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/zpCdaCNVSCM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="checking-available-badges">
+<span id="checking-available-badges"></span><h3>Checking Available Badges<a class="headerlink" href="#checking-available-badges" title="Permalink to this headline">¶</a></h3>
+<p>You can find all the badges a community is distributing by using the <code class="docutils literal notranslate"><span class="pre">$available-badges</span></code> command:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/wpeC75FllG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
 </div>
 </div>
 
@@ -177,8 +227,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="leaderboards.html" class="btn btn-neutral float-right" title="Leaderboards" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="moderation.html" class="btn btn-neutral" title="Moderation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="raids.html" class="btn btn-neutral" title="Raiding" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

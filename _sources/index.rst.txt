@@ -32,6 +32,11 @@ It has many features, including:
     * Track team distribution and who has arrived
     * Update your current raid status to the rest of discord
 
+* Badges
+    * Create badges for community events, contests and in-game achievements.
+    * Award badges to server members and have bot publicly announce them.
+    * Badges go with a trainer, following them to any server with PokeNav 
+
 * Leaderboards
     * Tracks top raid creators and participants
 
@@ -46,6 +51,7 @@ It has many features, including:
    community_setup 
    trainer
    raids
+   badges
    leaderboards
    pokedex
    moderation

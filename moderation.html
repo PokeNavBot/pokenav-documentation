@@ -84,13 +84,26 @@
 <li class="toctree-l1"><a class="reference internal" href="community_setup.html">Community Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="raids.html">Raiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pokedex.html">Pokedex</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Moderation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#raid-lobby">Raid Lobby</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ex-raid-lobby">EX Raid Lobby</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#community-management">Community Management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#auto-assign-team-roles">Auto Assign Team Roles</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#badges">Badges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creating-badges">Creating Badges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#updating-badges">Updating Badges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hiding-badges">Hiding Badges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#list-all-badges">List All Badges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-a-badge-announcement-channel">Setting a Badge Announcement Channel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#granting-badges">Granting Badges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#revoking-badges">Revoking Badges</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -165,136 +178,150 @@
 <p>These commands can only be run in the moderation room, which is accessible to server owners and adminstrators.</p>
 <div class="section" id="commands">
 <span id="commands"></span><h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<p>The following commands can <strong>ONLY</strong> be done in the moderation channel, by anyone with permissions to write to that channel.</p>
 <table border="1" class="colwidths-given docutils" id="id1">
 <caption><span class="caption-text">Managing Your PokeNav Installation</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col width="27%" />
-<col width="18%" />
-<col width="18%" />
-<col width="36%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Command</th>
-<th class="head">Who</th>
-<th class="head">Where</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$quickstart</span></code></td>
+<td>Previews quickstart installation of PokeNav.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$quickstart</span> <span class="pre">YES</span></code></td>
+<td>Sets up PokeNav installation</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-mod-channel</span> <span class="pre">#channel</span></code></td>
+<td>Changes the moderation channel.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$set-prefix</span> <span class="pre">$</span></code></td>
+<td>Changes the prefix used by PokeNav for your server.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-timezone</span> <span class="pre">US/Eastern</span></code></td>
+<td>Sets the timezone localization for this server.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$show-settings</span></code></td>
+<td>Shows all your bot configuration settings for this server.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils" id="id2">
+<caption><span class="caption-text">Moderating Teams</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-team-role</span> <span class="pre">mystic</span> <span class="pre">team-mystic</span></code></td>
+<td>Sets the role used to track a members in-game team.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$toggle-auto-assign-team</span></code></td>
+<td>Toggles whether  users will be auto assigned a team role when joining your community.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils" id="id3">
+<caption><span class="caption-text">Moderating Raids</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
 <th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$disable-ex-raid-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Disables EX raid announcements in the channel.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$disable-raid-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Disables raid announcements.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$disable-raid-role</span> <span class="pre">raid-latios</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Disables a role used to start raids.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$enable-ex-raid-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Enables EX raid announcements in the channel.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$enable-ex-raid-role</span> <span class="pre">raid-mewtwo</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Enables EX raid announcements via raid-mewtwo role.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$enable-raid-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Enables raid announcements in the channel.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$enable-raid-role</span> <span class="pre">raid-latios</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Enables raid announcements via raid-latios role.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$quickstart</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
-<td>Previews quickstart installation of PokeNav.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$quickstart</span> <span class="pre">YES</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
-<td>Sets up PokeNav installation</td>
-</tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$set-active-raids-channel</span> <span class="pre">#channel</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Publishes all active raids in this channel.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-ex-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Creates a new category where EX raids will be placed.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$set-ex-raid-duration-secs</span> <span class="pre">604800</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Maximum amount of time an EX raid channel can exist, in seconds.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-mod-channel</span> <span class="pre">#channel</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
-<td>Changes the moderation channel.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$set-prefix</span> <span class="pre">$</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
-<td>Changes the prefix used by PokeNav for your server.</td>
-</tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Creates a new category where raids will be placed.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$set-raid-duration-secs</span> <span class="pre">7200</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>Maximum amount of time a raid channel can exist, in seconds.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-raid-moderation-role</span> <span class="pre">raid-moderator</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>The role that can take privledged actions in raid channels (like ending it).</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$set-raid-viewer-role</span> <span class="pre">raid-viewer</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
 <td>The role that can view all active raid channels.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-team-role</span> <span class="pre">mystic</span> <span class="pre">team-mystic</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
-<td>Sets the role used to track a members in-game team.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$set-timezone</span> <span class="pre">US/Eastern</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
-<td>Sets the timezone localization for this server.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$show-settings</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
-<td>Shows all your bot configuration settings for this server.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$toggle-raid-roles</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$toggle-raid-roles</span></code></td>
 <td>Toggles whether you allow announcing raids via role mentions.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$toggle-restrict-status</span></code></td>
-<td>Anyone</td>
-<td>Mod Channel</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$toggle-restrict-status</span></code></td>
 <td>Toggles whether you allow anyone to update the status in a raid.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils" id="id4">
+<caption><span class="caption-text">Moderating Badges </span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$all-badges</span></code></td>
+<td>Lists all badges and whether are listed as available.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$create-badge</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
+<td>Creates a new badge with the given emoji, name and requirements.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
+<td>Grants badge #1 to Dude16.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
+<td>Revokes badge #1 from Dude16.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$toggle-badge</span> <span class="pre">1</span></code></td>
+<td>Toggles whether badge #1 appears in the <cite>$available-badges</cite> list.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$update-badge</span> <span class="pre">1</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
+<td>Updates badge #1 with new emoji, name and requirements.</td>
 </tr>
 </tbody>
 </table>
@@ -305,11 +332,64 @@
 <p class="first admonition-title">Note</p>
 <p class="last">Complete documentation coming shortly…</p>
 </div>
-<div class="section" id="raid-lobby">
-<span id="raid-lobby"></span><h3>Raid Lobby<a class="headerlink" href="#raid-lobby" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="community-management">
+<span id="community-management"></span><h3>Community Management<a class="headerlink" href="#community-management" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="auto-assign-team-roles">
+<span id="auto-assign-team-roles"></span><h4>Auto Assign Team Roles<a class="headerlink" href="#auto-assign-team-roles" title="Permalink to this headline">¶</a></h4>
+<p>Disabled by default, you can allow PokeNav to automatically assign members a team role if they already configured their team on another server.</p>
+<p>When a user joins your server, if you have this setting enabled, they will automatically be added to the proper team role if one is set for your server.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>This is disabled by default because doing so may allow malicious users to circumvent discord verification levels.</p>
+<p class="last">Be sure you have a good spam / moderation bot in your server before you enable this setting.</p>
 </div>
-<div class="section" id="ex-raid-lobby">
-<span id="ex-raid-lobby"></span><h3>EX Raid Lobby<a class="headerlink" href="#ex-raid-lobby" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="badges">
+<span id="badges"></span><h3>Badges<a class="headerlink" href="#badges" title="Permalink to this headline">¶</a></h3>
+<p>You can create badges from custom server emoji and award them to members for achieving certain goals. Everything is done by moderator discretion, so make badges for whatever you like. At the moment, if you delete the emoji for a badge its image will be removed from every trainers badge list (so please keep those around).</p>
+<p>Most badge operations work by referencing a badges unique id. When you create a badge, PokeNav will generate a unique id and display it alongside the badge when it is displayed. This id is also used to grant and revoke badges, as well as update its description.</p>
+<div class="section" id="creating-badges">
+<span id="creating-badges"></span><h4>Creating Badges<a class="headerlink" href="#creating-badges" title="Permalink to this headline">¶</a></h4>
+<p>To create a badge, use the <code class="docutils literal notranslate"><span class="pre">$create-badge</span></code> command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description.</p>
+<p>You must quote the name and requirements to capture it properly. Names are limited to 80 characters and requirements to 256. Emoji can be animted and it actually makes the badge that much cooler.</p>
+<p>Its recommended to make the requirements brief and describe what needs to be done to obtain it, as well as reference a channel where more information might be obtained.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/zcHGNHI5HpE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="updating-badges">
+<span id="updating-badges"></span><h4>Updating Badges<a class="headerlink" href="#updating-badges" title="Permalink to this headline">¶</a></h4>
+<p>If you need to update a badges emoji, name or requirements you can use the <code class="docutils literal notranslate"><span class="pre">$update-badge</span></code> command, which works EXACTLY like <code class="docutils literal notranslate"><span class="pre">$create-badge</span></code> but takes the badge id as the first item and updates that badge instead of creating a new one:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/MX3mVot12m4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="hiding-badges">
+<span id="hiding-badges"></span><h4>Hiding Badges<a class="headerlink" href="#hiding-badges" title="Permalink to this headline">¶</a></h4>
+<p>Sometimes you don’t want badges to be visible or you want to retire them. <code class="docutils literal notranslate"><span class="pre">$toggle-badge</span></code> will hide it from the <code class="docutils literal notranslate"><span class="pre">$available-badges</span></code> list. You can still grant and change it, but it won’t be visible to non-mods.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/dgFuMmwB-L4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="list-all-badges">
+<span id="list-all-badges"></span><h4>List All Badges<a class="headerlink" href="#list-all-badges" title="Permalink to this headline">¶</a></h4>
+<p>In addition to <code class="docutils literal notranslate"><span class="pre">$available-badges</span></code>, mods have access to <code class="docutils literal notranslate"><span class="pre">$all-badges</span></code> which also shows unavailable badges if they’ve been toggled off.</p>
+</div>
+<div class="section" id="setting-a-badge-announcement-channel">
+<span id="setting-a-badge-announcement-channel"></span><h4>Setting a Badge Announcement Channel<a class="headerlink" href="#setting-a-badge-announcement-channel" title="Permalink to this headline">¶</a></h4>
+<p>When you grant a badge, you can have the award be pubicly announced in the badge announcement channel. This will be created for you by <code class="docutils literal notranslate"><span class="pre">$quickstart</span></code>, but if you need to set it you can use the <code class="docutils literal notranslate"><span class="pre">$set-badge-channel</span></code> command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$set-badge-channel</span> <span class="pre">#trophy-room</span></code></p>
+</div>
+<div class="section" id="granting-badges">
+<span id="granting-badges"></span><h4>Granting Badges<a class="headerlink" href="#granting-badges" title="Permalink to this headline">¶</a></h4>
+<p>To grant a user a badge, use <code class="docutils literal notranslate"><span class="pre">$grant-badge</span></code> and provide the badge id and the name of the user. Like all commands the name can either be the user nickname or their full discord name with discriminator:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/FCj8nA4pr90" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="revoking-badges">
+<span id="revoking-badges"></span><h4>Revoking Badges<a class="headerlink" href="#revoking-badges" title="Permalink to this headline">¶</a></h4>
+<p>If you need to take back a badge, use <code class="docutils literal notranslate"><span class="pre">$revoke-badge</span></code> that same way you used <code class="docutils literal notranslate"><span class="pre">$grant-badge</span></code>. It won’t be announced but the badge will disappear from the users profile. You can use <code class="docutils literal notranslate"><span class="pre">$grant-badge</span></code> to give the user the badge back:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/WCUef2YFrDg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
 </div>
 </div>
 </div>
