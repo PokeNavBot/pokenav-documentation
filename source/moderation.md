@@ -17,6 +17,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$set-prefix $``, "Changes the prefix used by PokeNav for your server."
    ``$set-timezone US/Eastern``, "Sets the timezone localization for this server."
    ``$set-location 45.123 -75.123123``, "Sets the center point of a community play area."
+   ``$set-radius 20``, "Sets the minimum radius of your community (in kilometers)."
    ``$show-settings``, "Shows all your bot configuration settings for this server."
 ```
 
