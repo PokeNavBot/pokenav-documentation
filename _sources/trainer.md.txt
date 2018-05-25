@@ -18,8 +18,10 @@ Your trainer profile syncs across all servers using PokeNav.
    ``$silphcard``, Anyone, Guild / DM, "Displays your silphcard, if your silph id is set."
    ``$silphcard Dude16``, Anyone, Guild / DM, "Displays Dude16's silph card, if his silph id is set."
    ``$pokebattlerid 123456``, Anyone, Guild / DM, "Sets your pokebattler id for custom counters."
-   ``$quota``, Anyone, Guild / DM, "Gets your remaining monthly screenshot quota."
+   ``$my-settings``, Anyone, Guild / DM, "Gets your personal bot settings and quota."
    ``$team mystic``, Anyone, Guild, "Sets your team role on the current server."
+   ``$toggle-auto-join-screenshot``, Anyone, Guild / DM, "Toggles whether to automatically join a raid created via screenshot."
+   
 ```
 
 ## Features
