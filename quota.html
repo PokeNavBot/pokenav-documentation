@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quota &mdash; PokeNav  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Patreon and Support" href="patreon.html" />
+    <link rel="prev" title="Moderation" href="moderation.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PokeNav
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="community_setup.html">Community Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="raids.html">Raiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pokedex.html">Pokedex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="moderation.html">Moderation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quota</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-quotas-work">How Quotas Work</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quota-command"><code class="docutils literal notranslate"><span class="pre">$quota</span></code> command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-if-i-run-out-of-quota">What if I run out of quota?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-does-sharing-quota-mean">What does sharing quota mean?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#set-member-shared-quota-command"><code class="docutils literal notranslate"><span class="pre">$set-member-shared-quota</span></code> command</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="patreon.html">Patreon and Support</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PokeNav</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Quota</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/quota.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quota">
+<span id="quota"></span><h1>Quota<a class="headerlink" href="#quota" title="Permalink to this headline">¶</a></h1>
+<p>Individual quotas are a necessary evil of running a resource intensive process like screenshot analysis. Here’s a full explanation of how they work in PokeNav, which attempts to balance accessibility with covering operation costs.</p>
+<div class="section" id="how-quotas-work">
+<span id="how-quotas-work"></span><h2>How Quotas Work<a class="headerlink" href="#how-quotas-work" title="Permalink to this headline">¶</a></h2>
+<p>All users on each server with PokeNav are given a monthly quota of <strong>20 screenshot scans</strong>. This quota can be easily upgraded via contributing to <a class="reference external" href="https://www.patreon.com/PokeNavBot">Patreon</a>. When an individual upgrades his quota, he may share his new monthly quota with the rest of his primary server.</p>
+<div class="section" id="quota-command">
+<span id="quota-command"></span><h3><code class="docutils literal notranslate"><span class="pre">$quota</span></code> command<a class="headerlink" href="#quota-command" title="Permalink to this headline">¶</a></h3>
+<p>This command will show a user the amount of individual quota she has used in a month and how many remaining scans are available. Quota is reset on the first day of each month.</p>
+</div>
+<div class="section" id="what-if-i-run-out-of-quota">
+<span id="what-if-i-run-out-of-quota"></span><h3>What if I run out of quota?<a class="headerlink" href="#what-if-i-run-out-of-quota" title="Permalink to this headline">¶</a></h3>
+<p>If a user exceeds their individual and shared quota, PokeNav will send them a DM with instructions on increasing their monthly quota via support on <a class="reference external" href="https://www.patreon.com/PokeNavBot">Patreon</a>. They will be unable to perform any action that requires scanning a screenshot.</p>
+</div>
+<div class="section" id="what-does-sharing-quota-mean">
+<span id="what-does-sharing-quota-mean"></span><h3>What does sharing quota mean?<a class="headerlink" href="#what-does-sharing-quota-mean" title="Permalink to this headline">¶</a></h3>
+<p>Patreons can share their quota with their primary server using the <code class="docutils literal notranslate"><span class="pre">$share-quota</span></code> command in any channel where PokeNav is active.</p>
+<p>For example, if koshermuffin is a Patreon subscriber receiving 200 individual screenshot scans per month, she may use the <code class="docutils literal notranslate"><span class="pre">$share-quota</span></code> command to share the entire 200 quota with the rest of her server. Multiple people can share their quota with the server, creating a larger pool of available scans.</p>
+<p>If another user, IVpips, exceeds his individual quota of 20 scans in a given month, he may use up to <strong>30 additional scans</strong> (this number can be set by server admins) from the shared quota.</p>
+<div class="section" id="set-member-shared-quota-command">
+<span id="set-member-shared-quota-command"></span><h4><code class="docutils literal notranslate"><span class="pre">$set-member-shared-quota</span></code> command<a class="headerlink" href="#set-member-shared-quota-command" title="Permalink to this headline">¶</a></h4>
+<p>This command allows server admins to set a restriction on the number of scans an individual may use from the shared quota.</p>
+<p>The default limit for this is 30 scans. If a user exceeds both their individual and shared quota, they will be directed to supporting via <a class="reference external" href="https://www.patreon.com/PokeNavBot">Patreon</a> to increase their individual quota (and therefore be given the opportunity to also share this increased quota with their server).</p>
+<p>This limit is there to protect your server’s shared pool from being consumed by a malicious or unknowing user.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="patreon.html" class="btn btn-neutral float-right" title="Patreon and Support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="moderation.html" class="btn btn-neutral" title="Moderation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, PokeNavBot.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

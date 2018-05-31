@@ -51,6 +51,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$set-raid-viewer-role raid-viewer``, "The role that can view all active raid channels."
    ``$toggle-raid-roles``, "Toggles whether you allow announcing raids via role mentions."
    ``$toggle-restrict-status``, "Toggles whether you allow anyone to update the status in a raid."
+   ``$set-member-shared-quota``, "Sets the number of scans an individual can take from the shared pool."
 ```
 
 ```eval_rst

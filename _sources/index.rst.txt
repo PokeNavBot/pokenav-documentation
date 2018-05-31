@@ -55,4 +55,5 @@ It has many features, including:
    leaderboards
    pokedex
    moderation
+   quota 
    patreon
