@@ -4,11 +4,11 @@ Individual quotas are a necessary evil of running a resource intensive process l
 
 ## How Quotas Work
 
-All users on each server with PokeNav are given a monthly quota of **20 screenshot scans**. This quota can be easily upgraded via contributing to [Patreon](https://www.patreon.com/PokeNavBot). When an individual upgrades his quota, he may share his new monthly quota with the rest of his primary server. 
+All users on each server with PokeNav are given a monthly quota of **20 screenshot scans**. This quota can be easily upgraded via contributing to [Patreon](https://www.patreon.com/PokeNavBot). When an individual upgrades his quota, they may share their new monthly quota with the rest of their primary server. 
 
 ### `$quota` command
 
-This command will show a user the amount of individual quota she has used in a month and how many remaining scans are available. Quota is reset on the first day of each month. 
+This command will show a user the amount of individual quota they have used in a month and how many remaining scans are available. Quota is reset on the first day of each month. 
 
 ### What if I run out of quota?
 
