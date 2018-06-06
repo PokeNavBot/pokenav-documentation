@@ -31,7 +31,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Badges" href="badges.html" />
-    <link rel="prev" title="Trainer Profile" href="trainer.html" /> 
+    <link rel="prev" title="Trainer Profile &amp; Settings" href="trainer.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -82,7 +82,7 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="community_setup.html">Community Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile &amp; Settings</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Raiding</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#terminology">Terminology</a><ul>
@@ -91,19 +91,30 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#announcing-a-raid">Announcing a Raid</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#joining-a-raid">Joining a Raid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#announcing-a-raid">Announcing a Raid</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#raid-command">$raid command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exraid-command">$exraid command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#via-raid-roles">via raid roles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#via-screenshot">via screenshot</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#raid-screenshot-scanning">Raid Screenshot Scanning</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ex-raid-screenshot-scanning">EX Raid Screenshot Scanning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ex-raid-pass-scanning">EX Raid Pass Scanning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#joining-a-raid">Joining a Raid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#updating-the-boss">Updating the Boss</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#leaving-the-raid">Leaving the Raid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#listing-raid-party-members">Listing Raid Party Members</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#promoting-a-raid">Promoting a Raid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#updating-status">Updating Status</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#arriving-at-a-raid">Arriving at a Raid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ending-a-raid">Ending a Raid</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#setting-a-location">Setting a Location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-a-location">Setting a Location</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#if-pokenav-knows-about-your-gyms">If PokeNav knows about your gyms…</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#if-you-don-t-have-the-gym-use-the-approximate-address">If you don’t have the gym, use the approximate address…</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#getting-counters">Getting Counters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#promoting-a-raid">Promoting a Raid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#companion-accounts">Companion Accounts</a></li>
 </ul>
 </li>
 </ul>
@@ -273,10 +284,15 @@
 <td>Raid Party</td>
 <td>Updates the public status of the raid party.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$where</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$with</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
-<td>Gets the current location of the raid..</td>
+<td>Sets your companion accounts for this raid.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$where</span></code></td>
+<td>Anyone</td>
+<td>Raid Party</td>
+<td>Gets the current location of the raid.</td>
 </tr>
 </tbody>
 </table>
@@ -301,43 +317,118 @@
 </div>
 <div class="section" id="announcing-a-raid">
 <span id="announcing-a-raid"></span><h3>Announcing a Raid<a class="headerlink" href="#announcing-a-raid" title="Permalink to this headline">¶</a></h3>
+<p>With PokeNav, announcing and coordinating a raid is PokeNav is trivial.</p>
+<p>While several methods of announcing raids exist, All of these methods require being in a “raid lobby” which is simply a channel that has been enabled for annoucing raids. They will not work outside a raid lobby.</p>
+<div class="section" id="raid-command">
+<span id="raid-command"></span><h4>$raid command<a class="headerlink" href="#raid-command" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">$raid</span></code> command with no arguments will create a bare bones channel for coordination. This channel will last for up to 2 hours by default (can be set by server admins).</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/It2L-DTlKSc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="exraid-command">
+<span id="exraid-command"></span><h4>$exraid command<a class="headerlink" href="#exraid-command" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">$exraid</span></code> command with no arguments will create a bare bones channel for coordination. This channel will last for up to 14 days by default (can be set by server admins).</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/PCCrBiMa7b0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="via-raid-roles">
+<span id="via-raid-roles"></span><h4>via raid roles<a class="headerlink" href="#via-raid-roles" title="Permalink to this headline">¶</a></h4>
+<p>Your server admin can designate roles that will automatically trigger a raid channel when used in a message in a raid lobby.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/LkqH6tqvj60" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="via-screenshot">
+<span id="via-screenshot"></span><h4>via screenshot<a class="headerlink" href="#via-screenshot" title="Permalink to this headline">¶</a></h4>
+<p>Drop a screenshot of a raid and PokeNav will automatically scan it and create a raid lobby.</p>
+<p>The hatch time, end time and expiration will all be based off the timestamps in the screenshot.</p>
+<p>The boss will be automatically detected using a combination of text recognition and image recognition (even if the bosses name is obscured).</p>
+<p>If your servers play area has gyms loaded into PokeNavs database, the location will automatically be set based on the name of the gym and directions will be made available.</p>
 </div>
-<div class="section" id="joining-a-raid">
-<span id="joining-a-raid"></span><h3>Joining a Raid<a class="headerlink" href="#joining-a-raid" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="raid-screenshot-scanning">
 <span id="raid-screenshot-scanning"></span><h3>Raid Screenshot Scanning<a class="headerlink" href="#raid-screenshot-scanning" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="ex-raid-screenshot-scanning">
-<span id="ex-raid-screenshot-scanning"></span><h3>EX Raid Screenshot Scanning<a class="headerlink" href="#ex-raid-screenshot-scanning" title="Permalink to this headline">¶</a></h3>
-</div>
+<p>When uploading screenshots, help PokeNav accurately extract information from the screenshot. Make sure the gym and boss name are visible if possible.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/RDYo9PvIGzo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="ex-raid-pass-scanning">
+<span id="ex-raid-pass-scanning"></span><h3>EX Raid Pass Scanning<a class="headerlink" href="#ex-raid-pass-scanning" title="Permalink to this headline">¶</a></h3>
+<p>EX raid passes also work, make sure you upload a full screenshot of the pass with all information visible.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/u5sQeg44Xkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="joining-a-raid">
+<span id="joining-a-raid"></span><h3>Joining a Raid<a class="headerlink" href="#joining-a-raid" title="Permalink to this headline">¶</a></h3>
+<p>All raid channels are private by default (only admins can see them). Scroll up in your raid lobby or see the active-raids channel for a complete list of raids. React with a person icon to any message that mentions a raid and you will be added to the party.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/41q29YlLoKk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
 <div class="section" id="updating-the-boss">
 <span id="updating-the-boss"></span><h3>Updating the Boss<a class="headerlink" href="#updating-the-boss" title="Permalink to this headline">¶</a></h3>
-</div>
+<p>If the channels boss isn’t set, use the <code class="docutils literal notranslate"><span class="pre">$boss</span></code> command to set it. PokeNav doesn’t care about the boss if its an egg at the moment, so if its an egg, wait until the boss is known to set it.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/8G5JSnZTciw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
 <div class="section" id="leaving-the-raid">
 <span id="leaving-the-raid"></span><h3>Leaving the Raid<a class="headerlink" href="#leaving-the-raid" title="Permalink to this headline">¶</a></h3>
+<p>If you joined accidently or can’t make it, use the <code class="docutils literal notranslate"><span class="pre">$leave</span></code> command to leave the raid. You will be removed from the channel and the raid party members list.</p>
+<p>Don’t leave a raid after its done or you won’t get join credit in your profile and leaderboard for having participated. Instead just wait for it to expire or the creator to end the raid.</p>
 </div>
 <div class="section" id="listing-raid-party-members">
 <span id="listing-raid-party-members"></span><h3>Listing Raid Party Members<a class="headerlink" href="#listing-raid-party-members" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="updating-status">
-<span id="updating-status"></span><h3>Updating Status<a class="headerlink" href="#updating-status" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="arriving-at-a-raid">
-<span id="arriving-at-a-raid"></span><h3>Arriving at a Raid<a class="headerlink" href="#arriving-at-a-raid" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="ending-a-raid">
-<span id="ending-a-raid"></span><h3>Ending a Raid<a class="headerlink" href="#ending-a-raid" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="setting-a-location">
-<span id="setting-a-location"></span><h3>Setting a Location<a class="headerlink" href="#setting-a-location" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="getting-counters">
-<span id="getting-counters"></span><h3>Getting Counters<a class="headerlink" href="#getting-counters" title="Permalink to this headline">¶</a></h3>
+<p>You can view all the participants of the raid by typing <code class="docutils literal notranslate"><span class="pre">$members</span></code> or <code class="docutils literal notranslate"><span class="pre">$m</span></code>. It will show all the members, companion accounts and who has arrived on site.</p>
 </div>
 <div class="section" id="promoting-a-raid">
 <span id="promoting-a-raid"></span><h3>Promoting a Raid<a class="headerlink" href="#promoting-a-raid" title="Permalink to this headline">¶</a></h3>
+<p>Need a little bit of extra help? Go into any channel where PokeNav can read and write and mention the channel for your raid party. PokeNav will add a reaction and others can join right from another channel.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/hQEVWXoQYmk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="updating-status">
+<span id="updating-status"></span><h3>Updating Status<a class="headerlink" href="#updating-status" title="Permalink to this headline">¶</a></h3>
+<p>Status is the a globally visible message that indicates what is happening in the raid right now. Use it to indicate the next step, such as “Double, first starts at 1:15pm, then 1:30p” or “Hard start at 1:45pm”.</p>
+<p>Status updates are visible inside the raid and in the raid advertisement.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/4i_f5YZLAFQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="arriving-at-a-raid">
+<span id="arriving-at-a-raid"></span><h3>Arriving at a Raid<a class="headerlink" href="#arriving-at-a-raid" title="Permalink to this headline">¶</a></h3>
+<p>When you arrive at a raid, you can use the <code class="docutils literal notranslate"><span class="pre">$here</span></code> command to mark yourself as having arrived. This will make it easy to get an at-a-glance view of who is missing, so no one is left out.</p>
 </div>
+<div class="section" id="ending-a-raid">
+<span id="ending-a-raid"></span><h3>Ending a Raid<a class="headerlink" href="#ending-a-raid" title="Permalink to this headline">¶</a></h3>
+<p>When the raid is over, creators or raid moderators can clean up the raid and reduce noise by using the <code class="docutils literal notranslate"><span class="pre">$end</span></code> command.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/naG_hJex8Bs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="setting-a-location">
+<span id="setting-a-location"></span><h3>Setting a Location<a class="headerlink" href="#setting-a-location" title="Permalink to this headline">¶</a></h3>
+<p>If you announce a raid manually or PokeNav could not identify the gym, you can optionally set the location in one of two ways:</p>
+<div class="section" id="if-pokenav-knows-about-your-gyms">
+<span id="if-pokenav-knows-about-your-gyms"></span><h4>If PokeNav knows about your gyms…<a class="headerlink" href="#if-pokenav-knows-about-your-gyms" title="Permalink to this headline">¶</a></h4>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">$gym</span></code> command to set the location using the name of your gym. Duplicate gym names will present a selection dialog.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/NyajO44dVlc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="if-you-don-t-have-the-gym-use-the-approximate-address">
+<span id="if-you-don-t-have-the-gym-use-the-approximate-address"></span><h4>If you don’t have the gym, use the approximate address…<a class="headerlink" href="#if-you-don-t-have-the-gym-use-the-approximate-address" title="Permalink to this headline">¶</a></h4>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">$address</span></code> command to pin and set directions using any address. This will provide a google maps link to users.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/sIq8AD8Eqo0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+</div>
+<div class="section" id="getting-counters">
+<span id="getting-counters"></span><h3>Getting Counters<a class="headerlink" href="#getting-counters" title="Permalink to this headline">¶</a></h3>
+<p>If the raid boss was set, simply use <code class="docutils literal notranslate"><span class="pre">$counters</span></code> to get the list of counters for that boss. You can also provide current weather conditions, <code class="docutils literal notranslate"><span class="pre">$counters</span> <span class="pre">rain</span></code></p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/45tv2WREHZw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="companion-accounts">
+<span id="companion-accounts"></span><h3>Companion Accounts<a class="headerlink" href="#companion-accounts" title="Permalink to this headline">¶</a></h3>
+<p>If you temporarily have friends or family with you that aren’t on discord, you can make them in a raid channel by using the <code class="docutils literal notranslate"><span class="pre">$with</span></code> command. The member list and count will reflect the extra non-discord accounts with you.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/fkJkEj5yO9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
 </div>
 </div>
 
@@ -352,7 +443,7 @@
         <a href="badges.html" class="btn btn-neutral float-right" title="Badges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="trainer.html" class="btn btn-neutral" title="Trainer Profile" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="trainer.html" class="btn btn-neutral" title="Trainer Profile &amp; Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
