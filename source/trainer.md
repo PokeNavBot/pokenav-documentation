@@ -1,4 +1,4 @@
-# Trainer Profile
+# Trainer Profile & Settings
 
 Your trainer profile syncs across all servers using PokeNav.
 
@@ -21,6 +21,7 @@ Your trainer profile syncs across all servers using PokeNav.
    ``$my-settings``, Anyone, Guild / DM, "Gets your personal bot settings and quota."
    ``$team mystic``, Anyone, Guild, "Sets your team role on the current server."
    ``$toggle-auto-join-screenshot``, Anyone, Guild / DM, "Toggles whether to automatically join a raid created via screenshot."
+   ``$set-companion-accounts``, Anyone, Guild / DM, "Sets the number of companion accounts to use for each raid."
    ``$share-quota``, Anyone, Guild, "Shares your quota with the server (only available to Patreon subscribers)."
    ``$unshare-quota``, Anyone, Guild / DM, "Stops sharing your quota any server."
    
@@ -133,5 +134,17 @@ Your raid screenshot scans are limited, either by your patreon donation level or
 
     <div class="video-container">
     <iframe src="https://www.youtube.com/embed/Omg6K3pLsmI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+```
+
+### Set Companion Accounts
+
+You can set how many companion accounts should be added when you join a raid. Companion accounts represent accounts participating in the raid which do not have discord accounts, such as family and friends.
+
+```eval_rst
+.. raw:: html
+
+    <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/2CRu6yU_LmQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 ```
