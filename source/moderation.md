@@ -19,6 +19,8 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$set-location 45.123 -75.123123``, "Sets the center point of a community play area."
    ``$set-radius 20``, "Sets the minimum radius of your community (in kilometers)."
    ``$show-settings``, "Shows all your bot configuration settings for this server."
+   ``$set-bot-announcement-channel #news``, "Updates where bot announcements are sent (default: moderation channel)."
+   ``$set-profile-channel #profile-setup``, "Updates where scans profile images for setting teams."
 ```
 
 ```eval_rst
@@ -65,6 +67,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$revoke-badge 1 Dude16``, "Revokes badge #1 from Dude16."
    ``$toggle-badge 1``, "Toggles whether badge #1 appears in the `$available-badges` list."
    ``$update-badge 1 :emoji: "Name" "Requirements"``, "Updates badge #1 with new emoji, name and requirements."
+   ``$set-badge-announcement-channel #trophy-room``, "Badges will be awarded will be announced in #trophy-room."
 
 ```
 
@@ -78,6 +81,19 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
 ```
 
 ### Community Management
+
+#### Scanning Team Images 
+
+Disabled by default, you can set a profile channel. When this is set, users can upload a screenshot of their in-game profile and PokeNav will set their team and role based according to what it believes their team to be. Team scans don't count against your quota.
+
+<img src="/_static/imgs/team_scan.png" />
+
+```eval_rst
+
+.. note::
+    
+    To prevent accidently changing teams, PokeNav will only assign your team if you do not have a team role assigned on that server. You can change your team with the `$team` command.
+```
 
 #### Auto Assign Team Roles
 
