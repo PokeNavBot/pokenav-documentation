@@ -91,6 +91,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#community-management">Community Management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#scanning-team-images">Scanning Team Images</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#auto-assign-team-roles">Auto Assign Team Roles</a></li>
 </ul>
 </li>
@@ -216,6 +217,12 @@
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$show-settings</span></code></td>
 <td>Shows all your bot configuration settings for this server.</td>
 </tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-bot-announcement-channel</span> <span class="pre">#news</span></code></td>
+<td>Updates where bot announcements are sent (default: moderation channel).</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$set-profile-channel</span> <span class="pre">#profile-setup</span></code></td>
+<td>Updates where scans profile images for setting teams.</td>
+</tr>
 </tbody>
 </table>
 <table border="1" class="colwidths-given docutils" id="id2">
@@ -333,6 +340,9 @@
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">$update-badge</span> <span class="pre">1</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
 <td>Updates badge #1 with new emoji, name and requirements.</td>
 </tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">$set-badge-announcement-channel</span> <span class="pre">#trophy-room</span></code></td>
+<td>Badges will be awarded will be announced in #trophy-room.</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -344,6 +354,15 @@
 </div>
 <div class="section" id="community-management">
 <span id="community-management"></span><h3>Community Management<a class="headerlink" href="#community-management" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="scanning-team-images">
+<span id="scanning-team-images"></span><h4>Scanning Team Images<a class="headerlink" href="#scanning-team-images" title="Permalink to this headline">¶</a></h4>
+<p>Disabled by default, you can set a profile channel. When this is set, users can upload a screenshot of their in-game profile and PokeNav will set their team and role based according to what it believes their team to be. Team scans don’t count against your quota.</p>
+<p><img src="/_static/imgs/team_scan.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To prevent accidently changing teams, PokeNav will only assign your team if you do not have a team role assigned on that server. You can change your team with the <cite>$team</cite> command.</p>
+</div>
+</div>
 <div class="section" id="auto-assign-team-roles">
 <span id="auto-assign-team-roles"></span><h4>Auto Assign Team Roles<a class="headerlink" href="#auto-assign-team-roles" title="Permalink to this headline">¶</a></h4>
 <p>Disabled by default, you can allow PokeNav to automatically assign members a team role if they already configured their team on another server.</p>
