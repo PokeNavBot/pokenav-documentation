@@ -12,6 +12,7 @@ These are entirely at community discretion.
    :widths: 15, 10, 10, 20
 
    ``$badges``, Anyone, Guild / DM, "Displays a list of all the badges you've earn"
+   ``$badge-info 12``, Anyone, Guild / DM, "Displays detailed information about badge #12"
    ``$badges Dude16``, Anyone, Guild / DM, "Displays all the badges Dude16 has earned"
    ``$available-badges``, Anyone, Guild, "Lists all the available badges for the current community"
 ```

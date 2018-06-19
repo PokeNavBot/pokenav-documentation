@@ -21,9 +21,13 @@
    ``$time``, Anyone, Raid Party, "Gets the time remaining until egg hatch, raid end and channel expiration."
    ``$members``, Anyone, Raid Party, "Gets the list of members participating in the raid."
    ``$reset``, Creator / Moderator, Raid Party, "Resets everyones arrival status."
+   ``$set-despawn 45``, Creator / Moderator, Raid Party, "Sets the despawn time in minutes."
+   ``$set-hatch 45``, Creator / Moderator, Raid Party, "Sets the hatch time in minutes."
+   ``$extend 10``, Creator / Moderator, Raid Party, "Extends the channels expiration time by 10 minutes."
    ``$status``, Creator / Moderator, Raid Party, "Updates the public status of the raid party."
    ``$with``, Anyone, Raid Party, "Sets your companion accounts for this raid."
    ``$where``, Anyone, Raid Party, "Gets the current location of the raid."
+
 ```
 
 ## Terminology
@@ -135,6 +139,14 @@ All raid channels are private by default (only admins can see them). Scroll up i
     <iframe src="https://www.youtube.com/embed/41q29YlLoKk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 ```
+
+### Setting the Hatch and Despawn Time
+
+If you created a raid via screenshot, the hatch and despawn are time are set automatically. If you created a raid channel manually and want to provide this information or correct it. You can set those times using the `$set-hatch` and `$set-despawn` commands. 
+
+Using `$set-hatch 30` will set the raid to assume the egg will hatch in 30 minutes and despawn 45 minutes later. The channels expiration time will be extended automatically to accomodate the new time.
+
+Using `$set-despawn 30` will set the raid to assume the boss will despawn in 30 minutes. The hatch time will be set to 0 (45 minutes before the end of the raid). The channel's expiration time will be extended automatically to accomodate the new time.
 
 ### Updating the Boss
 
