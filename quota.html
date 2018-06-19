@@ -90,10 +90,10 @@
 <li class="toctree-l1"><a class="reference internal" href="moderation.html">Moderation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Quota</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#how-quotas-work">How Quotas Work</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#quota-command"><code class="docutils literal notranslate"><span class="pre">$quota</span></code> command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quota-command"><code class="docutils literal"><span class="pre">$quota</span></code> command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#what-if-i-run-out-of-quota">What if I run out of quota?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#what-does-sharing-quota-mean">What does sharing quota mean?</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#set-member-shared-quota-command"><code class="docutils literal notranslate"><span class="pre">$set-member-shared-quota</span></code> command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-member-shared-quota-command"><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code> command</a></li>
 </ul>
 </li>
 </ul>
@@ -167,12 +167,12 @@
             
   <div class="section" id="quota">
 <span id="quota"></span><h1>Quota<a class="headerlink" href="#quota" title="Permalink to this headline">¶</a></h1>
-<p>Individual quotas are a necessary evil of running a resource intensive process like screenshot analysis. Here’s a full explanation of how they work in PokeNav, which attempts to balance accessibility with covering operation costs.</p>
+<p>Individual quotas are a necessary evil of running a resource intensive process like screenshot analysis. Here&#8217;s a full explanation of how they work in PokeNav, which attempts to balance accessibility with covering operation costs.</p>
 <div class="section" id="how-quotas-work">
 <span id="how-quotas-work"></span><h2>How Quotas Work<a class="headerlink" href="#how-quotas-work" title="Permalink to this headline">¶</a></h2>
 <p>All users on each server with PokeNav are given a monthly quota of <strong>20 screenshot scans</strong>. This quota can be easily upgraded via contributing to <a class="reference external" href="https://www.patreon.com/PokeNavBot">Patreon</a>. When an individual upgrades his quota, they may share their new monthly quota with the rest of their primary server.</p>
 <div class="section" id="quota-command">
-<span id="quota-command"></span><h3><code class="docutils literal notranslate"><span class="pre">$quota</span></code> command<a class="headerlink" href="#quota-command" title="Permalink to this headline">¶</a></h3>
+<span id="quota-command"></span><h3><code class="docutils literal"><span class="pre">$quota</span></code> command<a class="headerlink" href="#quota-command" title="Permalink to this headline">¶</a></h3>
 <p>This command will show a user the amount of individual quota they have used in a month and how many remaining scans are available. Quota is reset on the first day of each month.</p>
 </div>
 <div class="section" id="what-if-i-run-out-of-quota">
@@ -181,14 +181,14 @@
 </div>
 <div class="section" id="what-does-sharing-quota-mean">
 <span id="what-does-sharing-quota-mean"></span><h3>What does sharing quota mean?<a class="headerlink" href="#what-does-sharing-quota-mean" title="Permalink to this headline">¶</a></h3>
-<p>Patreons can share their quota with their primary server using the <code class="docutils literal notranslate"><span class="pre">$share-quota</span></code> command in any channel where PokeNav is active.</p>
-<p>For example, if koshermuffin is a Patreon subscriber receiving 200 individual screenshot scans per month, she may use the <code class="docutils literal notranslate"><span class="pre">$share-quota</span></code> command to share the entire 200 quota with the rest of her server. Multiple people can share their quota with the server, creating a larger pool of available scans.</p>
+<p>Patreons can share their quota with their primary server using the <code class="docutils literal"><span class="pre">$share-quota</span></code> command in any channel where PokeNav is active.</p>
+<p>For example, if koshermuffin is a Patreon subscriber receiving 200 individual screenshot scans per month, she may use the <code class="docutils literal"><span class="pre">$share-quota</span></code> command to share the entire 200 quota with the rest of her server. Multiple people can share their quota with the server, creating a larger pool of available scans.</p>
 <p>If another user, IVpips, exceeds his individual quota of 20 scans in a given month, he may use up to <strong>30 additional scans</strong> (this number can be set by server admins) from the shared quota.</p>
 <div class="section" id="set-member-shared-quota-command">
-<span id="set-member-shared-quota-command"></span><h4><code class="docutils literal notranslate"><span class="pre">$set-member-shared-quota</span></code> command<a class="headerlink" href="#set-member-shared-quota-command" title="Permalink to this headline">¶</a></h4>
+<span id="set-member-shared-quota-command"></span><h4><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code> command<a class="headerlink" href="#set-member-shared-quota-command" title="Permalink to this headline">¶</a></h4>
 <p>This command allows server admins to set a restriction on the number of scans an individual may use from the shared quota.</p>
 <p>The default limit for this is 30 scans. If a user exceeds both their individual and shared quota, they will be directed to supporting via <a class="reference external" href="https://www.patreon.com/PokeNavBot">Patreon</a> to increase their individual quota (and therefore be given the opportunity to also share this increased quota with their server).</p>
-<p>This limit is there to protect your server’s shared pool from being consumed by a malicious or unknowing user.</p>
+<p>This limit is there to protect your server&#8217;s shared pool from being consumed by a malicious or unknowing user.</p>
 </div>
 </div>
 </div>
