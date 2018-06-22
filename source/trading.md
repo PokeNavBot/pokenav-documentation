@@ -7,6 +7,10 @@
    :header: "Command", "Who", "Where", "Description"
    :widths: 15, 10, 10, 20
 
+   ``$set-trainer-code 1234 1234 1234``, Anyone, Anywhere, "Sets a trainer code in the users profile."
+   ``$stc 1234 1234 1234``, Anyone, Anywhere, "Sets a trainer code in the users profile."
+   ``$get-trainer-code IVpips``, Anyone, Anywhere, "Gets a trainer code in the users profile (can be copy and pasted)."
+   ``$gtc IVpips``, Anyone, Anywhere, "Gets a trainer code in the users profile (can be copy and pasted)."
    ``$want togepi``, Anyone, Trade Lobby, "Asking for a togepi -- no specifications."
    ``$want togepi shiny``, Anyone, Trade Lobby, "Asking for a shiny togepi."
    ``$want togepi gender:male``, Anyone, Trade Lobby, "Looking for a male togepi."
