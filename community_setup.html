@@ -101,6 +101,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile &amp; Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="raids.html">Raiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trading.html">Trading</a></li>
 <li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pokedex.html">Pokedex</a></li>
@@ -197,17 +198,20 @@
 <p>Don&#8217;t worry, nothing will happen. PokeNav will instead show you a summary of what it will do:</p>
 <p><img alt="quickstart preview" src="_images/preview_quickstart.png" /></p>
 <p>Let&#8217;s go through what this means.</p>
-<p>PokeNav will do a bunch of things for you if you type <code class="docutils literal"><span class="pre">$quickstart</span> <span class="pre">YES</span></code>. These can be changed, renamed or removed at any time. Lets go through each:</p>
+<p>PokeNav will do a bunch of things for you if you type <code class="docutils literal"><span class="pre">$quickstart</span> <span class="pre">all</span></code>. These can be changed, renamed or removed at any time. Lets go through each:</p>
 <dl>
 <dt>Active Raids Channel (#active-raids)</dt>
 <dd>A single channel where all raids in your server appear, no one but PokeNav can post here. Gives trainers a clutter-free view of every raid and the option to join any raid.</dd><dt>Raid Lobby / EX Raid Lobby (#announce-raids-here)</dt>
 <dd>A single channel where users can post new raids. Commands to start raids will be ignored anywhere but in this channel.</dd><dt>Raid Party Category (Raid Parties)</dt>
 <dd>Channels created to coordinate each raid will be placed under this category. If deleted, will place channels next to the Raid Lobby it where it was announced.</dd><dt>Raid Viewer Role (@raid-viewer)</dt>
 <dd>Users in this role will be able to read and write in all active raid channels, even if they are not apart of the raid party. In PokeNav, raid parties are invisible to everyone but Raid Viewers and Raid Party Members.</dd><dt>Raid Moderator Role (@raid-moderator)</dt>
-<dd>Users in this role will be able to perform privledged actions in raids. This includes ending the raid early, updating the public status or reseting the raid parties arrival status.</dd><dt>Team Roles (mystic, instinct, valor)</dt>
+<dd>Users in this role will be able to perform privledged actions in raids. This includes ending the raid early, updating the public status or reseting the raid parties arrival status.</dd><dt>Active Trades (#active-trades)</dt>
+<dd>A single channel where all trades in your server appear, no one but PokeNav can post here. Gives trainers a clutter-free view of every trade and the option to join any trade.</dd><dt>Trade Lobby (#announce-trades-here)</dt>
+<dd>A single channel where users can post new desired trades (wants). Commands to start trades will be ignored anywhere but in this channel.</dd><dt>Team Roles (mystic, instinct, valor)</dt>
 <dd>PokeNav will attempt to automatically detect your team roles, or create them if they don't exist. Roles with the words `mystic`, `instinct` or `valor` will be detected automatically.</dd>
 </dl><p>Don&#8217;t worry if everything isn&#8217;t exactly the way you want it. You can immediatelly rename or delete any channel or role created by <code class="docutils literal"><span class="pre">$quickstart</span></code>.</p>
-<p>Once you run <code class="docutils literal"><span class="pre">$quickstart</span> <span class="pre">YES</span></code> you will have a fully functioning PokeNav installation.</p>
+<p>You can also configure only certain features. For example, <code class="docutils literal"><span class="pre">$quickstart</span> <span class="pre">trades</span></code> will only setup the items in quickstart that start with <code class="docutils literal"><span class="pre">[trades]</span></code>. Since many features in PokeNav are configured by channel, this will defacto leave them off for your server. You can do this, for example, to use PokeNav for trades, badges and teams but skip raids. In that case, simply run <code class="docutils literal"><span class="pre">$quickstart</span> <span class="pre">trades</span> <span class="pre">badges</span> <span class="pre">teams</span></code>. Order doesn&#8217;t mater.</p>
+<p>Once you run <code class="docutils literal"><span class="pre">$quickstart</span> <span class="pre">all</span></code> you will have a fully functioning PokeNav installation with all features.</p>
 </div>
 <div class="section" id="recommendations-integrating-into-an-existing-community">
 <span id="recommendations-integrating-into-an-existing-community"></span><h3>Recommendations: Integrating Into An Existing Community<a class="headerlink" href="#recommendations-integrating-into-an-existing-community" title="Permalink to this headline">¶</a></h3>

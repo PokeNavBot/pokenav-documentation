@@ -32,7 +32,7 @@ Don't worry, nothing will happen. PokeNav will instead show you a summary of wha
 
 Let's go through what this means. 
 
-PokeNav will do a bunch of things for you if you type `$quickstart YES`. These can be changed, renamed or removed at any time. Lets go through each:
+PokeNav will do a bunch of things for you if you type `$quickstart all`. These can be changed, renamed or removed at any time. Lets go through each:
 
 <dl>
 <dt>Active Raids Channel (#active-raids)</dt>
@@ -50,13 +50,21 @@ PokeNav will do a bunch of things for you if you type `$quickstart YES`. These c
 <dt>Raid Moderator Role (@raid-moderator)</dt>
 <dd>Users in this role will be able to perform privledged actions in raids. This includes ending the raid early, updating the public status or reseting the raid parties arrival status.</dd>
 
+<dt>Active Trades (#active-trades)</dt>
+<dd>A single channel where all trades in your server appear, no one but PokeNav can post here. Gives trainers a clutter-free view of every trade and the option to join any trade.</dd>
+
+<dt>Trade Lobby (#announce-trades-here)</dt>
+<dd>A single channel where users can post new desired trades (wants). Commands to start trades will be ignored anywhere but in this channel.</dd>
+
 <dt>Team Roles (mystic, instinct, valor)</dt>
 <dd>PokeNav will attempt to automatically detect your team roles, or create them if they don't exist. Roles with the words `mystic`, `instinct` or `valor` will be detected automatically.</dd>
 </dl>
 
 Don't worry if everything isn't exactly the way you want it. You can immediatelly rename or delete any channel or role created by `$quickstart`.
 
-Once you run `$quickstart YES` you will have a fully functioning PokeNav installation.
+You can also configure only certain features. For example, `$quickstart trades` will only setup the items in quickstart that start with `[trades]`. Since many features in PokeNav are configured by channel, this will defacto leave them off for your server. You can do this, for example, to use PokeNav for trades, badges and teams but skip raids. In that case, simply run `$quickstart trades badges teams`. Order doesn't mater.
+
+Once you run `$quickstart all` you will have a fully functioning PokeNav installation with all features.
 
 ### Recommendations: Integrating Into An Existing Community
 
