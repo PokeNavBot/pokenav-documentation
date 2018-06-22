@@ -51,6 +51,7 @@ It has many features, including:
    community_setup 
    trainer
    raids
+   trading 
    badges
    leaderboards
    pokedex
