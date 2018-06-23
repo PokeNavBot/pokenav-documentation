@@ -111,6 +111,13 @@ When a user joins your server, if you have this setting enabled, they will autom
     Be sure you have a good spam / moderation bot in your server before you enable this setting.
 ```
 
+#### Gym and Pokestop Awareness
+
+PokeNav sources gym and pokestop locations from user submitted datasets and other known sources. If you configure a location and radius for your server, you can gain access to search those gyms and pokestops as well as automatically match directions when you submit raid screenshots.
+
+`$set-location lat lon` will set a server with a default radius as the "play area" for your server. PokeNav will include any gyms and pokestops that fall into the play area when looking up directions. If you need to adjust your radius, use `$set-radius`. Play area with a radius up to 100km is currently supported.
+
+
 ### Badges
 
 You can create badges from custom server emoji and award them to members for achieving certain goals. Everything is done by moderator discretion, so make badges for whatever you like. At the moment, if you delete the emoji for a badge its image will be removed from every trainers badge list (so please keep those around).
