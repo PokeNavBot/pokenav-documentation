@@ -93,3 +93,7 @@ You can disable an ex raid lobby by deleting the channel, or by running:
 #### Setup Your Mods
 
 Once PokeNav is configured, add all your mods and admins to `raid-moderators` so they have permissions to end and mentor other trainers in using the bot. It will allow them to take any action the creator of the raid could take.
+
+#### Additional Experimental Features
+
+You can also setup some optional new or experimental features. To read more about these features, and how to opt in, head over to the [Moderation Documentation](moderation.md)
