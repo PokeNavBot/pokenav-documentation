@@ -37,7 +37,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    :header: "Command", "Description"
    :widths: 5, 20
 
-   ``$set-active-trades-channel #channel``, "Sets a channel where all trades will appear."
+   ``$set-active-trades-channel #channel``, "Publishes all trades in this channel and deletes non-trade messages."
    ``$enable-trade-lobby #channel``, "Enables trade commands in a channel."
    ``$disable-trade-lobby #channel``, "Disables trade commands in a channel."
 ```
