@@ -33,6 +33,16 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
 ```
 
 ```eval_rst
+.. csv-table:: Moderating Trades
+   :header: "Command", "Description"
+   :widths: 5, 20
+
+   ``$set-active-trades-channel #channel``, "Sets a channel where all trades will appear."
+   ``$enable-trade-lobby #channel``, "Enables trade commands in a channel."
+   ``$disable-trade-lobby #channel``, "Disables trade commands in a channel."
+```
+
+```eval_rst
 .. csv-table:: Moderating Raids
    :header: "Command", "Description"
    :widths: 5, 20
