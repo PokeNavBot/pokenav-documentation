@@ -32,6 +32,9 @@ It has many features, including:
     * Track team distribution and who has arrived
     * Update your current raid status to the rest of discord
 
+* Trading support
+    * Advertise your wanted trades and let PokeNav act as a notification inbox.
+
 * Badges
     * Create badges for community events, contests and in-game achievements.
     * Award badges to server members and have bot publicly announce them.

@@ -57,6 +57,8 @@ You can have up to 3 outstanding trade requests in PokeNav at once.
 
 Trade requests last for at most 3 days, then disappear.
 
+PokeNav will only notify the poster once per individual showing interest in a post. This prevents using PokeNav to spam posters with responses.
+
 ### Responding To A Trade
 
 Trades happen asynchronously. If you see a trade you want to help with, react to the messaged as indicated. The poster will be DM'd by PokeNav to add your friend information and send you a DM to coordinate the trade. 
