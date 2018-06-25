@@ -37,7 +37,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    :header: "Command", "Description"
    :widths: 5, 20
 
-   ``$create-active-trades-channel #channel``, "Creates a new channel and publishes all future active trades there."
+   ``$create-active-trades-channel``, "Creates a new channel and publishes all future active trades there."
    ``$enable-trade-lobby #channel``, "Enables trade commands in a channel."
    ``$disable-trade-lobby #channel``, "Disables trade commands in a channel."
 ```
@@ -54,7 +54,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$enable-ex-raid-role raid-mewtwo``, "Enables EX raid announcements via raid-mewtwo role."
    ``$enable-raid-lobby #channel``, "Enables raid announcements in the channel."
    ``$enable-raid-role raid-latios``, "Enables raid announcements via raid-latios role."
-   ``$create-active-raids-channel channel_name``, "Creates a new channel and publishes all future active raids there."
+   ``$create-active-raids-channel``, "Creates a new channel and publishes all future active raids there."
    ``$create-ex-raid-category Category Name``, "Creates a new category where EX raids will be placed."
    ``$set-ex-raid-duration-secs 604800``, "Maximum amount of time an EX raid channel can exist, in seconds."
    ``$create-raid-category Category Name``, "Creates a new category where raids will be placed."
