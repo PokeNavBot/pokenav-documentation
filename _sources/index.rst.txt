@@ -6,10 +6,12 @@
 Trainer's Guide
 ===================================
 
+
 .. note::
     This guide is being actively updated over time. 
     
     Some sections may be incomplete but are being worked on in priority order.
+
 
 **Welcome, Trainer!**
 
@@ -25,9 +27,8 @@ It has many features, including:
     * Links to Pokebattler Pokebox
 
 * Bot and scanner independent raid coordination
-    * Creates raids **automatically** from raid and egg screenshots
-    * Creates EX raids **automatically** from EX raid pass screenshots
-    * Private rooms for coordinating raids
+    * Creates private raid channels **automatically** from raid and egg screenshots
+    * Creates private EX raid channels **automatically** from EX raid pass screenshots
     * Boss counters via Pokebattler
     * Track team distribution and who has arrived
     * Update your current raid status to the rest of discord
@@ -45,13 +46,14 @@ It has many features, including:
 
 * Pokedex support
     * Beautiful pokedex pages for all released Pokemon
-    * Personalized counter lookups via Pokebattler
+    * Personalized counter via Pokebattler
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
    community_setup 
+   video_overview
    trainer
    raids
    trading 
