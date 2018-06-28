@@ -21,6 +21,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$show-settings``, "Shows all your bot configuration settings for this server."
    ``$set-bot-announcement-channel #news``, "Updates where bot announcements are sent (default: moderation channel)."
    ``$set-profile-channel #profile-setup``, "Updates where scans profile images for setting teams."
+   ``$toggle-24-hour-time``, "Toggles timestamps as 24-hour time instead of AM/PM."
 ```
 
 ```eval_rst
@@ -63,6 +64,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$set-raid-viewer-role raid-viewer``, "The role that can view all active raid channels."
    ``$toggle-raid-roles``, "Toggles whether you allow announcing raids via role mentions."
    ``$toggle-restrict-status``, "Toggles whether you allow anyone to update the status in a raid."
+   ``$toggle-auto-insert-counters``, "Toggles whether raid boss counters get automatically inserted in a raid."
    ``$set-member-shared-quota``, "Sets the number of scans an individual can take from the shared pool."
 ```
 
