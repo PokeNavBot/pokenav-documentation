@@ -1,4 +1,4 @@
-# Moderation 
+# Server Settings 
 
 These commands can only be run in the moderation room, which is accessible to server owners and adminstrators.
 

@@ -94,10 +94,14 @@ You can disable an ex raid lobby by deleting the channel, or by running:
 
 Make sure you use `$set-timezone` if you are not located in the default timezone (US/Eastern). You can find a full list of timezones at [at this gist](https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568).
 
+#### Changing Your Moderation Channel
+
+You can use `$set-mod-channel` to change the moderation channel -- if you already have a bot channel for admins.
+
 #### Setup Your Mods
 
 Once PokeNav is configured, add all your mods and admins to `raid-moderators` so they have permissions to end and mentor other trainers in using the bot. It will allow them to take any action the creator of the raid could take.
 
 #### Additional Experimental Features
 
-You can also setup some optional new or experimental features. To read more about these features, and how to opt in, head over to the [Moderation Documentation](moderation.md)
+You can also setup some optional new or experimental features. To read more about these features, and how to opt in, head over to the [Server Settings Page](moderation.md)
