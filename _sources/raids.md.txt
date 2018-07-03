@@ -7,8 +7,9 @@
    :header: "Command", "Who", "Where", "Description"
    :widths: 15, 10, 10, 20
 
-   ``$raid latios Starbucks``, Anyone, Raid Lobby, "Starts a latios raid party for Starbucks."
-   ``$exraid mewtwo Burpee Park``, Anyone, EX Raid Lobby, "Starts a mewtwo ex raid party for Burpee Park"
+   ``$raid latios "St. David's Church" 45``, Anyone, Raid Lobby, "Starts a latios raid at St. David's Church despawning in 45 minutes."
+   ``$egg latios "St. David's Church" 45``, Anyone, Raid Lobby, "Starts a latios raid at St. David's Church hatching in 45 minutes."
+   ``$exraid mewtwo "Burpee Park" "July 4th 2018 1:00pm"``, Anyone, EX Raid Lobby, "Starts a mewtwo ex raid party for Burpee Park at 1pm on July 4th."
    ``$boss latios``, Creator / Moderator, Raid Party, "Changes the raid boss to latios."
    ``$counters``, Anyone, Raid Party, "Gets the counters for the raid boss."
    ``$counters windy``, Anyone, Raid Party, "Gets the counters for the raid boss in windy weather"
@@ -58,41 +59,6 @@ With PokeNav, announcing and coordinating a raid is PokeNav is trivial.
 
 While several methods of announcing raids exist, All of these methods require being in a "raid lobby" which is simply a channel that has been enabled for annoucing raids. They will not work outside a raid lobby.
 
-#### $raid command
-
-The `$raid` command with no arguments will create a bare bones channel for coordination. This channel will last for up to 2 hours by default (can be set by server admins).
-
-```eval_rst
-.. raw:: html
-
-    <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/It2L-DTlKSc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-```
-
-#### $exraid command
-
-The `$exraid` command with no arguments will create a bare bones channel for coordination. This channel will last for up to 14 days by default (can be set by server admins).
-
-```eval_rst
-.. raw:: html
-
-    <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/PCCrBiMa7b0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-```
-
-#### via raid roles
-
-Your server admin can designate roles that will automatically trigger a raid channel when used in a message in a raid lobby.
-
-```eval_rst
-.. raw:: html
-
-    <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/LkqH6tqvj60" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-```
 
 #### via screenshot
 
@@ -100,13 +66,15 @@ Drop a screenshot of a raid and PokeNav will automatically scan it and create a 
 
 The hatch time, end time and expiration will all be based off the timestamps in the screenshot. 
 
-The boss will be automatically detected using a combination of text recognition and image recognition (even if the bosses name is obscured). 
+The boss will be automatically detected using a combination of text recognition and image recognition (even if the bosses name is obscured -- though this will fail if it can't detect the boss and you may need to upload training data so we can refine the image recognition process).
 
 If your servers play area has gyms loaded into PokeNavs database, the location will automatically be set based on the name of the gym and directions will be made available.
 
 ### Raid Screenshot Scanning
 
 When uploading screenshots, help PokeNav accurately extract information from the screenshot. Make sure the gym and boss name are visible if possible.
+
+Avoid uploading images before the timer is visible or the boss is zoomed in or not clearly visible -- otherwise you may waste some scan quota.
 
 ```eval_rst
 .. raw:: html
@@ -125,6 +93,56 @@ EX raid passes also work, make sure you upload a full screenshot of the pass wit
 
     <div class="video-container">
     <iframe src="https://www.youtube.com/embed/u5sQeg44Xkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+```
+
+#### $raid command
+
+The `$raid` command with no arguments will create a bare bones channel for coordination. This channel will last for up to 2 hours by default (can be set by server admins).
+
+```eval_rst
+.. raw:: html
+
+    <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/It2L-DTlKSc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+```
+
+You can also provide additional details to set information when you first run the command. The first argument is the Pokemon. The second is the exact name of the gym (use quotes if it contains spaces) and the third is the amount of time remaining in minutes. If you use the `$raid` command, it will assume the egg has hatched and the minutes is the despawn time. 
+
+You must set a pokemon to set the gym, you must set a gym to set the time. If it can't find the gym it will default gracefully and still create the channel. If you make a mistake, you can fix the times or gym name by going into the channel and using the appropriate command to correct or set the missing info.
+
+#### $egg command
+
+The `$egg` command exists to indicate that the amount of time specified is the hatch time, not the despawn time, so all timers will be set appropriately for an egg. 
+
+Technically, PokeNav doesn't currently care about eggs, nor do most trainers -- as typically people are looking for certain bosses. If you know the boss (as in when there is a single legendary raid boss), you can use the pokemon's name and it will set the boss right away. Otherwise you can say the egg level `$egg 5 "St. Davids"` and it will leave the boss unset until you manually set it in channel. 
+
+In the future, PokeNav may do something with this raid level, but for now it is simply a placeholder. 
+
+#### $exraid command
+
+The `$exraid` command with no arguments will create a bare bones channel for coordination. This channel will last for up to 14 days by default (can be set by server admins).
+
+```eval_rst
+.. raw:: html
+
+    <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/PCCrBiMa7b0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+```
+
+You can also provide the gym name and start time of the raid. If you omit the year, PokeNav will assume the current year, so be as detailed as possible. EX raid times cannot be easily corrected with the set-despawn / set-hatch at this time, so it is better to end or re-create the raid or make them via screenshot.
+
+#### via raid roles
+
+Your server admin can designate roles that will automatically trigger a raid channel when used in a message in a raid lobby.
+
+```eval_rst
+.. raw:: html
+
+    <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/LkqH6tqvj60" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 ```
 

@@ -93,14 +93,17 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#announcing-a-raid">Announcing a Raid</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#raid-command">$raid command</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#exraid-command">$exraid command</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#via-raid-roles">via raid roles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#via-screenshot">via screenshot</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#raid-screenshot-scanning">Raid Screenshot Scanning</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ex-raid-pass-scanning">EX Raid Pass Scanning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ex-raid-pass-scanning">EX Raid Pass Scanning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#raid-command">$raid command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#egg-command">$egg command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exraid-command">$exraid command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#via-raid-roles">via raid roles</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#joining-a-raid">Joining a Raid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#setting-the-hatch-and-despawn-time">Setting the Hatch and Despawn Time</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#updating-the-boss">Updating the Boss</a></li>
@@ -212,102 +215,107 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$raid</span> <span class="pre">latios</span> <span class="pre">Starbucks</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$raid</span> <span class="pre">latios</span> <span class="pre">&quot;St.</span> <span class="pre">David's</span> <span class="pre">Church&quot;</span> <span class="pre">45</span></code></td>
 <td>Anyone</td>
 <td>Raid Lobby</td>
-<td>Starts a latios raid party for Starbucks.</td>
+<td>Starts a latios raid at St. David&#8217;s Church despawning in 45 minutes.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$exraid</span> <span class="pre">mewtwo</span> <span class="pre">Burpee</span> <span class="pre">Park</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$egg</span> <span class="pre">latios</span> <span class="pre">&quot;St.</span> <span class="pre">David's</span> <span class="pre">Church&quot;</span> <span class="pre">45</span></code></td>
+<td>Anyone</td>
+<td>Raid Lobby</td>
+<td>Starts a latios raid at St. David&#8217;s Church hatching in 45 minutes.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$exraid</span> <span class="pre">mewtwo</span> <span class="pre">&quot;Burpee</span> <span class="pre">Park&quot;</span> <span class="pre">&quot;July</span> <span class="pre">4th</span> <span class="pre">2018</span> <span class="pre">1:00pm&quot;</span></code></td>
 <td>Anyone</td>
 <td>EX Raid Lobby</td>
-<td>Starts a mewtwo ex raid party for Burpee Park</td>
+<td>Starts a mewtwo ex raid party for Burpee Park at 1pm on July 4th.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$boss</span> <span class="pre">latios</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$boss</span> <span class="pre">latios</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Changes the raid boss to latios.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$counters</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$counters</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the counters for the raid boss.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$counters</span> <span class="pre">windy</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$counters</span> <span class="pre">windy</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the counters for the raid boss in windy weather</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$end</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$end</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Immediatelly ends the raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$here</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$here</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Marks you as having arrived at the raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$here</span> <span class="pre">&#64;IVpips</span> <span class="pre">&#64;koshermuffin</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$here</span> <span class="pre">&#64;IVpips</span> <span class="pre">&#64;koshermuffin</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Marks IVpips and koshermuffin as having arrived at the raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$leave</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$leave</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Leaves the raid party immediatelly.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$address</span> <span class="pre">123</span> <span class="pre">Main</span> <span class="pre">St</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$address</span> <span class="pre">123</span> <span class="pre">Main</span> <span class="pre">St</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Sets the location of the raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$gym</span> <span class="pre">Deep</span> <span class="pre">Meadow</span> <span class="pre">Park</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$gym</span> <span class="pre">Deep</span> <span class="pre">Meadow</span> <span class="pre">Park</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Sets the location to the gym in your play area.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$time</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$time</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the time remaining until egg hatch, raid end and channel expiration.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$members</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$members</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the list of members participating in the raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$reset</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$reset</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Resets everyones arrival status.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-despawn</span> <span class="pre">45</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-despawn</span> <span class="pre">45</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Sets the despawn time in minutes.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-hatch</span> <span class="pre">45</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-hatch</span> <span class="pre">45</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Sets the hatch time in minutes.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$extend</span> <span class="pre">10</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$extend</span> <span class="pre">10</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Extends the channels expiration time by 10 minutes.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$status</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$status</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Updates the public status of the raid party.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$with</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$with</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Sets your companion accounts for this raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$where</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$where</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the current location of the raid.</td>
@@ -337,35 +345,18 @@
 <span id="announcing-a-raid"></span><h3>Announcing a Raid<a class="headerlink" href="#announcing-a-raid" title="Permalink to this headline">¶</a></h3>
 <p>With PokeNav, announcing and coordinating a raid is PokeNav is trivial.</p>
 <p>While several methods of announcing raids exist, All of these methods require being in a &#8220;raid lobby&#8221; which is simply a channel that has been enabled for annoucing raids. They will not work outside a raid lobby.</p>
-<div class="section" id="raid-command">
-<span id="raid-command"></span><h4>$raid command<a class="headerlink" href="#raid-command" title="Permalink to this headline">¶</a></h4>
-<p>The <code class="docutils literal"><span class="pre">$raid</span></code> command with no arguments will create a bare bones channel for coordination. This channel will last for up to 2 hours by default (can be set by server admins).</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/It2L-DTlKSc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div>
-<div class="section" id="exraid-command">
-<span id="exraid-command"></span><h4>$exraid command<a class="headerlink" href="#exraid-command" title="Permalink to this headline">¶</a></h4>
-<p>The <code class="docutils literal"><span class="pre">$exraid</span></code> command with no arguments will create a bare bones channel for coordination. This channel will last for up to 14 days by default (can be set by server admins).</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/PCCrBiMa7b0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div>
-<div class="section" id="via-raid-roles">
-<span id="via-raid-roles"></span><h4>via raid roles<a class="headerlink" href="#via-raid-roles" title="Permalink to this headline">¶</a></h4>
-<p>Your server admin can designate roles that will automatically trigger a raid channel when used in a message in a raid lobby.</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/LkqH6tqvj60" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div>
 <div class="section" id="via-screenshot">
 <span id="via-screenshot"></span><h4>via screenshot<a class="headerlink" href="#via-screenshot" title="Permalink to this headline">¶</a></h4>
 <p>Drop a screenshot of a raid and PokeNav will automatically scan it and create a raid lobby.</p>
 <p>The hatch time, end time and expiration will all be based off the timestamps in the screenshot.</p>
-<p>The boss will be automatically detected using a combination of text recognition and image recognition (even if the bosses name is obscured).</p>
+<p>The boss will be automatically detected using a combination of text recognition and image recognition (even if the bosses name is obscured &#8211; though this will fail if it can&#8217;t detect the boss and you may need to upload training data so we can refine the image recognition process).</p>
 <p>If your servers play area has gyms loaded into PokeNavs database, the location will automatically be set based on the name of the gym and directions will be made available.</p>
 </div>
 </div>
 <div class="section" id="raid-screenshot-scanning">
 <span id="raid-screenshot-scanning"></span><h3>Raid Screenshot Scanning<a class="headerlink" href="#raid-screenshot-scanning" title="Permalink to this headline">¶</a></h3>
 <p>When uploading screenshots, help PokeNav accurately extract information from the screenshot. Make sure the gym and boss name are visible if possible.</p>
+<p>Avoid uploading images before the timer is visible or the boss is zoomed in or not clearly visible &#8211; otherwise you may waste some scan quota.</p>
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/RDYo9PvIGzo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div></div>
@@ -374,7 +365,34 @@
 <p>EX raid passes also work, make sure you upload a full screenshot of the pass with all information visible.</p>
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/u5sQeg44Xkg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><div class="section" id="raid-command">
+<span id="raid-command"></span><h4>$raid command<a class="headerlink" href="#raid-command" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal"><span class="pre">$raid</span></code> command with no arguments will create a bare bones channel for coordination. This channel will last for up to 2 hours by default (can be set by server admins).</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/It2L-DTlKSc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><p>You can also provide additional details to set information when you first run the command. The first argument is the Pokemon. The second is the exact name of the gym (use quotes if it contains spaces) and the third is the amount of time remaining in minutes. If you use the <code class="docutils literal"><span class="pre">$raid</span></code> command, it will assume the egg has hatched and the minutes is the despawn time.</p>
+<p>You must set a pokemon to set the gym, you must set a gym to set the time. If it can&#8217;t find the gym it will default gracefully and still create the channel. If you make a mistake, you can fix the times or gym name by going into the channel and using the appropriate command to correct or set the missing info.</p>
+</div>
+<div class="section" id="egg-command">
+<span id="egg-command"></span><h4>$egg command<a class="headerlink" href="#egg-command" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal"><span class="pre">$egg</span></code> command exists to indicate that the amount of time specified is the hatch time, not the despawn time, so all timers will be set appropriately for an egg.</p>
+<p>Technically, PokeNav doesn&#8217;t currently care about eggs, nor do most trainers &#8211; as typically people are looking for certain bosses. If you know the boss (as in when there is a single legendary raid boss), you can use the pokemon&#8217;s name and it will set the boss right away. Otherwise you can say the egg level <code class="docutils literal"><span class="pre">$egg</span> <span class="pre">5</span> <span class="pre">&quot;St.</span> <span class="pre">Davids&quot;</span></code> and it will leave the boss unset until you manually set it in channel.</p>
+<p>In the future, PokeNav may do something with this raid level, but for now it is simply a placeholder.</p>
+</div>
+<div class="section" id="exraid-command">
+<span id="exraid-command"></span><h4>$exraid command<a class="headerlink" href="#exraid-command" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal"><span class="pre">$exraid</span></code> command with no arguments will create a bare bones channel for coordination. This channel will last for up to 14 days by default (can be set by server admins).</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/PCCrBiMa7b0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><p>You can also provide the gym name and start time of the raid. If you omit the year, PokeNav will assume the current year, so be as detailed as possible. EX raid times cannot be easily corrected with the set-despawn / set-hatch at this time, so it is better to end or re-create the raid or make them via screenshot.</p>
+</div>
+<div class="section" id="via-raid-roles">
+<span id="via-raid-roles"></span><h4>via raid roles<a class="headerlink" href="#via-raid-roles" title="Permalink to this headline">¶</a></h4>
+<p>Your server admin can designate roles that will automatically trigger a raid channel when used in a message in a raid lobby.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/LkqH6tqvj60" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div></div>
+</div>
 <div class="section" id="joining-a-raid">
 <span id="joining-a-raid"></span><h3>Joining a Raid<a class="headerlink" href="#joining-a-raid" title="Permalink to this headline">¶</a></h3>
 <p>All raid channels are private by default (only admins can see them). Scroll up in your raid lobby or see the active-raids channel for a complete list of raids. React with a person icon to any message that mentions a raid and you will be added to the party.</p>
