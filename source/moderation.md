@@ -79,6 +79,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$revoke-badge 1 Dude16``, "Revokes badge #1 from Dude16."
    ``$toggle-badge 1``, "Toggles whether badge #1 appears in the `$available-badges` list."
    ``$update-badge 1 :emoji: "Name" "Requirements"``, "Updates badge #1 with new emoji, name and requirements."
+   ``$badge-report 1``, "Shows a report showing recent recipients and up to 150 trainers who earned the badge."
    ``$set-badge-channel #trophy-room``, "Badges will be awarded will be announced in #trophy-room."
 
 ```
