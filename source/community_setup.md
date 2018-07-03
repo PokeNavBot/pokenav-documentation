@@ -10,7 +10,7 @@ If you want to test out PokeNav from a user's perspective, you can do so on the 
 
 ## Inviting PokeNav 
 
-To get an invite link to PokeNav, please visit the [PokeNav Discord Server](https://discord.gg/7M9quNd) and request beta access.
+To get an invite link to PokeNav, please visit the [PokeNav Discord Server](https://discord.gg/7M9quNd). The invite can be found by reading the rules and faqs.
 
 Once PokeNav is added to your server, it will immediately create a new channel called `#pokenav`. This is the moderation channel, it can be changed at any time, but a moderation channel must always exist. If you delete the moderation channel, PokeNav will attempt to recreate one within a few minutes. You must be an adminstrator or server owner to see #pokenav.
 
@@ -92,7 +92,7 @@ You can disable an ex raid lobby by deleting the channel, or by running:
 
 #### Setting Your Time Zone 
 
-Make sure you use `$set-timezone` if you are not located in the default timezone (US/Eastern). You can find a full list of timezones at [at this gist](https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568).
+Make sure you use `$set-timezone` if you are not located in the default timezone (US/Eastern). You can find a full list of timezones [at this gist](https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568).
 
 #### Changing Your Moderation Channel
 
