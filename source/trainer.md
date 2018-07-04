@@ -23,7 +23,7 @@ Your trainer profile syncs across all servers using PokeNav.
    ``$my-settings``, Anyone, Guild / DM, "Gets your personal bot settings and quota."
    ``$team mystic``, Anyone, Guild, "Sets your team role on the current server."
    ``$tus trade-sent-notification``, Anyone, Guild / DM, "Toggles whether you receive a notification when you show interest in a trade."
-   ``$tus auto-join-screenshot``, Anyone, Guild / DM, "Toggles whether to automatically join a raid created via screenshot."
+   ``$tus auto-join-raids``, Anyone, Guild / DM, "Toggles whether to automatically join a raid when you create it."
    ``$set-companion-trainers``, Anyone, Guild / DM, "Sets the number of companion trainers to use for each raid."
    ``$share-quota``, Anyone, Guild, "Shares your quota with the server (only available to Patreon subscribers)."
    ``$unshare-quota``, Anyone, Guild / DM, "Stops sharing your quota any server."
