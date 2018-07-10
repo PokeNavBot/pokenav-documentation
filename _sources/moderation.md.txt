@@ -21,7 +21,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$show-settings``, "Shows all your bot configuration settings for this server."
    ``$set-bot-announcement-channel #news``, "Updates where bot announcements are sent (default: moderation channel)."
    ``$set-profile-channel #profile-setup``, "Updates where scans profile images for setting teams."
-   ``$toggle-24-hour-time``, "Toggles timestamps as 24-hour time instead of AM/PM."
+   ``$toggle 24-hour-time``, "Toggles timestamps as 24-hour time instead of AM/PM."
 ```
 
 ```eval_rst
@@ -30,7 +30,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    :widths: 5, 20
    
    ``$set-team-role mystic team-mystic``, "Sets the role used to track a members in-game team."
-   ``$toggle-auto-assign-team``, "Toggles whether  users will be auto assigned a team role when joining your community."
+   ``$toggle auto-assign-team``, "Toggles whether  users will be auto assigned a team role when joining your community."
 ```
 
 ```eval_rst
@@ -63,8 +63,11 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$set-raid-moderation-role raid-moderator``, "The role that can take privledged actions in raid channels (like ending it)."
    ``$set-raid-viewer-role raid-viewer``, "The role that can view all active raid channels."
    ``$toggle-raid-roles``, "Toggles whether you allow announcing raids via role mentions."
-   ``$toggle-restrict-status``, "Toggles whether you allow anyone to update the status in a raid."
-   ``$toggle-auto-insert-counters``, "Toggles whether raid boss counters get automatically inserted in a raid."
+   ``$toggle restrict-status``, "Toggles whether you allow anyone to update the status in a raid."
+   ``$toggle auto-insert-counters``, "Toggles whether raid boss counters get automatically inserted in a raid."
+   ``$toggle auto-insert-cheatsheet``, "Toggles whether to insert cheatsheet at start of a raid."
+   ``$toggle avoid-duplicate-raids``, "Toggles whether to avoid more than a single raid or ex raid at a gym."
+   ``$toggle public-raid-channels``, "Toggles whether raid channels should be visible to anyone in the raid lobby."
    ``$set-member-shared-quota``, "Sets the number of scans an individual can take from the shared pool."
 ```
 
