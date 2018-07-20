@@ -68,6 +68,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$toggle auto-insert-cheatsheet``, "Toggles whether to insert cheatsheet at start of a raid."
    ``$toggle avoid-duplicate-raids``, "Toggles whether to avoid more than a single raid or ex raid at a gym."
    ``$toggle public-raid-channels``, "Toggles whether raid channels should be visible to anyone in the raid lobby."
+   ``$toggle clean-raid-lobbies``, "Toggles whether raid messages are deleted by the bot."
    ``$set-member-shared-quota``, "Sets the number of scans an individual can take from the shared pool."
 ```
 
@@ -79,7 +80,9 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$all-badges``, "Lists all badges and whether are listed as available."
    ``$create-badge :emoji: "Name" "Requirements"``, "Creates a new badge with the given emoji, name and requirements."
    ``$grant-badge 1 Dude16``, "Grants badge #1 to Dude16."
+   ``$grant-badge 1 raid-mewtwo-123``, "Grants badge #1 to everyone in the role raid-mewtwo-123."
    ``$revoke-badge 1 Dude16``, "Revokes badge #1 from Dude16."
+   ``$revoke-badge 1 raid-mewtwo-123``, "Revokes badge #1 from everyone in the role raid-mewtwo-123."
    ``$toggle-badge 1``, "Toggles whether badge #1 appears in the `$available-badges` list."
    ``$update-badge 1 :emoji: "Name" "Requirements"``, "Updates badge #1 with new emoji, name and requirements."
    ``$badge-report 1``, "Shows a report showing recent recipients and up to 150 trainers who earned the badge."

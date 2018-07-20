@@ -346,7 +346,10 @@
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">public-raid-channels</span></code></td>
 <td>Toggles whether raid channels should be visible to anyone in the raid lobby.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-raid-lobbies</span></code></td>
+<td>Toggles whether raid messages are deleted by the bot.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code></td>
 <td>Sets the number of scans an individual can take from the shared pool.</td>
 </tr>
 </tbody>
@@ -372,8 +375,14 @@
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
 <td>Grants badge #1 to Dude16.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
+<td>Grants badge #1 to everyone in the role raid-mewtwo-123.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
 <td>Revokes badge #1 from Dude16.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
+<td>Revokes badge #1 from everyone in the role raid-mewtwo-123.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle-badge</span> <span class="pre">1</span></code></td>
 <td>Toggles whether badge #1 appears in the <cite>$available-badges</cite> list.</td>
