@@ -90,7 +90,14 @@
 <li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Pokedex</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#looking-up-pokemon">Looking Up Pokemon</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#alolan-forms">Alolan Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#names-with-punctuation-and-spaces">Names With Punctuation and Spaces</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="moderation.html">Server Settings</a></li>
@@ -215,9 +222,24 @@
 </div>
 <div class="section" id="features">
 <span id="features"></span><h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Complete documentation coming shortly...</p>
+<div class="section" id="looking-up-pokemon">
+<span id="looking-up-pokemon"></span><h3>Looking Up Pokemon<a class="headerlink" href="#looking-up-pokemon" title="Permalink to this headline">¶</a></h3>
+<p>Most Pokemon can be looked up using their standard english name. Names are case insensitive. At the moment, PokeNav only supports English language lookups:</p>
+<p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">snorlax</span></code></p>
+<div class="section" id="alolan-forms">
+<span id="alolan-forms"></span><h4>Alolan Forms<a class="headerlink" href="#alolan-forms" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">raichu-alola</span></code></p>
+<p>In fact, all forms are always written in PokeNav as <code class="docutils literal"><span class="pre">pokemon-form</span></code>:</p>
+<p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">deoxys-attack</span></code></p>
+<p>This extends even to trade commands (which are covered more in <a class="reference internal" href="trading.html"><span class="doc">the trading section</span></a>):</p>
+<p><code class="docutils literal"><span class="pre">$want</span> <span class="pre">unown-a</span></code></p>
+</div>
+<div class="section" id="names-with-punctuation-and-spaces">
+<span id="names-with-punctuation-and-spaces"></span><h4>Names With Punctuation and Spaces<a class="headerlink" href="#names-with-punctuation-and-spaces" title="Permalink to this headline">¶</a></h4>
+<p>If a Pokemon isn&#8217;t recognized, try it without puntuation and with quotes if the name contains spaces:</p>
+<p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">&quot;Mr</span> <span class="pre">Mime&quot;</span></code></p>
+<p><img src="/_static/imgs/mr_mime_dex.png" /></p>
+</div>
 </div>
 </div>
 </div>
