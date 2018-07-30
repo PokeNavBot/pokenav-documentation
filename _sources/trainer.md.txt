@@ -16,7 +16,7 @@ Your trainer profile syncs across all servers using PokeNav.
    ``$set xp 20000000``, Anyone, Guild / DM, "Sets your XP and level to 40."
    ``$link pokebattler 123456``, Anyone, Guild / DM, "Sets your pokebattler id for custom counters in DMs."
    ``$link trainerdex``, Anyone, Guild / DM, "Finds and automatically sets your TrainerDex profile."
-   ``$link silphid SilphDude16``, Anyone, Guild / DM, "Sets your silph traveler id in your profile."
+   ``$link silph SilphDude16``, Anyone, Guild / DM, "Sets your silph traveler id in your profile."
    ``$trainerdex``, Anyone, Guild / DM, "Displays your basic TrainerDex profile."
    ``$silphcard``, Anyone, Guild / DM, "Displays your silphcard, if your silph id is set."
    ``$silphcard Dude16``, Anyone, Guild / DM, "Displays Dude16's silph card, if his silph id is set."
