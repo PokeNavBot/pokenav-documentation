@@ -41,6 +41,8 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$create-active-trades-channel``, "Creates a new channel and publishes all future active trades there."
    ``$enable-trade-lobby #channel``, "Enables trade commands in a channel."
    ``$disable-trade-lobby #channel``, "Disables trade commands in a channel."
+   ``$set trade-request-limit 5``, "Sets maximum number of trade requests that can be made by a given user."
+   ``$set trade-duration-secs 275000``, "Sets the amount of time before trades expire on your server."
 ```
 
 ```eval_rst
