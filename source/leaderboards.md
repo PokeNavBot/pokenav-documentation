@@ -52,9 +52,9 @@ The top command allows you to see an at a glance view of the top 10 trainers in 
 
 To prevent easily manipulating the top 10, some qualification rules exist for each leaderboard:
 
-#### Raids Created
+#### Raid Parties Created
 
-For a raid to count towards `Raids Created`, the following must ALL be true:
+For a raid to count towards `Raid Parties Created`, the following must ALL be true:
 
 * You must be the creator of the raid.
 * The raid must end (`$end` or expiration of channel) with at least two people in the raid party.
@@ -64,9 +64,9 @@ For a raid to count towards `Raids Created`, the following must ALL be true:
 .. note:: You do not need to be a member of the raid when it ends.
 ```
 
-#### Raids Joined
+#### Raid Parties Joined
 
-For a raid to count towards `Raids Joined`, the following must ALL be true:
+For a raid to count towards `Raid Parties Joined`, the following must ALL be true:
 
 * You must be a member of the raid when it ends.
 * The raid must end (`$end` or expiration of channel) with at least two people in the raid party.
@@ -74,4 +74,17 @@ For a raid to count towards `Raids Joined`, the following must ALL be true:
 ```eval_rst
 
 .. note:: You do not need to be the creator of the raid.
+```
+
+#### Raids Reported
+
+For a raid to count towards `Raids Reported`, the following must ALL be true:
+
+* You must be the creator of the raid.
+* The raid despawn time must have elapsed.
+* The raid must have had a valid gym location set, as well as hatch and despawn time.
+
+```eval_rst
+
+.. note:: You do not need to be a member of the raid.
 ```
