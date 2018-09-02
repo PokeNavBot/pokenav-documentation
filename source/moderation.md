@@ -69,8 +69,10 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$toggle auto-insert-counters``, "Toggles whether raid boss counters get automatically inserted in a raid."
    ``$toggle auto-insert-cheatsheet``, "Toggles whether to insert cheatsheet at start of a raid."
    ``$toggle avoid-duplicate-raids``, "Toggles whether to avoid more than a single raid or ex raid at a gym."
-   ``$toggle public-raid-channels``, "Toggles whether raid channels should be visible to anyone in the raid lobby."
+   ``$toggle create-raid-channels``, "Toggles whether bot is allowed to create channels for raids."
+   ``$toggle create-raid-channels-immediately #raid-lobby``, "Toggles whether raids in this lobby should create a channel immediately or wait until someone joins."
    ``$toggle clean-raid-lobbies``, "Toggles whether raid messages are deleted by the bot."
+   ``$toggle public-raid-channels``, "Toggles whether raid channels should be visible to anyone in the raid lobby."
    ``$set-member-shared-quota``, "Sets the number of scans an individual can take from the shared pool."
 ```
 
@@ -102,6 +104,23 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
 ```
 
 ### Community Management
+
+#### Raid Channels
+
+By default, PokeNav creates a channel for every raid that is announced, when it is announced. 
+
+If you want to turn this off raid channels on your server, use `$toggle create-raid-channels`.
+
+If you want to wait until someone joins a raid to make a channel, you can toggle this per raid lobby / callout channel: `$toggle create-raid-channels-immediately #raid-lobby`
+
+##### Why would you want to make channels immediately? 
+
+If you make a channel immediately, then when a user posts a screenshot they can be automatically added to it. This is useful for level 5 and 4 raids. It also gives you flexibility to run your server the way you like.
+
+##### Why would you not want to make channels immediately? 
+
+PokeNav uses a channel and role to coordinate raids. This is a limited discord resource, so you may want to report many raids but delay creating channels until people need them, avoiding using a role unless it is necessary.
+
 
 #### Scanning Team Images 
 
