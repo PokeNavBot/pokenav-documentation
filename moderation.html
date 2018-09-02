@@ -93,6 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#community-management">Community Management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#raid-channels">Raid Channels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scanning-team-images">Scanning Team Images</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#auto-assign-team-roles">Auto Assign Team Roles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#gym-and-pokestop-awareness">Gym and Pokestop Awareness</a></li>
@@ -349,11 +350,17 @@
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">avoid-duplicate-raids</span></code></td>
 <td>Toggles whether to avoid more than a single raid or ex raid at a gym.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">public-raid-channels</span></code></td>
-<td>Toggles whether raid channels should be visible to anyone in the raid lobby.</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code></td>
+<td>Toggles whether bot is allowed to create channels for raids.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-raid-lobbies</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels-immediately</span> <span class="pre">#raid-lobby</span></code></td>
+<td>Toggles whether raids in this lobby should create a channel immediately or wait until someone joins.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-raid-lobbies</span></code></td>
 <td>Toggles whether raid messages are deleted by the bot.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">public-raid-channels</span></code></td>
+<td>Toggles whether raid channels should be visible to anyone in the raid lobby.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code></td>
 <td>Sets the number of scans an individual can take from the shared pool.</td>
@@ -413,6 +420,20 @@
 </div>
 <div class="section" id="community-management">
 <span id="community-management"></span><h3>Community Management<a class="headerlink" href="#community-management" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="raid-channels">
+<span id="raid-channels"></span><h4>Raid Channels<a class="headerlink" href="#raid-channels" title="Permalink to this headline">¶</a></h4>
+<p>By default, PokeNav creates a channel for every raid that is announced, when it is announced.</p>
+<p>If you want to turn this off raid channels on your server, use <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code>.</p>
+<p>If you want to wait until someone joins a raid to make a channel, you can toggle this per raid lobby / callout channel: <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels-immediately</span> <span class="pre">#raid-lobby</span></code></p>
+<div class="section" id="why-would-you-want-to-make-channels-immediately">
+<span id="why-would-you-want-to-make-channels-immediately"></span><h5>Why would you want to make channels immediately?<a class="headerlink" href="#why-would-you-want-to-make-channels-immediately" title="Permalink to this headline">¶</a></h5>
+<p>If you make a channel immediately, then when a user posts a screenshot they can be automatically added to it. This is useful for level 5 and 4 raids. It also gives you flexibility to run your server the way you like.</p>
+</div>
+<div class="section" id="why-would-you-not-want-to-make-channels-immediately">
+<span id="why-would-you-not-want-to-make-channels-immediately"></span><h5>Why would you not want to make channels immediately?<a class="headerlink" href="#why-would-you-not-want-to-make-channels-immediately" title="Permalink to this headline">¶</a></h5>
+<p>PokeNav uses a channel and role to coordinate raids. This is a limited discord resource, so you may want to report many raids but delay creating channels until people need them, avoiding using a role unless it is necessary.</p>
+</div>
+</div>
 <div class="section" id="scanning-team-images">
 <span id="scanning-team-images"></span><h4>Scanning Team Images<a class="headerlink" href="#scanning-team-images" title="Permalink to this headline">¶</a></h4>
 <p>Disabled by default, you can set a profile channel. When this is set, users can upload a screenshot of their in-game profile and PokeNav will set their team and role based according to what it believes their team to be. Team scans don&#8217;t count against your quota.</p>
