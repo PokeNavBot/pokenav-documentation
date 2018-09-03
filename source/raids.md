@@ -10,7 +10,7 @@
    ``$raid latios "St. David's Church" 45``, Anyone, Raid Lobby, "Starts a latios raid at St. David's Church despawning in 45 minutes."
    ``$egg latios "St. David's Church" 45``, Anyone, Raid Lobby, "Starts a latios raid at St. David's Church hatching in 45 minutes."
    ``$exraid "Burpee Park" "July 4th 2018 1:00pm"``, Anyone, EX Raid Lobby, "Starts a mewtwo ex raid party for Burpee Park at 1pm on July 4th."
-   ``$boss latios``, Creator / Moderator, Raid Party, "Changes the raid boss to latios."
+   ``$boss latios``, Anyone, Raid Party, "Changes the raid boss to latios."
    ``$counters``, Anyone, Raid Party, "Gets the counters for the raid boss."
    ``$counters windy``, Anyone, Raid Party, "Gets the counters for the raid boss in windy weather"
    ``$end``, Creator / Moderator, Raid Party, "Immediatelly ends the raid."
