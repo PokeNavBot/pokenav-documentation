@@ -70,7 +70,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$toggle auto-insert-cheatsheet``, "Toggles whether to insert cheatsheet at start of a raid."
    ``$toggle avoid-duplicate-raids``, "Toggles whether to avoid more than a single raid or ex raid at a gym."
    ``$toggle create-raid-channels``, "Toggles whether bot is allowed to create channels for raids."
-   ``$toggle create-raid-channels-immediately #raid-lobby``, "Toggles whether raids in this lobby should create a channel immediately or wait until someone joins."
+   ``$toggle create-raid-channel-immediately #raid-lobby``, "Toggles whether raids in this lobby should create a channel immediately or wait until someone joins."
    ``$toggle clean-raid-lobbies``, "Toggles whether raid messages are deleted by the bot."
    ``$toggle public-raid-channels``, "Toggles whether raid channels should be visible to anyone in the raid lobby."
    ``$set-member-shared-quota``, "Sets the number of scans an individual can take from the shared pool."
