@@ -1,8 +1,10 @@
 # Badges 
 
-Badges allow community admins to create fun achievements for members to earn.
 
-These are entirely at community discretion.
+Badges allow community admins to create fun achievements for members to earn. These are entirely at community discretion.
+    
+For information on setting up badges for your server, see the [Server Settings page](moderation.md).
+
 
 ## Commands
 
