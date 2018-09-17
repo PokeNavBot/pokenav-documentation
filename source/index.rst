@@ -54,12 +54,12 @@ It has many features, including:
 
    community_setup 
    video_overview
+   moderation
    trainer
    raids
    trading 
    badges
    leaderboards
    pokedex
-   moderation
    quota 
    patreon
