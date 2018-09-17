@@ -73,6 +73,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$toggle create-raid-channel-immediately #raid-lobby``, "Toggles whether raids in this lobby should create a channel immediately or wait until someone joins."
    ``$toggle clean-raid-lobbies``, "Toggles whether raid messages are deleted by the bot."
    ``$toggle public-raid-channels``, "Toggles whether raid channels should be visible to anyone in the raid lobby."
+   ``$toggle share-raid-reports``, "Toggles whether raids are reported to the mobile app."
    ``$set-member-shared-quota``, "Sets the number of scans an individual can take from the shared pool."
 ```
 
