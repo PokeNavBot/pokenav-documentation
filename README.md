@@ -23,3 +23,8 @@ You can then edit your source and changes will be reflected locally.
 Contributions are open to anyone, if you would like to fix a typo or make a small change, feel free to make a Pull Request and mention why you are making the changes in the PR description. 
 
 For larger changes or if you are interested in contributing a longer form guide, open up an issue so we can discuss the guide, what you want to do before you invest a substantial amount of time. 
+
+
+## License
+
+Documentation for PokeNav is released into public domain. You may modify or share the documentation in any manner you choose. Attribution is not required. For additional details, see LICENSE.
