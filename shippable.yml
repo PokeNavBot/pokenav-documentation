@@ -1,0 +1,14 @@
+language: python
+
+branches:
+    only:
+        - master
+
+python:
+    - 3.6
+
+build:
+    ci:
+        - pip install --upgrade pip
+        - pip install -r requirements.txt
+        - make html
