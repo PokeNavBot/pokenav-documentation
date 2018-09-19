@@ -13,4 +13,4 @@ build:
         - pip install -r requirements.txt
         - make html
     on_success:
-        - if [ [ "$IS_PULL_REQUEST" == false ] ]; then make gh-pages; fi
+        - if [ "$IS_PULL_REQUEST" == false ]; then make gh-pages; fi
