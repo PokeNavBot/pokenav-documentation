@@ -26,13 +26,13 @@ gh-pages:
 	git checkout gh-pages
 	rm -rf build _sources _static
 	# git checkout master $(GH_PAGES_SOURCES) $(GH_PAGES_ADD)
-	git checkout testing-update-flow $(GH_PAGES_SOURCES) $(GH_PAGES_ADD)
+	git checkout - $(GH_PAGES_SOURCES) $(GH_PAGES_ADD)
 	git reset HEAD
 	make html
 	rsync -avz build/html/* ./
 	rm -rf $(GH_PAGES_SOURCES) build
 	git add -A
-	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages ; git checkout testing-update-flow
+	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin gh-pages 
 
 
 livehtml:
