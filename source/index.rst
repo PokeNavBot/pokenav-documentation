@@ -12,7 +12,7 @@ Trainer's Guide
     
     Some sections may be incomplete but are being worked on in priority order.
 
-    If you want to help improve these docs, stay tuned...
+    If you want to help improve these docs, visit https://github.com/PokeNavbot/pokenav-documentation
 
 
 **Welcome, Trainer!**
