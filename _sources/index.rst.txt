@@ -12,6 +12,8 @@ Trainer's Guide
     
     Some sections may be incomplete but are being worked on in priority order.
 
+    If you want to help improve these docs, stay tuned...
+
 
 **Welcome, Trainer!**
 

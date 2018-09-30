@@ -317,56 +317,62 @@
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-active-raids-channel</span></code></td>
 <td>Creates a new channel and publishes all future active raids there.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-ex-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-active-ex-raids-channel</span></code></td>
+<td>Creates a new channel and publishes all future active EX raids there.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-ex-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
 <td>Creates a new category where EX raids will be placed.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-ex-raid-duration-secs</span> <span class="pre">604800</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-ex-raid-duration-secs</span> <span class="pre">604800</span></code></td>
 <td>Maximum amount of time an EX raid channel can exist, in seconds.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
 <td>Creates a new category where raids will be placed.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-raid-duration-secs</span> <span class="pre">7200</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-raid-duration-secs</span> <span class="pre">7200</span></code></td>
 <td>Maximum amount of time a raid channel can exist, in seconds.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-raid-moderation-role</span> <span class="pre">raid-moderator</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-raid-moderation-role</span> <span class="pre">raid-moderator</span></code></td>
 <td>The role that can take privledged actions in raid channels (like ending it).</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-raid-viewer-role</span> <span class="pre">raid-viewer</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-raid-viewer-role</span> <span class="pre">raid-viewer</span></code></td>
 <td>The role that can view all active raid channels.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle-raid-roles</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle-raid-roles</span></code></td>
 <td>Toggles whether you allow announcing raids via role mentions.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">restrict-status</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">restrict-status</span></code></td>
 <td>Toggles whether you allow anyone to update the status in a raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-counters</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-counters</span></code></td>
 <td>Toggles whether raid boss counters get automatically inserted in a raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-cheatsheet</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-cheatsheet</span></code></td>
 <td>Toggles whether to insert cheatsheet at start of a raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">avoid-duplicate-raids</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">avoid-duplicate-raids</span></code></td>
 <td>Toggles whether to avoid more than a single raid or ex raid at a gym.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code></td>
 <td>Toggles whether bot is allowed to create channels for raids.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channel-immediately</span> <span class="pre">#raid-lobby</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channel-immediately</span> <span class="pre">#raid-lobby</span></code></td>
 <td>Toggles whether raids in this lobby should create a channel immediately or wait until someone joins.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-raid-lobbies</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-raid-lobbies</span></code></td>
 <td>Toggles whether raid messages are deleted by the bot.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">public-raid-channels</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">public-raid-channels</span></code></td>
 <td>Toggles whether raid channels should be visible to anyone in the raid lobby.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-raid-reports</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-raid-reports</span></code></td>
 <td>Toggles whether raids are reported to the mobile app.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code></td>
 <td>Sets the number of scans an individual can take from the shared pool.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">assumed-t5</span> <span class="pre">mewtwo</span></code></td>
+<td>Assumes all tier 5 eggs are Mewtwo.</td>
 </tr>
 </tbody>
 </table>

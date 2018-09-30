@@ -58,6 +58,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$enable-raid-lobby #channel``, "Enables raid announcements in the channel."
    ``$enable-raid-role raid-latios``, "Enables raid announcements via raid-latios role."
    ``$create-active-raids-channel``, "Creates a new channel and publishes all future active raids there."
+   ``$create-active-ex-raids-channel``, "Creates a new channel and publishes all future active EX raids there."
    ``$create-ex-raid-category Category Name``, "Creates a new category where EX raids will be placed."
    ``$set-ex-raid-duration-secs 604800``, "Maximum amount of time an EX raid channel can exist, in seconds."
    ``$create-raid-category Category Name``, "Creates a new category where raids will be placed."
@@ -75,6 +76,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$toggle public-raid-channels``, "Toggles whether raid channels should be visible to anyone in the raid lobby."
    ``$toggle share-raid-reports``, "Toggles whether raids are reported to the mobile app."
    ``$set-member-shared-quota``, "Sets the number of scans an individual can take from the shared pool."
+   ``$set assumed-t5 mewtwo``, "Assumes all tier 5 eggs are Mewtwo."
 ```
 
 ```eval_rst
