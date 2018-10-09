@@ -1,0 +1,18 @@
+language: python
+
+branches:
+    only:
+        - master
+
+python:
+    - 3.6
+
+build:
+    ci:
+        - pip install --upgrade pip
+        - pip install -r requirements.txt
+        - make html
+          #    on_success:
+          #        - git remote set-url origin git@github.com:$REPO_FULL_NAME.git
+          #        - git config --get remote.origin.url
+          #        - if [ "$IS_PULL_REQUEST" == false ]; then make gh-pages; fi
