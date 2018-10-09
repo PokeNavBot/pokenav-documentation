@@ -23,6 +23,12 @@ PokeNav is a discord bot that helps discord communities coordinate in Pokemon Go
 
 It has many features, including:
 
+* Interactive Mobile App
+    * Available for Android and iOS (coming soon)
+    * Shows nearby raids reports reported in discord
+    * Shows a global map view of all community raids using PokeNav
+    * Login with your discord account to view additional raid details.
+
 * Trainer Profiles
     * Syncs across multiple services
     * Links to your Silph Road Traveler's Card
@@ -55,6 +61,7 @@ It has many features, including:
    :hidden:
 
    community_setup 
+   mobile_app 
    video_overview
    moderation
    trainer

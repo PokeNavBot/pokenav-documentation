@@ -22,6 +22,7 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
    ``$set-bot-announcement-channel #news``, "Updates where bot announcements are sent (default: moderation channel)."
    ``$set-profile-channel #profile-setup``, "Updates where scans profile images for setting teams."
    ``$toggle 24-hour-time``, "Toggles timestamps as 24-hour time instead of AM/PM."
+   ``$toggle share-invite-url``, "Toggles sharing a public invite for your server."
 ```
 
 ```eval_rst
