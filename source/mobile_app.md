@@ -29,7 +29,7 @@ You can opt-in (default OFF) to sharing invites to your server. If you do, when 
 
 <img src="_static/imgs/community-list.png" alt="profile screenshot" style="align-text: center;" width="300"/>
 
-To enable invites, `$toggle share-invite-url`.
+To enable invites, `$toggle share-invite-url #channel`, where the channel is the welcome channel you want new users to appear.
 
 ### Setup Server Location
 
