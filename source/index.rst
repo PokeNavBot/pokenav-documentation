@@ -40,6 +40,7 @@ It has many features, including:
     * Boss counters via Pokebattler
     * Track team distribution and who has arrived
     * Update your current raid status to the rest of discord
+    * Rule-based automatic notifications via discord
 
 * Trading support
     * Advertise your wanted trades and let PokeNav act as a notification inbox.

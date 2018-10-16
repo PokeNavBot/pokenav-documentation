@@ -77,6 +77,24 @@ The following commands can **ONLY** be done in the moderation channel, by anyone
 ```
 
 ```eval_rst
+.. csv-table:: Moderating Notifications
+   :header: "Command", "Description"
+   :widths: 5, 20
+
+   ``$set-notification-channel #channel-name``, "Set a dedicated channel for notifications"
+   ``$create role role-name``, "Creates a mentionable role"
+   ``$create notify-rule role-name "gym: Gym Name"``, "Mentions `role-name` when any raid occurs at the gym"
+   ``$create notify-rule role-name "tier: 5" "gym: Gym Name"``, "Mentions `role-name` when a tier 5 raid occurs at the gym"
+   ``$create notify-rule role-name "boss: jynx" "gym: Gym Name"``, "Mentions `role-name` when a jynx raid occurs at the gym"
+   ``$delete notify-rule 123``, "Deletes the notification role #123"
+   ``$delete notify-rule role-name``, "Deletes all rules for `role-name`"
+   ``$subs``, "Shows all subscriptions on your server, along with rules"
+   ``$subs role-name``, "Shows all roles for the role, if any exist"
+   ``$sub role-name``, "Subscribes the user to that role"
+   ``$unsub role-name``, "Unsubscribes the user from that role"
+```
+
+```eval_rst
 .. csv-table:: Moderating Badges 
    :header: "Command", "Description"
    :widths: 5, 20
@@ -120,6 +138,37 @@ If you make a channel immediately, then when a user posts a screenshot they can 
 ##### Why would you not want to make channels immediately? 
 
 PokeNav uses a channel and role to coordinate raids. This is a limited discord resource, so you may want to report many raids but delay creating channels until people need them, avoiding using a role unless it is necessary.
+
+
+#### Raid Notifications
+
+You can configure PokeNav to automatically tag roles when certain raid conditions are met, for example, when a tier 5 raid occurs at one of several EX gyms, or when a Jynx raid is called out. You do this by defining "notify rules", which are checked when someone announced a raid on your server.
+
+You can have up to 25 roles checked for notifications and 15 rules per role (at the time of this writing). You can specify multiple rules per role, and if any of them are true, the role will be mentioned.
+
+If the raid changes to match a rule, like when a boss is updated -- it will issue a follow up notification in the raid lobby or notification channel. Only the newly qualified role will be mentioned. A single raid will never tag the same role more than once.
+
+##### Example: EX Raid Notifications
+
+If say you have three EX gyms in your area, and you want to notify an ex-eligible role whenever a tier 5 is announced, you would run the following commands
+
+`$create notify-rule ex-eligible "tier: 5" "gym: Gym 1"`
+`$create notify-rule ex-eligible "tier: 5" "gym: Gym 2"`
+`$create notify-rule ex-eligible "tier: 5" "gym: Gym 3"`
+
+
+##### Example: PokeDraft
+
+Say you are running a PokeDraft and this weeks boss is Jynx:
+
+`$create notify-rule poke-draft-raid-boss "boss: Jynx"`
+
+Users can then subscribe to that role with `$sub poke-draft-raid-boss`. When a Jynx is called out or a tier 3 egg gets update to Jynx, a notification will be sent.
+
+When the boss rotates to a new PokeDraft boss, say Alakazam; you can clear the role:
+
+`$delete notify-rule poke-draft-raid-boss`
+`$create notify-rule poke-draft-raid-boss "boss: Alakazam"`
 
 
 #### Scanning Team Images 
