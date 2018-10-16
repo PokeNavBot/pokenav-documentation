@@ -89,6 +89,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#community-management">Community Management</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#raid-channels">Raid Channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#raid-notifications">Raid Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scanning-team-images">Scanning Team Images</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#auto-assign-team-roles">Auto Assign Team Roles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#gym-and-pokestop-awareness">Gym and Pokestop Awareness</a></li>
@@ -369,7 +370,54 @@
 </tbody>
 </table>
 <table border="1" class="colwidths-given docutils" id="id5">
-<caption><span class="caption-text">Moderating Badges </span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Moderating Notifications</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-notification-channel</span> <span class="pre">#channel-name</span></code></td>
+<td>Set a dedicated channel for notifications</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">role</span> <span class="pre">role-name</span></code></td>
+<td>Creates a mentionable role</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">role-name</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">Name&quot;</span></code></td>
+<td>Mentions <cite>role-name</cite> when any raid occurs at the gym</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">role-name</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">Name&quot;</span></code></td>
+<td>Mentions <cite>role-name</cite> when a tier 5 raid occurs at the gym</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">role-name</span> <span class="pre">&quot;boss:</span> <span class="pre">jynx&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">Name&quot;</span></code></td>
+<td>Mentions <cite>role-name</cite> when a jynx raid occurs at the gym</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">notify-rule</span> <span class="pre">123</span></code></td>
+<td>Deletes the notification role #123</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">notify-rule</span> <span class="pre">role-name</span></code></td>
+<td>Deletes all rules for <cite>role-name</cite></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$subs</span></code></td>
+<td>Shows all subscriptions on your server, along with rules</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$subs</span> <span class="pre">role-name</span></code></td>
+<td>Shows all roles for the role, if any exist</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$sub</span> <span class="pre">role-name</span></code></td>
+<td>Subscribes the user to that role</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$unsub</span> <span class="pre">role-name</span></code></td>
+<td>Unsubscribes the user from that role</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils" id="id6">
+<caption><span class="caption-text">Moderating Badges </span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -433,6 +481,28 @@
 <div class="section" id="why-would-you-not-want-to-make-channels-immediately">
 <span id="why-would-you-not-want-to-make-channels-immediately"></span><h5>Why would you not want to make channels immediately?<a class="headerlink" href="#why-would-you-not-want-to-make-channels-immediately" title="Permalink to this headline">¶</a></h5>
 <p>PokeNav uses a channel and role to coordinate raids. This is a limited discord resource, so you may want to report many raids but delay creating channels until people need them, avoiding using a role unless it is necessary.</p>
+</div>
+</div>
+<div class="section" id="raid-notifications">
+<span id="raid-notifications"></span><h4>Raid Notifications<a class="headerlink" href="#raid-notifications" title="Permalink to this headline">¶</a></h4>
+<p>You can configure PokeNav to automatically tag roles when certain raid conditions are met, for example, when a tier 5 raid occurs at one of several EX gyms, or when a Jynx raid is called out. You do this by defining &#8220;notify rules&#8221;, which are checked when someone announced a raid on your server.</p>
+<p>You can have up to 25 roles checked for notifications and 15 rules per role (at the time of this writing). You can specify multiple rules per role, and if any of them are true, the role will be mentioned.</p>
+<p>If the raid changes to match a rule, like when a boss is updated &#8211; it will issue a follow up notification in the raid lobby or notification channel. Only the newly qualified role will be mentioned. A single raid will never tag the same role more than once.</p>
+<div class="section" id="example-ex-raid-notifications">
+<span id="example-ex-raid-notifications"></span><h5>Example: EX Raid Notifications<a class="headerlink" href="#example-ex-raid-notifications" title="Permalink to this headline">¶</a></h5>
+<p>If say you have three EX gyms in your area, and you want to notify an ex-eligible role whenever a tier 5 is announced, you would run the following commands</p>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">ex-eligible</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">1&quot;</span></code>
+<code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">ex-eligible</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">2&quot;</span></code>
+<code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">ex-eligible</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">3&quot;</span></code></p>
+</div>
+<div class="section" id="example-pokedraft">
+<span id="example-pokedraft"></span><h5>Example: PokeDraft<a class="headerlink" href="#example-pokedraft" title="Permalink to this headline">¶</a></h5>
+<p>Say you are running a PokeDraft and this weeks boss is Jynx:</p>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">poke-draft-raid-boss</span> <span class="pre">&quot;boss:</span> <span class="pre">Jynx&quot;</span></code></p>
+<p>Users can then subscribe to that role with <code class="docutils literal"><span class="pre">$sub</span> <span class="pre">poke-draft-raid-boss</span></code>. When a Jynx is called out or a tier 3 egg gets update to Jynx, a notification will be sent.</p>
+<p>When the boss rotates to a new PokeDraft boss, say Alakazam; you can clear the role:</p>
+<p><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">notify-rule</span> <span class="pre">poke-draft-raid-boss</span></code>
+<code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">poke-draft-raid-boss</span> <span class="pre">&quot;boss:</span> <span class="pre">Alakazam&quot;</span></code></p>
 </div>
 </div>
 <div class="section" id="scanning-team-images">
