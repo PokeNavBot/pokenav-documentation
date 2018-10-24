@@ -20,6 +20,7 @@
    ``$want Exeggutor-Alola``, Anyone, Trade Lobby, "Looking for an exeggutor (alolan form)."
    ``$want Unown-F``, Anyone, Trade Lobby, "Looking for an Unown (F form)."
    ``$want Unown "note: A B or C forms"``, Anyone, Trade Lobby, "Looking for an Unown with notes for broad specification."
+   ``$offer Unown-A``, Anyone, Trade Lobby, "Offer for an Unown-A."
    ``$unwant 13``, Anyone, Anywhere, "Deletes trade request with Trade #13 in header."
    ``$clear-wants``, Anyone, Anywhere, "Deletes all your trade requests."
 ```
