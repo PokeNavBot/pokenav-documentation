@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Server Settings &mdash; PokeNav  documentation</title>
+  <title>Admin’s Guide &mdash; PokeNav  documentation</title>
   
 
   
@@ -84,18 +84,14 @@
 <li class="toctree-l1"><a class="reference internal" href="community_setup.html">Community Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mobile_app.html">PokeNav Companion App</a></li>
 <li class="toctree-l1"><a class="reference internal" href="video_overview.html">Video Walkthrough</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Server Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#community-management">Community Management</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#raid-channels">Raid Channels</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#raid-notifications">Raid Notifications</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scanning-team-images">Scanning Team Images</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#auto-assign-team-roles">Auto Assign Team Roles</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#gym-and-pokestop-awareness">Gym and Pokestop Awareness</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Admin&#8217;s Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#server-settings">Server Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#badges">Badges</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#badges">Badges</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guide">Guide</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#creating-badges">Creating Badges</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#updating-badges">Updating Badges</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hiding-badges">Hiding Badges</a></li>
@@ -105,6 +101,52 @@
 <li class="toctree-l4"><a class="reference internal" href="#revoking-badges">Revoking Badges</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#teams">Teams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guide">Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#scanning-team-images">Scanning Team Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#auto-assign-team-roles">Auto Assign Team Roles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#raiding">Raiding</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guide">Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#raid-channel-settings">Raid Channel Settings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#poi">POI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guide">Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#what-are-poi">What Are POI?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-poi-works-in-pokenav">How POI Works In PokeNav</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-a-new-gym-pokestop">Adding A New Gym / Pokestop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#figuring-out-the-right-coordinates">Figuring Out The Right Coordinates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#converting-a-pokestop-to-a-gym">Converting a Pokestop To A Gym</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#a-new-sponsored-or-ex-eligible-gym-pokestop">A New Sponsored or EX Eligible Gym / Pokestop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-poi-can-i-see-in-my-server">What POI can I see in my server?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-restrictions-are-there-on-poi">What Restrictions Are There On POI?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-do-i-get-my-poi-verified">How Do I Get My POI Verified?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#notifications">Notifications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guide">Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example-ex-raid-notifications">Example: EX Raid Notifications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-pokedraft">Example: PokeDraft</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#trading">Trading</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
 </ul>
 </li>
 </ul>
@@ -162,7 +204,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Server Settings</li>
+      <li>Admin&#8217;s Guide</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,14 +223,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="server-settings">
-<span id="server-settings"></span><h1>Server Settings<a class="headerlink" href="#server-settings" title="Permalink to this headline">¶</a></h1>
-<p>These commands can only be run in the moderation room, which is accessible to server owners and adminstrators.</p>
+  <div class="section" id="admin-s-guide">
+<span id="admin-s-guide"></span><h1>Admin&#8217;s Guide<a class="headerlink" href="#admin-s-guide" title="Permalink to this headline">¶</a></h1>
+<p>PokeNav has many features, which you as the admin have the ability to leverage and enabled.</p>
+<p>All of the following features are utlitized using commands run inside the <code class="docutils literal"><span class="pre">#pokenav</span></code> channel.</p>
+<div class="section" id="server-settings">
+<span id="server-settings"></span><h2>Server Settings<a class="headerlink" href="#server-settings" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
-<span id="commands"></span><h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
-<p>The following commands can <strong>ONLY</strong> be done in the moderation channel, by anyone with permissions to write to that channel.</p>
-<table border="1" class="colwidths-given docutils" id="id1">
-<caption><span class="caption-text">Managing Your PokeNav Installation</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<span id="commands"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id11">
+<caption><span class="caption-text">Managing Your PokeNav Installation</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -237,8 +281,110 @@
 </tr>
 </tbody>
 </table>
-<table border="1" class="colwidths-given docutils" id="id2">
-<caption><span class="caption-text">Moderating Teams</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+</div>
+</div>
+<div class="section" id="badges">
+<span id="badges"></span><h2>Badges<a class="headerlink" href="#badges" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="commands">
+<span id="id1"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id12">
+<caption><span class="caption-text">Moderating Badges </span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$all-badges</span></code></td>
+<td>Lists all badges and whether are listed as available.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-badge</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
+<td>Creates a new badge with the given emoji, name and requirements.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
+<td>Grants badge #1 to Dude16.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
+<td>Grants badge #1 to everyone in the role raid-mewtwo-123.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
+<td>Revokes badge #1 from Dude16.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
+<td>Revokes badge #1 from everyone in the role raid-mewtwo-123.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle-badge</span> <span class="pre">1</span></code></td>
+<td>Toggles whether badge #1 appears in the <cite>$available-badges</cite> list.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$update-badge</span> <span class="pre">1</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
+<td>Updates badge #1 with new emoji, name and requirements.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$badge-report</span> <span class="pre">1</span></code></td>
+<td>Shows a report showing recent recipients and up to 150 trainers who earned the badge.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-badge-channel</span> <span class="pre">#trophy-room</span></code></td>
+<td>Badges will be awarded will be announced in #trophy-room.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="guide">
+<span id="guide"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<p>You can create badges from custom server emoji and award them to members for achieving certain goals. Everything is done by moderator discretion, so make badges for whatever you like. At the moment, if you delete the emoji for a badge its image will be removed from every trainers badge list (so please keep those around).</p>
+<p>Most badge operations work by referencing a badges unique id. When you create a badge, PokeNav will generate a unique id and display it alongside the badge when it is displayed. This id is also used to grant and revoke badges, as well as update its description.</p>
+<div class="section" id="creating-badges">
+<span id="creating-badges"></span><h4>Creating Badges<a class="headerlink" href="#creating-badges" title="Permalink to this headline">¶</a></h4>
+<p>To create a badge, use the <code class="docutils literal"><span class="pre">$create-badge</span></code> command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description.</p>
+<p>You must quote the name and requirements to capture it properly. Names are limited to 80 characters and requirements to 256. Emoji can be animted and it actually makes the badge that much cooler.</p>
+<p>Its recommended to make the requirements brief and describe what needs to be done to obtain it, as well as reference a channel where more information might be obtained.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/zcHGNHI5HpE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="updating-badges">
+<span id="updating-badges"></span><h4>Updating Badges<a class="headerlink" href="#updating-badges" title="Permalink to this headline">¶</a></h4>
+<p>If you need to update a badges emoji, name or requirements you can use the <code class="docutils literal"><span class="pre">$update-badge</span></code> command, which works EXACTLY like <code class="docutils literal"><span class="pre">$create-badge</span></code> but takes the badge id as the first item and updates that badge instead of creating a new one:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/MX3mVot12m4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="hiding-badges">
+<span id="hiding-badges"></span><h4>Hiding Badges<a class="headerlink" href="#hiding-badges" title="Permalink to this headline">¶</a></h4>
+<p>Sometimes you don&#8217;t want badges to be visible or you want to retire them. <code class="docutils literal"><span class="pre">$toggle-badge</span></code> will hide it from the <code class="docutils literal"><span class="pre">$available-badges</span></code> list. You can still grant and change it, but it won&#8217;t be visible to non-mods.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/dgFuMmwB-L4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="list-all-badges">
+<span id="list-all-badges"></span><h4>List All Badges<a class="headerlink" href="#list-all-badges" title="Permalink to this headline">¶</a></h4>
+<p>In addition to <code class="docutils literal"><span class="pre">$available-badges</span></code>, mods have access to <code class="docutils literal"><span class="pre">$all-badges</span></code> which also shows unavailable badges if they&#8217;ve been toggled off.</p>
+</div>
+<div class="section" id="setting-a-badge-announcement-channel">
+<span id="setting-a-badge-announcement-channel"></span><h4>Setting a Badge Announcement Channel<a class="headerlink" href="#setting-a-badge-announcement-channel" title="Permalink to this headline">¶</a></h4>
+<p>When you grant a badge, you can have the award be pubicly announced in the badge announcement channel. This will be created for you by <code class="docutils literal"><span class="pre">$quickstart</span></code>, but if you need to set it you can use the <code class="docutils literal"><span class="pre">$set-badge-channel</span></code> command:</p>
+<p><code class="docutils literal"><span class="pre">$set-badge-channel</span> <span class="pre">#trophy-room</span></code></p>
+</div>
+<div class="section" id="granting-badges">
+<span id="granting-badges"></span><h4>Granting Badges<a class="headerlink" href="#granting-badges" title="Permalink to this headline">¶</a></h4>
+<p>To grant a user a badge, use <code class="docutils literal"><span class="pre">$grant-badge</span></code> and provide the badge id and the name of the user. Like all commands the name can either be the user nickname or their full discord name with discriminator:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/FCj8nA4pr90" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="revoking-badges">
+<span id="revoking-badges"></span><h4>Revoking Badges<a class="headerlink" href="#revoking-badges" title="Permalink to this headline">¶</a></h4>
+<p>If you need to take back a badge, use <code class="docutils literal"><span class="pre">$revoke-badge</span></code> that same way you used <code class="docutils literal"><span class="pre">$grant-badge</span></code>. It won&#8217;t be announced but the badge will disappear from the users profile. You can use <code class="docutils literal"><span class="pre">$grant-badge</span></code> to give the user the badge back:</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/WCUef2YFrDg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+</div>
+</div>
+<div class="section" id="teams">
+<span id="teams"></span><h2>Teams<a class="headerlink" href="#teams" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="commands">
+<span id="id2"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id13">
+<caption><span class="caption-text">Moderating Teams</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -257,37 +403,36 @@
 </tr>
 </tbody>
 </table>
-<table border="1" class="colwidths-given docutils" id="id3">
-<caption><span class="caption-text">Moderating Trades</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Command</th>
-<th class="head">Description</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-active-trades-channel</span></code></td>
-<td>Creates a new channel and publishes all future active trades there.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$enable-trade-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Enables trade commands in a channel.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$disable-trade-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Disables trade commands in a channel.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">trade-request-limit</span> <span class="pre">5</span></code></td>
-<td>Sets maximum number of trade requests that can be made by a given user.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">trade-duration-secs</span> <span class="pre">275000</span></code></td>
-<td>Sets the amount of time before trades expire on your server.</td>
-</tr>
-</tbody>
-</table>
-<table border="1" class="colwidths-given docutils" id="id4">
-<caption><span class="caption-text">Moderating Raids</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+</div>
+<div class="section" id="guide">
+<span id="id3"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="scanning-team-images">
+<span id="scanning-team-images"></span><h4>Scanning Team Images<a class="headerlink" href="#scanning-team-images" title="Permalink to this headline">¶</a></h4>
+<p>Disabled by default, you can set a profile channel. When this is set, users can upload a screenshot of their in-game profile and PokeNav will set their team and role based according to what it believes their team to be. Team scans don&#8217;t count against your quota.</p>
+<p><img src="/_static/imgs/team_scan.png" /></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To prevent accidently changing teams, PokeNav will only assign your team if you do not have a team role assigned on that server. You can change your team with the <cite>$team</cite> command.</p>
+</div>
+</div>
+<div class="section" id="auto-assign-team-roles">
+<span id="auto-assign-team-roles"></span><h4>Auto Assign Team Roles<a class="headerlink" href="#auto-assign-team-roles" title="Permalink to this headline">¶</a></h4>
+<p>Disabled by default, you can allow PokeNav to automatically assign members a team role if they already configured their team on another server.</p>
+<p>When a user joins your server, if you have this setting enabled, they will automatically be added to the proper team role if one is set for your server.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>This is disabled by default because doing so may allow malicious users to circumvent discord verification levels.</p>
+<p class="last">Be sure you have a good spam / moderation bot in your server before you enable this setting.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="raiding">
+<span id="raiding"></span><h2>Raiding<a class="headerlink" href="#raiding" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="commands">
+<span id="id4"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id14">
+<caption><span class="caption-text">Moderating Raids</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -369,8 +514,130 @@
 </tr>
 </tbody>
 </table>
-<table border="1" class="colwidths-given docutils" id="id5">
-<caption><span class="caption-text">Moderating Notifications</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+</div>
+<div class="section" id="guide">
+<span id="id5"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="raid-channel-settings">
+<span id="raid-channel-settings"></span><h4>Raid Channel Settings<a class="headerlink" href="#raid-channel-settings" title="Permalink to this headline">¶</a></h4>
+<p>By default, PokeNav creates a channel for every raid that is announced, when it is announced.</p>
+<p>If you want to turn this off raid channels on your server, use <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code>.</p>
+<p>If you want to wait until someone joins a raid to make a channel, you can toggle this per raid lobby / callout channel: <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels-immediately</span> <span class="pre">#raid-lobby</span></code></p>
+<div class="section" id="why-would-you-want-to-make-channels-immediately">
+<span id="why-would-you-want-to-make-channels-immediately"></span><h5>Why would you want to make channels immediately?<a class="headerlink" href="#why-would-you-want-to-make-channels-immediately" title="Permalink to this headline">¶</a></h5>
+<p>If you make a channel immediately, then when a user posts a screenshot they can be automatically added to it. This is useful for level 5 and 4 raids. It also gives you flexibility to run your server the way you like.</p>
+</div>
+<div class="section" id="why-would-you-not-want-to-make-channels-immediately">
+<span id="why-would-you-not-want-to-make-channels-immediately"></span><h5>Why would you not want to make channels immediately?<a class="headerlink" href="#why-would-you-not-want-to-make-channels-immediately" title="Permalink to this headline">¶</a></h5>
+<p>PokeNav uses a channel and role to coordinate raids. This is a limited discord resource, so you may want to report many raids but delay creating channels until people need them, avoiding using a role unless it is necessary.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="poi">
+<span id="poi"></span><h2>POI<a class="headerlink" href="#poi" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="commands">
+<span id="id6"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id15">
+<caption><span class="caption-text">Moderating POI</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Gym</span> <span class="pre">Name&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span></code></td>
+<td>Creates a gym at the give lat, lon.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">pokestop</span> <span class="pre">&quot;Pokestop</span> <span class="pre">Name&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span></code></td>
+<td>Creates a pokestop at the give lat, lon.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$update</span> <span class="pre">poi</span> <span class="pre">12345</span> <span class="pre">&quot;name:</span> <span class="pre">New</span> <span class="pre">Name&quot;</span></code></td>
+<td>Updates POI #12345 with a new name.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$update</span> <span class="pre">poi</span> <span class="pre">12345</span> <span class="pre">&quot;type:</span> <span class="pre">gym&quot;</span></code></td>
+<td>Updates POI #12345 and sets its type to be gym.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">poi</span> <span class="pre">12345</span></code></td>
+<td>Removes POI #12345 from your community.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="guide">
+<span id="id7"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="what-are-poi">
+<span id="what-are-poi"></span><h4>What Are POI?<a class="headerlink" href="#what-are-poi" title="Permalink to this headline">¶</a></h4>
+<p>POI, or Points of Interest, are in-game locations, stored in PokeNav&#8217;s database, which can be used to enable all sorts of useful features, including raid deduplication, directions, app visibility and more.</p>
+<p>PokeNav has a large, but not complete, database of Point of Interest. We rely on users to upload and add new POI as they become available.</p>
+</div>
+<div class="section" id="how-poi-works-in-pokenav">
+<span id="how-poi-works-in-pokenav"></span><h4>How POI Works In PokeNav<a class="headerlink" href="#how-poi-works-in-pokenav" title="Permalink to this headline">¶</a></h4>
+<p>PokeNav contains a database of POI which consists of the POI&#8217;s name, type, latitude and longitude. It also has other metadata, described later.</p>
+<p>PokeNav&#8217;s POI system was re-written in October 2018 to give server admins complete control over their own server&#8217;s POI. You can think of your POI database as consisting of two parts: user submitted POI and &#8220;verified&#8221; POI. Verified POI are gyms and pokestops shared by all PokeNav servers, covering some of the most populated places. PokeNav contains over 2 million verified POI. User submitted POI are those which admins have uploaded to PokeNav and which can only be seen in the server in which they were created.</p>
+<p>To use POI you must <code class="docutils literal"><span class="pre">$set</span> <span class="pre">location</span></code> for your server and adjust <code class="docutils literal"><span class="pre">$set</span> <span class="pre">radius</span></code> to an appropriate setting. When a POI lookup is done on your server, PokeNav filters the POI by the play area set and typically looks up the best match, if any.</p>
+</div>
+<div class="section" id="adding-a-new-gym-pokestop">
+<span id="adding-a-new-gym-pokestop"></span><h4>Adding A New Gym / Pokestop<a class="headerlink" href="#adding-a-new-gym-pokestop" title="Permalink to this headline">¶</a></h4>
+<p>To the following when a gym or pokestop is missing from your community (either because it was recently added or your community is new):</p>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Name</span> <span class="pre">Of</span> <span class="pre">Gym&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span></code></p>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">pokestop</span> <span class="pre">&quot;Name</span> <span class="pre">Of</span> <span class="pre">Pokestop&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span></code></p>
+</div>
+<div class="section" id="figuring-out-the-right-coordinates">
+<span id="figuring-out-the-right-coordinates"></span><h4>Figuring Out The Right Coordinates<a class="headerlink" href="#figuring-out-the-right-coordinates" title="Permalink to this headline">¶</a></h4>
+<p>All coordinates provided must be valid locations inside your community play areas; latitude must be between -90 and 90 and longitude between -180 and 180.</p>
+<p>Remember that the coordinates don&#8217;t need to be &#8220;exact&#8221; but should be accurate enough that if someone clicks directions, it takes them to the right place &#8211; at least within visible range of the stop.</p>
+<p>If the pokestop or gym is non-sponsored, you can use the ingress intel map to get a link to the portal. You will need to sign up for an ingress account, but if you click on a portal than press the &#8220;link&#8221; button in the upper right hand corner you can get a direct link to any portal. For example:</p>
+<p><code class="docutils literal"><span class="pre">https://www.ingress.com/intel?ll=40.207983,-75.177594&amp;z=17&amp;pll=40.207319,-75.177512</span></code></p>
+<p>The coordinates after <code class="docutils literal"><span class="pre">pll</span></code> are the POIs actual location. So to create that POI you would do:</p>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Deep</span> <span class="pre">Meadow</span> <span class="pre">Park&quot;</span> <span class="pre">40.207319</span> <span class="pre">-75177512</span></code></p>
+<p>Though, we recommend you making sure that the POI is not actually in the database first. Copy and paste the portal name into <code class="docutils literal"><span class="pre">$gi</span></code> or <code class="docutils literal"><span class="pre">$si</span></code> to make sure!</p>
+<p>If a POI is sponsored, it won&#8217;t be on the intel map. Instead go to Google Maps to find the business and drop a pin (press and hold) which will give you coordinates.</p>
+</div>
+<div class="section" id="converting-a-pokestop-to-a-gym">
+<span id="converting-a-pokestop-to-a-gym"></span><h4>Converting a Pokestop To A Gym<a class="headerlink" href="#converting-a-pokestop-to-a-gym" title="Permalink to this headline">¶</a></h4>
+<p>First, lookup the existing Pokestop using <code class="docutils literal"><span class="pre">$si</span> <span class="pre">name</span> <span class="pre">of</span> <span class="pre">pokestop</span></code>. If its &#8220;verified&#8221; or doesn&#8217;t exist you need to add a new gym with the same name to your community:</p>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Name</span> <span class="pre">Of</span> <span class="pre">Gym&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span></code></p>
+<p>If the pokestop was &#8220;unverified&#8221;, you can simply update it. Lookup the pokestop like above and note the id number in the footer. Then:</p>
+<p><code class="docutils literal"><span class="pre">$update</span> <span class="pre">poi</span> <span class="pre">12345</span> <span class="pre">&quot;type:</span> <span class="pre">gym&quot;</span></code></p>
+</div>
+<div class="section" id="a-new-sponsored-or-ex-eligible-gym-pokestop">
+<span id="a-new-sponsored-or-ex-eligible-gym-pokestop"></span><h4>A New Sponsored or EX Eligible Gym / Pokestop<a class="headerlink" href="#a-new-sponsored-or-ex-eligible-gym-pokestop" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Name</span> <span class="pre">Of</span> <span class="pre">Gym&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span> <span class="pre">&quot;sponsored:</span> <span class="pre">1&quot;</span> <span class="pre">&quot;ex_eligible:</span> <span class="pre">1&quot;</span></code></p>
+<p>It will show both the &#8220;sponsored&#8221; and &#8220;ex_eligible&#8221; tag at the bottom of the bot response.</p>
+<p>If you forgot to add a sponsored flag:</p>
+<p>`$update poi 12345 &#8220;sponsored: 1&#8221;</p>
+<p>If you accidently made it sponsored</p>
+<p><code class="docutils literal"><span class="pre">$update</span> <span class="pre">poi</span> <span class="pre">12345</span> <span class="pre">&quot;sponsored:</span> <span class="pre">0&quot;</span></code></p>
+</div>
+<div class="section" id="what-poi-can-i-see-in-my-server">
+<span id="what-poi-can-i-see-in-my-server"></span><h4>What POI can I see in my server?<a class="headerlink" href="#what-poi-can-i-see-in-my-server" title="Permalink to this headline">¶</a></h4>
+<p>You can see all your community submitted POI and shared verified POI when you search for gyms and pokestops, unless the POI you are looking for shares a name with a verified POI.</p>
+<p>POI you upload always &#8220;shadow&#8221; verified POI of the same type.  Allowing you to update your server&#8217;s POI without verification.</p>
+<p>For example, let&#8217;s say that theres a verified POI called &#8220;Starbucks&#8221; which changed location. You cannot change a verified POI. Instead you can add &#8220;Starbucks&#8221; with the right location to your server. Going forward, when users try to use &#8220;Starbucks&#8221; in your server, they will only be able to see &#8220;Starbucks&#8221; you added. This allows you to customize your server&#8217;s available POI by eliminating duplicates in the shared set (thereby setting a default) or to update gyms so your server is more current.</p>
+<p>On the other hand if you add a &#8220;Starbucks&#8221; gym to your set, the &#8220;Starbucks&#8221; pokestops will still be visible from the verified set and vice versa.</p>
+</div>
+<div class="section" id="what-restrictions-are-there-on-poi">
+<span id="what-restrictions-are-there-on-poi"></span><h4>What Restrictions Are There On POI?<a class="headerlink" href="#what-restrictions-are-there-on-poi" title="Permalink to this headline">¶</a></h4>
+<p>Your server cannot have a POI with the same name, type and location.</p>
+<p>You can create a POI with the same name and type, but PokeNav won&#8217;t be able to find it without assistance.</p>
+<p>There is a soft limit to how many POI your community can upload, we will adjust and clarify this when file upload becomes available.</p>
+</div>
+<div class="section" id="how-do-i-get-my-poi-verified">
+<span id="how-do-i-get-my-poi-verified"></span><h4>How Do I Get My POI Verified?<a class="headerlink" href="#how-do-i-get-my-poi-verified" title="Permalink to this headline">¶</a></h4>
+<p>We&#8217;re still working on the verification system, check in later for more information!</p>
+</div>
+</div>
+</div>
+<div class="section" id="notifications">
+<span id="notifications"></span><h2>Notifications<a class="headerlink" href="#notifications" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="commands">
+<span id="id8"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id16">
+<caption><span class="caption-text">Moderating Notifications</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -416,8 +683,36 @@
 </tr>
 </tbody>
 </table>
-<table border="1" class="colwidths-given docutils" id="id6">
-<caption><span class="caption-text">Moderating Badges </span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+</div>
+<div class="section" id="guide">
+<span id="id9"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<p>You can configure PokeNav to automatically tag roles when certain raid conditions are met, for example, when a tier 5 raid occurs at one of several EX gyms, or when a Jynx raid is called out. You do this by defining &#8220;notify rules&#8221;, which are checked when someone announced a raid on your server.</p>
+<p>You can have up to 25 roles checked for notifications and 15 rules per role (at the time of this writing). You can specify multiple rules per role, and if any of them are true, the role will be mentioned.</p>
+<p>If the raid changes to match a rule, like when a boss is updated &#8211; it will issue a follow up notification in the raid lobby or notification channel. Only the newly qualified role will be mentioned. A single raid will never tag the same role more than once.</p>
+<div class="section" id="example-ex-raid-notifications">
+<span id="example-ex-raid-notifications"></span><h4>Example: EX Raid Notifications<a class="headerlink" href="#example-ex-raid-notifications" title="Permalink to this headline">¶</a></h4>
+<p>If say you have three EX gyms in your area, and you want to notify an ex-eligible role whenever a tier 5 is announced, you would run the following commands</p>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">ex-eligible</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">1&quot;</span></code>
+<code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">ex-eligible</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">2&quot;</span></code>
+<code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">ex-eligible</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">3&quot;</span></code></p>
+</div>
+<div class="section" id="example-pokedraft">
+<span id="example-pokedraft"></span><h4>Example: PokeDraft<a class="headerlink" href="#example-pokedraft" title="Permalink to this headline">¶</a></h4>
+<p>Say you are running a PokeDraft and this weeks boss is Jynx:</p>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">poke-draft-raid-boss</span> <span class="pre">&quot;boss:</span> <span class="pre">Jynx&quot;</span></code></p>
+<p>Users can then subscribe to that role with <code class="docutils literal"><span class="pre">$sub</span> <span class="pre">poke-draft-raid-boss</span></code>. When a Jynx is called out or a tier 3 egg gets update to Jynx, a notification will be sent.</p>
+<p>When the boss rotates to a new PokeDraft boss, say Alakazam; you can clear the role:</p>
+<p><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">notify-rule</span> <span class="pre">poke-draft-raid-boss</span></code>
+<code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">poke-draft-raid-boss</span> <span class="pre">&quot;boss:</span> <span class="pre">Alakazam&quot;</span></code></p>
+</div>
+</div>
+</div>
+<div class="section" id="trading">
+<span id="trading"></span><h2>Trading<a class="headerlink" href="#trading" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="commands">
+<span id="id10"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id17">
+<caption><span class="caption-text">Moderating Trades</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -428,153 +723,23 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$all-badges</span></code></td>
-<td>Lists all badges and whether are listed as available.</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-active-trades-channel</span></code></td>
+<td>Creates a new channel and publishes all future active trades there.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-badge</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
-<td>Creates a new badge with the given emoji, name and requirements.</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$enable-trade-lobby</span> <span class="pre">#channel</span></code></td>
+<td>Enables trade commands in a channel.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
-<td>Grants badge #1 to Dude16.</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$disable-trade-lobby</span> <span class="pre">#channel</span></code></td>
+<td>Disables trade commands in a channel.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
-<td>Grants badge #1 to everyone in the role raid-mewtwo-123.</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">trade-request-limit</span> <span class="pre">5</span></code></td>
+<td>Sets maximum number of trade requests that can be made by a given user.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
-<td>Revokes badge #1 from Dude16.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
-<td>Revokes badge #1 from everyone in the role raid-mewtwo-123.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle-badge</span> <span class="pre">1</span></code></td>
-<td>Toggles whether badge #1 appears in the <cite>$available-badges</cite> list.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$update-badge</span> <span class="pre">1</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
-<td>Updates badge #1 with new emoji, name and requirements.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$badge-report</span> <span class="pre">1</span></code></td>
-<td>Shows a report showing recent recipients and up to 150 trainers who earned the badge.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-badge-channel</span> <span class="pre">#trophy-room</span></code></td>
-<td>Badges will be awarded will be announced in #trophy-room.</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">trade-duration-secs</span> <span class="pre">275000</span></code></td>
+<td>Sets the amount of time before trades expire on your server.</td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="features">
-<span id="features"></span><h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Complete documentation coming shortly...</p>
-</div>
-<div class="section" id="community-management">
-<span id="community-management"></span><h3>Community Management<a class="headerlink" href="#community-management" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="raid-channels">
-<span id="raid-channels"></span><h4>Raid Channels<a class="headerlink" href="#raid-channels" title="Permalink to this headline">¶</a></h4>
-<p>By default, PokeNav creates a channel for every raid that is announced, when it is announced.</p>
-<p>If you want to turn this off raid channels on your server, use <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code>.</p>
-<p>If you want to wait until someone joins a raid to make a channel, you can toggle this per raid lobby / callout channel: <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels-immediately</span> <span class="pre">#raid-lobby</span></code></p>
-<div class="section" id="why-would-you-want-to-make-channels-immediately">
-<span id="why-would-you-want-to-make-channels-immediately"></span><h5>Why would you want to make channels immediately?<a class="headerlink" href="#why-would-you-want-to-make-channels-immediately" title="Permalink to this headline">¶</a></h5>
-<p>If you make a channel immediately, then when a user posts a screenshot they can be automatically added to it. This is useful for level 5 and 4 raids. It also gives you flexibility to run your server the way you like.</p>
-</div>
-<div class="section" id="why-would-you-not-want-to-make-channels-immediately">
-<span id="why-would-you-not-want-to-make-channels-immediately"></span><h5>Why would you not want to make channels immediately?<a class="headerlink" href="#why-would-you-not-want-to-make-channels-immediately" title="Permalink to this headline">¶</a></h5>
-<p>PokeNav uses a channel and role to coordinate raids. This is a limited discord resource, so you may want to report many raids but delay creating channels until people need them, avoiding using a role unless it is necessary.</p>
-</div>
-</div>
-<div class="section" id="raid-notifications">
-<span id="raid-notifications"></span><h4>Raid Notifications<a class="headerlink" href="#raid-notifications" title="Permalink to this headline">¶</a></h4>
-<p>You can configure PokeNav to automatically tag roles when certain raid conditions are met, for example, when a tier 5 raid occurs at one of several EX gyms, or when a Jynx raid is called out. You do this by defining &#8220;notify rules&#8221;, which are checked when someone announced a raid on your server.</p>
-<p>You can have up to 25 roles checked for notifications and 15 rules per role (at the time of this writing). You can specify multiple rules per role, and if any of them are true, the role will be mentioned.</p>
-<p>If the raid changes to match a rule, like when a boss is updated &#8211; it will issue a follow up notification in the raid lobby or notification channel. Only the newly qualified role will be mentioned. A single raid will never tag the same role more than once.</p>
-<div class="section" id="example-ex-raid-notifications">
-<span id="example-ex-raid-notifications"></span><h5>Example: EX Raid Notifications<a class="headerlink" href="#example-ex-raid-notifications" title="Permalink to this headline">¶</a></h5>
-<p>If say you have three EX gyms in your area, and you want to notify an ex-eligible role whenever a tier 5 is announced, you would run the following commands</p>
-<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">ex-eligible</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">1&quot;</span></code>
-<code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">ex-eligible</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">2&quot;</span></code>
-<code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">ex-eligible</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">3&quot;</span></code></p>
-</div>
-<div class="section" id="example-pokedraft">
-<span id="example-pokedraft"></span><h5>Example: PokeDraft<a class="headerlink" href="#example-pokedraft" title="Permalink to this headline">¶</a></h5>
-<p>Say you are running a PokeDraft and this weeks boss is Jynx:</p>
-<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">poke-draft-raid-boss</span> <span class="pre">&quot;boss:</span> <span class="pre">Jynx&quot;</span></code></p>
-<p>Users can then subscribe to that role with <code class="docutils literal"><span class="pre">$sub</span> <span class="pre">poke-draft-raid-boss</span></code>. When a Jynx is called out or a tier 3 egg gets update to Jynx, a notification will be sent.</p>
-<p>When the boss rotates to a new PokeDraft boss, say Alakazam; you can clear the role:</p>
-<p><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">notify-rule</span> <span class="pre">poke-draft-raid-boss</span></code>
-<code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">poke-draft-raid-boss</span> <span class="pre">&quot;boss:</span> <span class="pre">Alakazam&quot;</span></code></p>
-</div>
-</div>
-<div class="section" id="scanning-team-images">
-<span id="scanning-team-images"></span><h4>Scanning Team Images<a class="headerlink" href="#scanning-team-images" title="Permalink to this headline">¶</a></h4>
-<p>Disabled by default, you can set a profile channel. When this is set, users can upload a screenshot of their in-game profile and PokeNav will set their team and role based according to what it believes their team to be. Team scans don&#8217;t count against your quota.</p>
-<p><img src="/_static/imgs/team_scan.png" /></p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">To prevent accidently changing teams, PokeNav will only assign your team if you do not have a team role assigned on that server. You can change your team with the <cite>$team</cite> command.</p>
-</div>
-</div>
-<div class="section" id="auto-assign-team-roles">
-<span id="auto-assign-team-roles"></span><h4>Auto Assign Team Roles<a class="headerlink" href="#auto-assign-team-roles" title="Permalink to this headline">¶</a></h4>
-<p>Disabled by default, you can allow PokeNav to automatically assign members a team role if they already configured their team on another server.</p>
-<p>When a user joins your server, if you have this setting enabled, they will automatically be added to the proper team role if one is set for your server.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p>This is disabled by default because doing so may allow malicious users to circumvent discord verification levels.</p>
-<p class="last">Be sure you have a good spam / moderation bot in your server before you enable this setting.</p>
-</div>
-</div>
-<div class="section" id="gym-and-pokestop-awareness">
-<span id="gym-and-pokestop-awareness"></span><h4>Gym and Pokestop Awareness<a class="headerlink" href="#gym-and-pokestop-awareness" title="Permalink to this headline">¶</a></h4>
-<p>PokeNav sources gym and pokestop locations from user submitted datasets and other known sources. If you configure a location and radius for your server, you can gain access to search those gyms and pokestops as well as automatically match directions when you submit raid screenshots.</p>
-<p><code class="docutils literal"><span class="pre">$set-location</span> <span class="pre">lat</span> <span class="pre">lon</span></code> will set a server with a default radius as the &#8220;play area&#8221; for your server. PokeNav will include any gyms and pokestops that fall into the play area when looking up directions. If you need to adjust your radius, use <code class="docutils literal"><span class="pre">$set-radius</span></code>. Play area with a radius up to 100km is currently supported.</p>
-</div>
-</div>
-<div class="section" id="badges">
-<span id="badges"></span><h3>Badges<a class="headerlink" href="#badges" title="Permalink to this headline">¶</a></h3>
-<p>You can create badges from custom server emoji and award them to members for achieving certain goals. Everything is done by moderator discretion, so make badges for whatever you like. At the moment, if you delete the emoji for a badge its image will be removed from every trainers badge list (so please keep those around).</p>
-<p>Most badge operations work by referencing a badges unique id. When you create a badge, PokeNav will generate a unique id and display it alongside the badge when it is displayed. This id is also used to grant and revoke badges, as well as update its description.</p>
-<div class="section" id="creating-badges">
-<span id="creating-badges"></span><h4>Creating Badges<a class="headerlink" href="#creating-badges" title="Permalink to this headline">¶</a></h4>
-<p>To create a badge, use the <code class="docutils literal"><span class="pre">$create-badge</span></code> command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description.</p>
-<p>You must quote the name and requirements to capture it properly. Names are limited to 80 characters and requirements to 256. Emoji can be animted and it actually makes the badge that much cooler.</p>
-<p>Its recommended to make the requirements brief and describe what needs to be done to obtain it, as well as reference a channel where more information might be obtained.</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/zcHGNHI5HpE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div>
-<div class="section" id="updating-badges">
-<span id="updating-badges"></span><h4>Updating Badges<a class="headerlink" href="#updating-badges" title="Permalink to this headline">¶</a></h4>
-<p>If you need to update a badges emoji, name or requirements you can use the <code class="docutils literal"><span class="pre">$update-badge</span></code> command, which works EXACTLY like <code class="docutils literal"><span class="pre">$create-badge</span></code> but takes the badge id as the first item and updates that badge instead of creating a new one:</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/MX3mVot12m4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div>
-<div class="section" id="hiding-badges">
-<span id="hiding-badges"></span><h4>Hiding Badges<a class="headerlink" href="#hiding-badges" title="Permalink to this headline">¶</a></h4>
-<p>Sometimes you don&#8217;t want badges to be visible or you want to retire them. <code class="docutils literal"><span class="pre">$toggle-badge</span></code> will hide it from the <code class="docutils literal"><span class="pre">$available-badges</span></code> list. You can still grant and change it, but it won&#8217;t be visible to non-mods.</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/dgFuMmwB-L4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div>
-<div class="section" id="list-all-badges">
-<span id="list-all-badges"></span><h4>List All Badges<a class="headerlink" href="#list-all-badges" title="Permalink to this headline">¶</a></h4>
-<p>In addition to <code class="docutils literal"><span class="pre">$available-badges</span></code>, mods have access to <code class="docutils literal"><span class="pre">$all-badges</span></code> which also shows unavailable badges if they&#8217;ve been toggled off.</p>
-</div>
-<div class="section" id="setting-a-badge-announcement-channel">
-<span id="setting-a-badge-announcement-channel"></span><h4>Setting a Badge Announcement Channel<a class="headerlink" href="#setting-a-badge-announcement-channel" title="Permalink to this headline">¶</a></h4>
-<p>When you grant a badge, you can have the award be pubicly announced in the badge announcement channel. This will be created for you by <code class="docutils literal"><span class="pre">$quickstart</span></code>, but if you need to set it you can use the <code class="docutils literal"><span class="pre">$set-badge-channel</span></code> command:</p>
-<p><code class="docutils literal"><span class="pre">$set-badge-channel</span> <span class="pre">#trophy-room</span></code></p>
-</div>
-<div class="section" id="granting-badges">
-<span id="granting-badges"></span><h4>Granting Badges<a class="headerlink" href="#granting-badges" title="Permalink to this headline">¶</a></h4>
-<p>To grant a user a badge, use <code class="docutils literal"><span class="pre">$grant-badge</span></code> and provide the badge id and the name of the user. Like all commands the name can either be the user nickname or their full discord name with discriminator:</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/FCj8nA4pr90" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div>
-<div class="section" id="revoking-badges">
-<span id="revoking-badges"></span><h4>Revoking Badges<a class="headerlink" href="#revoking-badges" title="Permalink to this headline">¶</a></h4>
-<p>If you need to take back a badge, use <code class="docutils literal"><span class="pre">$revoke-badge</span></code> that same way you used <code class="docutils literal"><span class="pre">$grant-badge</span></code>. It won&#8217;t be announced but the badge will disappear from the users profile. You can use <code class="docutils literal"><span class="pre">$grant-badge</span></code> to give the user the badge back:</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/WCUef2YFrDg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div></div>
 </div>
 </div>
 </div>
