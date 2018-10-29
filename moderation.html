@@ -550,7 +550,7 @@
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Gym</span> <span class="pre">Name&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span></code></td>
-<td>Creates a gym at the give lat, lon.</td>
+<td>Creates a gym at the given lat, lon.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">pokestop</span> <span class="pre">&quot;Pokestop</span> <span class="pre">Name&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span></code></td>
 <td>Creates a pokestop at the give lat, lon.</td>
@@ -582,7 +582,7 @@
 </div>
 <div class="section" id="adding-a-new-gym-pokestop">
 <span id="adding-a-new-gym-pokestop"></span><h4>Adding A New Gym / Pokestop<a class="headerlink" href="#adding-a-new-gym-pokestop" title="Permalink to this headline">¶</a></h4>
-<p>To the following when a gym or pokestop is missing from your community (either because it was recently added or your community is new):</p>
+<p>Do the following when a gym or pokestop is missing from your community (either because it was recently added or your community is new):</p>
 <p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Name</span> <span class="pre">Of</span> <span class="pre">Gym&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span></code></p>
 <p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">pokestop</span> <span class="pre">&quot;Name</span> <span class="pre">Of</span> <span class="pre">Pokestop&quot;</span> <span class="pre">45.00</span> <span class="pre">-75.00</span></code></p>
 </div>
@@ -590,10 +590,10 @@
 <span id="figuring-out-the-right-coordinates"></span><h4>Figuring Out The Right Coordinates<a class="headerlink" href="#figuring-out-the-right-coordinates" title="Permalink to this headline">¶</a></h4>
 <p>All coordinates provided must be valid locations inside your community play areas; latitude must be between -90 and 90 and longitude between -180 and 180.</p>
 <p>Remember that the coordinates don&#8217;t need to be &#8220;exact&#8221; but should be accurate enough that if someone clicks directions, it takes them to the right place &#8211; at least within visible range of the stop.</p>
-<p>If the pokestop or gym is non-sponsored, you can use the ingress intel map to get a link to the portal. You will need to sign up for an ingress account, but if you click on a portal than press the &#8220;link&#8221; button in the upper right hand corner you can get a direct link to any portal. For example:</p>
+<p>If the pokestop or gym is non-sponsored, you can use the ingress intel map to get a link to the portal. You will need to sign up for an ingress account, but if you click on a portal then press the &#8220;link&#8221; button in the upper right hand corner you can get a direct link to any portal. For example:</p>
 <p><code class="docutils literal"><span class="pre">https://www.ingress.com/intel?ll=40.207983,-75.177594&amp;z=17&amp;pll=40.207319,-75.177512</span></code></p>
 <p>The coordinates after <code class="docutils literal"><span class="pre">pll</span></code> are the POIs actual location. So to create that POI you would do:</p>
-<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Deep</span> <span class="pre">Meadow</span> <span class="pre">Park&quot;</span> <span class="pre">40.207319</span> <span class="pre">-75177512</span></code></p>
+<p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Deep</span> <span class="pre">Meadow</span> <span class="pre">Park&quot;</span> <span class="pre">40.207319</span> <span class="pre">-75.177512</span></code></p>
 <p>Though, we recommend you making sure that the POI is not actually in the database first. Copy and paste the portal name into <code class="docutils literal"><span class="pre">$gi</span></code> or <code class="docutils literal"><span class="pre">$si</span></code> to make sure!</p>
 <p>If a POI is sponsored, it won&#8217;t be on the intel map. Instead go to Google Maps to find the business and drop a pin (press and hold) which will give you coordinates.</p>
 </div>
@@ -622,7 +622,7 @@
 </div>
 <div class="section" id="what-restrictions-are-there-on-poi">
 <span id="what-restrictions-are-there-on-poi"></span><h4>What Restrictions Are There On POI?<a class="headerlink" href="#what-restrictions-are-there-on-poi" title="Permalink to this headline">¶</a></h4>
-<p>Your server cannot have a POI with the same name, type and location.</p>
+<p>Your server cannot have multiple POI with the same name, type and location.</p>
 <p>You can create a POI with the same name and type, but PokeNav won&#8217;t be able to find it without assistance.</p>
 <p>There is a soft limit to how many POI your community can upload, we will adjust and clarify this when file upload becomes available.</p>
 </div>

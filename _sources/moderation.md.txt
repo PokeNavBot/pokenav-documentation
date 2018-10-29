@@ -238,7 +238,7 @@ PokeNav uses a channel and role to coordinate raids. This is a limited discord r
    :header: "Command", "Description"
    :widths: 5, 20
 
-   ``$create poi gym "Gym Name" 45.00 -75.00``, "Creates a gym at the give lat, lon."
+   ``$create poi gym "Gym Name" 45.00 -75.00``, "Creates a gym at the given lat, lon."
    ``$create poi pokestop "Pokestop Name" 45.00 -75.00``, "Creates a pokestop at the give lat, lon."
    ``$update poi 12345 "name: New Name"``, "Updates POI #12345 with a new name."
    ``$update poi 12345 "type: gym"``, "Updates POI #12345 and sets its type to be gym."
@@ -263,7 +263,7 @@ To use POI you must `$set location` for your server and adjust `$set radius` to 
 
 #### Adding A New Gym / Pokestop
 
-To the following when a gym or pokestop is missing from your community (either because it was recently added or your community is new):
+Do the following when a gym or pokestop is missing from your community (either because it was recently added or your community is new):
 
 `$create poi gym "Name Of Gym" 45.00 -75.00`
 
@@ -275,13 +275,13 @@ All coordinates provided must be valid locations inside your community play area
 
 Remember that the coordinates don't need to be "exact" but should be accurate enough that if someone clicks directions, it takes them to the right place -- at least within visible range of the stop. 
 
-If the pokestop or gym is non-sponsored, you can use the ingress intel map to get a link to the portal. You will need to sign up for an ingress account, but if you click on a portal than press the "link" button in the upper right hand corner you can get a direct link to any portal. For example:
+If the pokestop or gym is non-sponsored, you can use the ingress intel map to get a link to the portal. You will need to sign up for an ingress account, but if you click on a portal then press the "link" button in the upper right hand corner you can get a direct link to any portal. For example:
 
 `https://www.ingress.com/intel?ll=40.207983,-75.177594&z=17&pll=40.207319,-75.177512`
 
 The coordinates after `pll` are the POIs actual location. So to create that POI you would do:
 
-`$create poi gym "Deep Meadow Park" 40.207319 -75177512`
+`$create poi gym "Deep Meadow Park" 40.207319 -75.177512`
 
 Though, we recommend you making sure that the POI is not actually in the database first. Copy and paste the portal name into `$gi` or `$si` to make sure!
 
@@ -323,7 +323,7 @@ On the other hand if you add a "Starbucks" gym to your set, the "Starbucks" poke
 
 #### What Restrictions Are There On POI?
 
-Your server cannot have a POI with the same name, type and location. 
+Your server cannot have multiple POI with the same name, type and location. 
 
 You can create a POI with the same name and type, but PokeNav won't be able to find it without assistance.
 
