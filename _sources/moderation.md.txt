@@ -243,6 +243,7 @@ PokeNav uses a channel and role to coordinate raids. This is a limited discord r
    ``$update poi 12345 "name: New Name"``, "Updates POI #12345 with a new name."
    ``$update poi 12345 "type: gym"``, "Updates POI #12345 and sets its type to be gym."
    ``$delete poi 12345``, "Removes POI #12345 from your community."
+   ``$poi``, "Shows a detailed POI summary for your server."
 ```
 
 ### Guide
