@@ -37,13 +37,13 @@ All of the following features are utlitized using commands run inside the `#poke
    :widths: 5, 20
 
    ``$all-badges``, "Lists all badges and whether are listed as available."
-   ``$create-badge :emoji: "Name" "Requirements"``, "Creates a new badge with the given emoji, name and requirements."
+   ``$create badge :emoji: "Name" "Requirements"``, "Creates a new badge with the given emoji, name and requirements."
+   ``$update badge 1 :emoji: "Name" "Requirements"``, "Updates badge #1 with new emoji, name and requirements."
    ``$grant-badge 1 Dude16``, "Grants badge #1 to Dude16."
    ``$grant-badge 1 raid-mewtwo-123``, "Grants badge #1 to everyone in the role raid-mewtwo-123."
    ``$revoke-badge 1 Dude16``, "Revokes badge #1 from Dude16."
    ``$revoke-badge 1 raid-mewtwo-123``, "Revokes badge #1 from everyone in the role raid-mewtwo-123."
    ``$toggle-badge 1``, "Toggles whether badge #1 appears in the `$available-badges` list."
-   ``$update-badge 1 :emoji: "Name" "Requirements"``, "Updates badge #1 with new emoji, name and requirements."
    ``$badge-report 1``, "Shows a report showing recent recipients and up to 150 trainers who earned the badge."
    ``$set-badge-channel #trophy-room``, "Badges will be awarded will be announced in #trophy-room."
 
