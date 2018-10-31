@@ -21,6 +21,7 @@ All of the following features are utlitized using commands run inside the `#poke
    ``$set location 45.123 -75.123123``, "Sets the center point of a community play area."
    ``$set radius 20``, "Sets the minimum radius of your community (in kilometers)."
    ``$show-settings``, "Shows all your bot configuration settings for this server."
+   ``$report quota``, "Shows a quota report, along with a top contributors list."
    ``$set-bot-announcement-channel #news``, "Updates where bot announcements are sent (default: moderation channel)."
    ``$set-profile-channel #profile-setup``, "Updates where scans profile images for setting teams."
    ``$toggle 24-hour-time``, "Toggles timestamps as 24-hour time instead of AM/PM."
@@ -44,7 +45,7 @@ All of the following features are utlitized using commands run inside the `#poke
    ``$revoke-badge 1 Dude16``, "Revokes badge #1 from Dude16."
    ``$revoke-badge 1 raid-mewtwo-123``, "Revokes badge #1 from everyone in the role raid-mewtwo-123."
    ``$toggle-badge 1``, "Toggles whether badge #1 appears in the `$available-badges` list."
-   ``$badge-report 1``, "Shows a report showing recent recipients and up to 150 trainers who earned the badge."
+   ``$report badge 1``, "Shows a report showing recent recipients and up to 150 trainers who earned the badge."
    ``$set-badge-channel #trophy-room``, "Badges will be awarded will be announced in #trophy-room."
 
 ```
