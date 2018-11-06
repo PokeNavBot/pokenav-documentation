@@ -267,16 +267,19 @@
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$show-settings</span></code></td>
 <td>Shows all your bot configuration settings for this server.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-bot-announcement-channel</span> <span class="pre">#news</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$report</span> <span class="pre">quota</span></code></td>
+<td>Shows a quota report, along with a top contributors list.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-bot-announcement-channel</span> <span class="pre">#news</span></code></td>
 <td>Updates where bot announcements are sent (default: moderation channel).</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-profile-channel</span> <span class="pre">#profile-setup</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-profile-channel</span> <span class="pre">#profile-setup</span></code></td>
 <td>Updates where scans profile images for setting teams.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">24-hour-time</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">24-hour-time</span></code></td>
 <td>Toggles timestamps as 24-hour time instead of AM/PM.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-invite-url</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-invite-url</span></code></td>
 <td>Toggles sharing a public invite for your server.</td>
 </tr>
 </tbody>
@@ -302,28 +305,28 @@
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$all-badges</span></code></td>
 <td>Lists all badges and whether are listed as available.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-badge</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">badge</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
 <td>Creates a new badge with the given emoji, name and requirements.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
-<td>Grants badge #1 to Dude16.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
-<td>Grants badge #1 to everyone in the role raid-mewtwo-123.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
-<td>Revokes badge #1 from Dude16.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
-<td>Revokes badge #1 from everyone in the role raid-mewtwo-123.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle-badge</span> <span class="pre">1</span></code></td>
-<td>Toggles whether badge #1 appears in the <cite>$available-badges</cite> list.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$update-badge</span> <span class="pre">1</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$update</span> <span class="pre">badge</span> <span class="pre">1</span> <span class="pre">:emoji:</span> <span class="pre">&quot;Name&quot;</span> <span class="pre">&quot;Requirements&quot;</span></code></td>
 <td>Updates badge #1 with new emoji, name and requirements.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$badge-report</span> <span class="pre">1</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
+<td>Grants badge #1 to Dude16.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
+<td>Grants badge #1 to everyone in the role raid-mewtwo-123.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
+<td>Revokes badge #1 from Dude16.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
+<td>Revokes badge #1 from everyone in the role raid-mewtwo-123.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle-badge</span> <span class="pre">1</span></code></td>
+<td>Toggles whether badge #1 appears in the <cite>$available-badges</cite> list.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$report</span> <span class="pre">badge</span> <span class="pre">1</span></code></td>
 <td>Shows a report showing recent recipients and up to 150 trainers who earned the badge.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-badge-channel</span> <span class="pre">#trophy-room</span></code></td>
