@@ -12,7 +12,7 @@ The only condition of use is attribution.
 
 ### Attribution
 
-If you use any PokeNav in anything that is republished publicly in the form of a tool, website, article, infographic or social media post; please provide a link back to our website. No specific format is required, but we suggest something like `Data provided by PokeNav - https://pokenavbot.com`. 
+If you use any PokeNav data in anything that is republished publicly in the form of a tool, website, article, infographic or social media post; please provide a link back to our website. No specific format is required, but we suggest something like `Data provided by PokeNav - https://pokenavbot.com`. 
 
 ### Community Attribution
 
