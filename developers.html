@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Developer’s Guide &mdash; PokeNav  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Trainer Profile &amp; Settings" href="trainer.html" />
+    <link rel="prev" title="Admin’s Guide" href="moderation.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PokeNav
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="community_setup.html">Community Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mobile_app.html">PokeNav Companion App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_overview.html">Video Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="moderation.html">Admin&#8217;s Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Developer&#8217;s Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#audience">Audience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#attribution-and-terms">Attribution and Terms</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#attribution">Attribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#community-attribution">Community Attribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-availability">Data Availability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#apis">APIs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#raid-stream-api">Raid Stream API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#endpoint">Endpoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#params">Params</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#behavior-usage-guide">Behavior &amp; Usage Guide</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#output-example">Output Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#general-api-notes">General API Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#public-datasets">Public Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile &amp; Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="raids.html">Raiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trading.html">Trading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pokedex.html">Pokedex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quota.html">Quota</a></li>
+<li class="toctree-l1"><a class="reference internal" href="patreon.html">Patreon and Support</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PokeNav</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Developer&#8217;s Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/developers.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="developer-s-guide">
+<span id="developer-s-guide"></span><h1>Developer&#8217;s Guide<a class="headerlink" href="#developer-s-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="audience">
+<span id="audience"></span><h2>Audience<a class="headerlink" href="#audience" title="Permalink to this headline">¶</a></h2>
+<p>This document is intended for developers and researchers wishing to get access to PokeNav&#8217;s data for the purposes of building third party tools, infographics or performing research. If you are simply trying to use PokeNav, you can skip the rest of this document.</p>
+</div>
+<div class="section" id="attribution-and-terms">
+<span id="attribution-and-terms"></span><h2>Attribution and Terms<a class="headerlink" href="#attribution-and-terms" title="Permalink to this headline">¶</a></h2>
+<p>You may use any data provided through the public APIs and datasets documented below, free of charge (except in case where a charge may be imposed by a third party you use to access said data). No warranty or gaurantee of accuracy is provided. All data in PokeNav is user submitted and as such is subject to errors. No personally identifiable information is present in the open data API.</p>
+<p>The only condition of use is attribution.</p>
+<div class="section" id="attribution">
+<span id="attribution"></span><h3>Attribution<a class="headerlink" href="#attribution" title="Permalink to this headline">¶</a></h3>
+<p>If you use any PokeNav in anything that is republished publicly in the form of a tool, website, article, infographic or social media post; please provide a link back to our website. No specific format is required, but we suggest something like <code class="docutils literal"><span class="pre">Data</span> <span class="pre">provided</span> <span class="pre">by</span> <span class="pre">PokeNav</span> <span class="pre">-</span> <span class="pre">https://pokenavbot.com</span></code>.</p>
+</div>
+<div class="section" id="community-attribution">
+<span id="community-attribution"></span><h3>Community Attribution<a class="headerlink" href="#community-attribution" title="Permalink to this headline">¶</a></h3>
+<p>If you republish a live data (raid, research, etc) on a third party tool such as a map, website or mobile application, you must provide attribution for both PokeNav and the reporting community. Additionally, you must link to the community if the invite url is present.</p>
+</div>
+</div>
+<div class="section" id="data-availability">
+<span id="data-availability"></span><h2>Data Availability<a class="headerlink" href="#data-availability" title="Permalink to this headline">¶</a></h2>
+<p>By default, all PokeNav communities opt into third party access. This means that any time a raid is reported, it will appear both in the PokeNav app and published for use by third parties. However, some communities choose not to share their data with third parties, and may opt out.</p>
+</div>
+<div class="section" id="apis">
+<span id="apis"></span><h2>APIs<a class="headerlink" href="#apis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="raid-stream-api">
+<span id="raid-stream-api"></span><h3>Raid Stream API<a class="headerlink" href="#raid-stream-api" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="endpoint">
+<span id="endpoint"></span><h4>Endpoint<a class="headerlink" href="#endpoint" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal"><span class="pre">https://api.pokenavbot.com/raids/v1/stream?lookback=&lt;minutes&gt;</span></code></p>
+</div>
+<div class="section" id="params">
+<span id="params"></span><h4>Params<a class="headerlink" href="#params" title="Permalink to this headline">¶</a></h4>
+<dl>
+    <dt>lookback</dt>
+    <dd>Integer, minutes to lookback from the last cached time (supported values: 1, 2, 5, 10).</dd>
+</dl></div>
+<div class="section" id="description">
+<span id="description"></span><h4>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h4>
+<p>Returns back a paginated list of raids that have changed in PokeNav in the lookback period.</p>
+</div>
+<div class="section" id="behavior-usage-guide">
+<span id="behavior-usage-guide"></span><h4>Behavior &amp; Usage Guide<a class="headerlink" href="#behavior-usage-guide" title="Permalink to this headline">¶</a></h4>
+<p>This API is cached, and returns all created and updated raids, ordered by most recently updated, since the last cache period.</p>
+<p>Updates are gauranteed to be cached / delayed by no more than 60 seconds. Pulling more frequently than 60 seconds is not advised, and will not consistently return new data.</p>
+<p>Recommended usage pattern is to pull from the stream at a usage interval of N, where 60 &lt;= N &lt; lookback seconds. See usage example for a real world use of the raid stream.</p>
+<p>You should use <code class="docutils literal"><span class="pre">updated</span></code> field to determine if a record is newer for a given raid.</p>
+</div>
+<div class="section" id="output-example">
+<span id="output-example"></span><h4>Output Example<a class="headerlink" href="#output-example" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span>
+    <span class="s2">&quot;next&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;previous&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">152446</span><span class="p">,</span>
+            <span class="s2">&quot;hatches&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-11-08T21:43:01.420082Z&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;ends&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-11-08T22:28:01.420082Z&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-11-08T21:54:25.814881Z&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;egg_tier&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+            <span class="s2">&quot;form&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;togetic&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Togetic&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;raid_boss_level&quot;</span><span class="p">:</span> <span class="mi">4</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;gym&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">441820</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Woven Willow Dragon&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;lat&quot;</span><span class="p">:</span> <span class="mf">42.720723</span><span class="p">,</span>
+                <span class="s2">&quot;lon&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">84.473375</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;community&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">372</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;LansingPokemonGo&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;member_count&quot;</span><span class="p">:</span> <span class="mi">2660</span>
+                <span class="s2">&quot;invite_url&quot;</span><span class="p">:</span> <span class="n">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">152445</span><span class="p">,</span>
+            <span class="s2">&quot;hatches&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-11-08T22:23:38.713152Z&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;ends&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-11-08T23:08:38.713152Z&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-11-08T21:53:54.936737Z&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;egg_tier&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+            <span class="s2">&quot;form&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+            <span class="s2">&quot;gym&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">41087</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Indian Rock&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;lat&quot;</span><span class="p">:</span> <span class="mf">39.400208</span><span class="p">,</span>
+                <span class="s2">&quot;lon&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">76.477885</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;community&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">164</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Pokémon Go White Marsh&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;member_count&quot;</span><span class="p">:</span> <span class="mi">645</span><span class="p">,</span>
+                <span class="s2">&quot;invite_url&quot;</span><span class="p">:</span> <span class="n">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage-example">
+<span id="usage-example"></span><h4>Usage Example<a class="headerlink" href="#usage-example" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/PokeNavBot/pokenav-open-data/blob/master/src/pokenav_data/raid_reports_loader.py">See the source code for the raid reports loader.</a></p>
+</div>
+</div>
+<div class="section" id="general-api-notes">
+<span id="general-api-notes"></span><h3>General API Notes<a class="headerlink" href="#general-api-notes" title="Permalink to this headline">¶</a></h3>
+<p>In PokeNav&#8217;s APIs, the pagination links <code class="docutils literal"><span class="pre">next</span></code> &amp; <code class="docutils literal"><span class="pre">previous</span></code> are path fragments (i.e. <code class="docutils literal"><span class="pre">/raids/v1/stream/?limit=1&amp;lookback=10&amp;offset=1</span></code>). You must recombine them with the endpoint host <code class="docutils literal"><span class="pre">https://api.pokenavbot.com</span></code> to access the next page.</p>
+</div>
+</div>
+<div class="section" id="public-datasets">
+<span id="public-datasets"></span><h2>Public Datasets<a class="headerlink" href="#public-datasets" title="Permalink to this headline">¶</a></h2>
+<p>PokeNav provides a set of datasets based on its public APIs, that enable anyone to slice and dice historical data. These are hosted as public datasets on Google BigQuery. Google Cloud Platform provides a generous free tier for querying this data.</p>
+<p>The public dataset can be accessed by querying <code class="docutils literal"><span class="pre">pokenav-production.pokenav.*</span></code>.</p>
+<p>Currently available datasets:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pokenav</span><span class="o">-</span><span class="n">production</span><span class="o">.</span><span class="n">pokenav</span><span class="o">.</span><span class="n">raid_reports</span>
+</pre></div>
+</div>
+<p>To test out querying through the bq web ui: <a class="reference external" href="https://bigquery.cloud.google.com">https://bigquery.cloud.google.com</a></p>
+<p>Example query through the web ui (pulls the 10 most recently updated reports):</p>
+<p><code class="docutils literal"><span class="pre">select</span> <span class="pre">*</span> <span class="pre">from</span> <span class="pre">[pokenav-production.pokenav.raid_reports]</span> <span class="pre">order</span> <span class="pre">by</span> <span class="pre">updated</span> <span class="pre">desc</span> <span class="pre">limit</span> <span class="pre">10</span></code></p>
+<p>You could export the results to google sheets, json, etc.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="trainer.html" class="btn btn-neutral float-right" title="Trainer Profile &amp; Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="moderation.html" class="btn btn-neutral" title="Admin’s Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, PokeNavBot.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script>
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40389189-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40389189-3');
+</script>
+
+
+</body>
+</html>

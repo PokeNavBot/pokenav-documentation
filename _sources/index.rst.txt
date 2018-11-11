@@ -65,6 +65,7 @@ It has many features, including:
    mobile_app 
    video_overview
    moderation
+   developers 
    trainer
    raids
    trading 
