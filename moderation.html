@@ -87,6 +87,11 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Admin&#8217;s Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#server-settings">Server Settings</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guide">Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#third-party-access">Third Party Access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#creating-badges">Creating Badges</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#badges">Badges</a><ul>
@@ -232,8 +237,8 @@
 <span id="server-settings"></span><h2>Server Settings<a class="headerlink" href="#server-settings" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
 <span id="commands"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id11">
-<caption><span class="caption-text">Managing Your PokeNav Installation</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<table border="1" class="colwidths-given docutils" id="id13">
+<caption><span class="caption-text">Managing Your PokeNav Installation</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -283,16 +288,30 @@
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-invite-url</span></code></td>
 <td>Toggles sharing a public invite for your server.</td>
 </tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">third-party-access</span></code></td>
+<td>Toggles sharing report data with third party developers.</td>
+</tr>
 </tbody>
 </table>
+</div>
+<div class="section" id="guide">
+<span id="guide"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="third-party-access">
+<span id="third-party-access"></span><h4>Third Party Access<a class="headerlink" href="#third-party-access" title="Permalink to this headline">¶</a></h4>
+<p>PokeNav provides some open APIs and public datasets that can be used by the larger Pokemon Go community to create tools and infographics. By default, all communities are opt-in to sharing with third party developers. You can use the <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">third-party-access</span></code> command to disable / enable future reports.</p>
+<p>Third Parties never gain access to personal information such as which trainer reported the raid, status information or members attending. They can see at most, the location of the raid, its start or end time and the community which reported it.</p>
+</div>
+<div class="section" id="creating-badges">
+<span id="creating-badges"></span><h4>Creating Badges<a class="headerlink" href="#creating-badges" title="Permalink to this headline">¶</a></h4>
+</div>
 </div>
 </div>
 <div class="section" id="badges">
 <span id="badges"></span><h2>Badges<a class="headerlink" href="#badges" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
 <span id="id1"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id12">
-<caption><span class="caption-text">Moderating Badges </span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<table border="1" class="colwidths-given docutils" id="id14">
+<caption><span class="caption-text">Moderating Badges </span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -337,11 +356,11 @@
 </table>
 </div>
 <div class="section" id="guide">
-<span id="guide"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<span id="id2"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
 <p>You can create badges from custom server emoji and award them to members for achieving certain goals. Everything is done by moderator discretion, so make badges for whatever you like. At the moment, if you delete the emoji for a badge its image will be removed from every trainers badge list (so please keep those around).</p>
 <p>Most badge operations work by referencing a badges unique id. When you create a badge, PokeNav will generate a unique id and display it alongside the badge when it is displayed. This id is also used to grant and revoke badges, as well as update its description.</p>
 <div class="section" id="creating-badges">
-<span id="creating-badges"></span><h4>Creating Badges<a class="headerlink" href="#creating-badges" title="Permalink to this headline">¶</a></h4>
+<span id="id3"></span><h4>Creating Badges<a class="headerlink" href="#creating-badges" title="Permalink to this headline">¶</a></h4>
 <p>To create a badge, use the <code class="docutils literal"><span class="pre">$create-badge</span></code> command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description.</p>
 <p>You must quote the name and requirements to capture it properly. Names are limited to 80 characters and requirements to 256. Emoji can be animted and it actually makes the badge that much cooler.</p>
 <p>Its recommended to make the requirements brief and describe what needs to be done to obtain it, as well as reference a channel where more information might be obtained.</p>
@@ -386,9 +405,9 @@
 <div class="section" id="teams">
 <span id="teams"></span><h2>Teams<a class="headerlink" href="#teams" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
-<span id="id2"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id13">
-<caption><span class="caption-text">Moderating Teams</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<span id="id4"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id15">
+<caption><span class="caption-text">Moderating Teams</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -409,7 +428,7 @@
 </table>
 </div>
 <div class="section" id="guide">
-<span id="id3"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<span id="id5"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="scanning-team-images">
 <span id="scanning-team-images"></span><h4>Scanning Team Images<a class="headerlink" href="#scanning-team-images" title="Permalink to this headline">¶</a></h4>
 <p>Disabled by default, you can set a profile channel. When this is set, users can upload a screenshot of their in-game profile and PokeNav will set their team and role based according to what it believes their team to be. Team scans don&#8217;t count against your quota.</p>
@@ -434,9 +453,9 @@
 <div class="section" id="raiding">
 <span id="raiding"></span><h2>Raiding<a class="headerlink" href="#raiding" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
-<span id="id4"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id14">
-<caption><span class="caption-text">Moderating Raids</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<span id="id6"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id16">
+<caption><span class="caption-text">Moderating Raids</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -520,7 +539,7 @@
 </table>
 </div>
 <div class="section" id="guide">
-<span id="id5"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<span id="id7"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="raid-channel-settings">
 <span id="raid-channel-settings"></span><h4>Raid Channel Settings<a class="headerlink" href="#raid-channel-settings" title="Permalink to this headline">¶</a></h4>
 <p>By default, PokeNav creates a channel for every raid that is announced, when it is announced.</p>
@@ -540,9 +559,9 @@
 <div class="section" id="poi">
 <span id="poi"></span><h2>POI<a class="headerlink" href="#poi" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
-<span id="id6"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id15">
-<caption><span class="caption-text">Moderating POI</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<span id="id8"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id17">
+<caption><span class="caption-text">Moderating POI</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -575,7 +594,7 @@
 </table>
 </div>
 <div class="section" id="guide">
-<span id="id7"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="what-are-poi">
 <span id="what-are-poi"></span><h4>What Are POI?<a class="headerlink" href="#what-are-poi" title="Permalink to this headline">¶</a></h4>
 <p>POI, or Points of Interest, are in-game locations, stored in PokeNav&#8217;s database, which can be used to enable all sorts of useful features, including raid deduplication, directions, app visibility and more.</p>
@@ -642,9 +661,9 @@
 <div class="section" id="notifications">
 <span id="notifications"></span><h2>Notifications<a class="headerlink" href="#notifications" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
-<span id="id8"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id16">
-<caption><span class="caption-text">Moderating Notifications</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<span id="id10"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id18">
+<caption><span class="caption-text">Moderating Notifications</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -692,7 +711,7 @@
 </table>
 </div>
 <div class="section" id="guide">
-<span id="id9"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<span id="id11"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
 <p>You can configure PokeNav to automatically tag roles when certain raid conditions are met, for example, when a tier 5 raid occurs at one of several EX gyms, or when a Jynx raid is called out. You do this by defining &#8220;notify rules&#8221;, which are checked when someone announced a raid on your server.</p>
 <p>You can have up to 25 roles checked for notifications and 15 rules per role (at the time of this writing). You can specify multiple rules per role, and if any of them are true, the role will be mentioned.</p>
 <p>If the raid changes to match a rule, like when a boss is updated &#8211; it will issue a follow up notification in the raid lobby or notification channel. Only the newly qualified role will be mentioned. A single raid will never tag the same role more than once.</p>
@@ -717,9 +736,9 @@
 <div class="section" id="trading">
 <span id="trading"></span><h2>Trading<a class="headerlink" href="#trading" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
-<span id="id10"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id17">
-<caption><span class="caption-text">Moderating Trades</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<span id="id12"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id19">
+<caption><span class="caption-text">Moderating Trades</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
