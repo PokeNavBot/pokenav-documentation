@@ -26,7 +26,18 @@ All of the following features are utlitized using commands run inside the `#poke
    ``$set-profile-channel #profile-setup``, "Updates where scans profile images for setting teams."
    ``$toggle 24-hour-time``, "Toggles timestamps as 24-hour time instead of AM/PM."
    ``$toggle share-invite-url``, "Toggles sharing a public invite for your server."
+   ``$toggle third-party-access``, "Toggles sharing report data with third party developers."
 ```
+
+### Guide
+
+#### Third Party Access
+
+PokeNav provides some open APIs and public datasets that can be used by the larger Pokemon Go community to create tools and infographics. By default, all communities are opt-in to sharing with third party developers. You can use the `$toggle third-party-access` command to disable / enable future reports.
+
+Third Parties never gain access to personal information such as which trainer reported the raid, status information or members attending. They can see at most, the location of the raid, its start or end time and the community which reported it.
+
+#### Creating Badges
 
 ## Badges
 
