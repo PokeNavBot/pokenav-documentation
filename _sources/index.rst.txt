@@ -24,15 +24,17 @@ PokeNav is a discord bot that helps discord communities coordinate in Pokemon Go
 It has many features, including:
 
 * Interactive Mobile App
-    * Available for Android and iOS (coming soon)
+    * Available for Android and iOS
     * Shows nearby raids reports reported in discord
     * Shows a global map view of all community raids using PokeNav
+    * Trainer profile, integrations and badges
     * Login with your discord account to view additional raid details.
 
 * Trainer Profiles
     * Syncs across multiple services
     * Links to your Silph Road Traveler's Card
     * Links to Pokebattler Pokebox
+    * Links to your TrainerDex profile
 
 * Bot and scanner independent raid coordination
     * Creates private raid channels **automatically** from raid and egg screenshots
@@ -43,7 +45,7 @@ It has many features, including:
     * Rule-based automatic notifications via discord
 
 * Trading support
-    * Advertise your wanted trades and let PokeNav act as a notification inbox.
+    * Advertise your want / offers for trades and let PokeNav act as a notification inbox.
 
 * Badges
     * Create badges for community events, contests and in-game achievements.
@@ -56,6 +58,9 @@ It has many features, including:
 * Pokedex support
     * Beautiful pokedex pages for all released Pokemon
     * Personalized counter via Pokebattler
+
+* Third Party Developer Access
+    * APIs and public datasets for re-publishing live raids, research and infographics
 
 .. toctree::
    :maxdepth: 2
