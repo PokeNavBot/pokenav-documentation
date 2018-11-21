@@ -61,9 +61,9 @@ If you want to use the app like a raid map, you might not want channels created 
 
 ### Using the iOS Siri Shortcut
 
-We have created a siri shortcut that makes uploading images to discord much faster and use less bandwidth. In a nutshell, this resize and converts the image before giving you the option to share to discord. Afterward, it deletes the image from your photo library. You can use this to take a screenshot, go to the home screen and tap to share an optimized screenshot. Upload happens instantly.
+We have created a siri shortcut that makes uploading images to discord much faster and use less bandwidth. In a nutshell, this resizes and converts the image before giving you the option to share to discord. Afterward, it deletes the image from your photo library. You can use this to take a screenshot, go to the home screen and tap to share an optimized screenshot. Upload happens instantly. It then deletes the image and returns you Pokemon Go.
 
-[Download The Siri Shortcut Here](https://www.icloud.com/shortcuts/f336715cb05e4d5d81dc377296024bd4)
+[Download The Latest Siri Shortcut Here](https://www.icloud.com/shortcuts/85b4f49c19dd49e7bed057fe2825cb3b)
 
 
 ## Support and Feedback
