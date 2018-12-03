@@ -255,7 +255,7 @@
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$quickstart</span> <span class="pre">YES</span></code></td>
 <td>Sets up PokeNav installation</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-mod-channel</span> <span class="pre">#channel</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">mod-channel</span> <span class="pre">#channel</span></code></td>
 <td>Changes the moderation channel.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">prefix</span> <span class="pre">$</span></code></td>
@@ -270,16 +270,16 @@
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">radius</span> <span class="pre">20</span></code></td>
 <td>Sets the minimum radius of your community (in kilometers).</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$show-settings</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$show</span> <span class="pre">settings</span></code></td>
 <td>Shows all your bot configuration settings for this server.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$report</span> <span class="pre">quota</span></code></td>
 <td>Shows a quota report, along with a top contributors list.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-bot-announcement-channel</span> <span class="pre">#news</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">bot-announcement-channel</span> <span class="pre">#news</span></code></td>
 <td>Updates where bot announcements are sent (default: moderation channel).</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-profile-channel</span> <span class="pre">#profile-setup</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">profile-channel</span> <span class="pre">#profile-setup</span></code></td>
 <td>Updates where scans profile images for setting teams.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">24-hour-time</span></code></td>
@@ -349,7 +349,7 @@
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$report</span> <span class="pre">badge</span> <span class="pre">1</span></code></td>
 <td>Shows a report showing recent recipients and up to 150 trainers who earned the badge.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-badge-channel</span> <span class="pre">#trophy-room</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">badge-channel</span> <span class="pre">#trophy-room</span></code></td>
 <td>Badges will be awarded will be announced in #trophy-room.</td>
 </tr>
 </tbody>
@@ -385,8 +385,8 @@
 </div>
 <div class="section" id="setting-a-badge-announcement-channel">
 <span id="setting-a-badge-announcement-channel"></span><h4>Setting a Badge Announcement Channel<a class="headerlink" href="#setting-a-badge-announcement-channel" title="Permalink to this headline">¶</a></h4>
-<p>When you grant a badge, you can have the award be pubicly announced in the badge announcement channel. This will be created for you by <code class="docutils literal"><span class="pre">$quickstart</span></code>, but if you need to set it you can use the <code class="docutils literal"><span class="pre">$set-badge-channel</span></code> command:</p>
-<p><code class="docutils literal"><span class="pre">$set-badge-channel</span> <span class="pre">#trophy-room</span></code></p>
+<p>When you grant a badge, you can have the award be pubicly announced in the badge announcement channel. This will be created for you by <code class="docutils literal"><span class="pre">$quickstart</span></code>, but if you need to set it you can use the <code class="docutils literal"><span class="pre">$set</span> <span class="pre">badge-channel</span></code> command:</p>
+<p><code class="docutils literal"><span class="pre">$set</span> <span class="pre">badge-channel</span> <span class="pre">#trophy-room</span></code></p>
 </div>
 <div class="section" id="granting-badges">
 <span id="granting-badges"></span><h4>Granting Badges<a class="headerlink" href="#granting-badges" title="Permalink to this headline">¶</a></h4>
@@ -418,7 +418,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-team-role</span> <span class="pre">mystic</span> <span class="pre">team-mystic</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">team-role</span> <span class="pre">mystic</span> <span class="pre">team-mystic</span></code></td>
 <td>Sets the role used to track a members in-game team.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-assign-team</span></code></td>
@@ -466,73 +466,64 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$disable-ex-raid-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Disables EX raid announcements in the channel.</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">ex-raid-lobby</span> <span class="pre">#channel</span></code></td>
+<td>Enable / disables EX raid announcements.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$disable-raid-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Disables raid announcements.</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">raid-lobby</span> <span class="pre">#channel</span></code></td>
+<td>Enable / disables raid announcements.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$enable-ex-raid-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Enables EX raid announcements in the channel.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$enable-raid-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Enables raid announcements in the channel.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-active-raids-channel</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">active-raids-channel</span></code></td>
 <td>Creates a new channel and publishes all future active raids there.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-active-ex-raids-channel</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">active-ex-raids-channel</span></code></td>
 <td>Creates a new channel and publishes all future active EX raids there.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-ex-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
-<td>Creates a new category where EX raids will be placed.</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">raid-duration-secs</span> <span class="pre">7200</span></code></td>
+<td>Maximum amount of time a raid channel can exist, in seconds.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-ex-raid-duration-secs</span> <span class="pre">604800</span></code></td>
-<td>Maximum amount of time an EX raid channel can exist, in seconds.</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-ex-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
+<td>Creates a new category where EX raids will be placed.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
 <td>Creates a new category where raids will be placed.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-raid-duration-secs</span> <span class="pre">7200</span></code></td>
-<td>Maximum amount of time a raid channel can exist, in seconds.</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-raid-moderation-role</span> <span class="pre">raid-moderator</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">raid-moderation-role</span> <span class="pre">raid-moderator</span></code></td>
 <td>The role that can take privledged actions in raid channels (like ending it).</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-raid-viewer-role</span> <span class="pre">raid-viewer</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">raid-viewer-role</span> <span class="pre">raid-viewer</span></code></td>
 <td>The role that can view all active raid channels.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">restrict-status</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">restrict-status</span></code></td>
 <td>Toggles whether you allow anyone to update the status in a raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-counters</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-counters</span></code></td>
 <td>Toggles whether raid boss counters get automatically inserted in a raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-cheatsheet</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-cheatsheet</span></code></td>
 <td>Toggles whether to insert cheatsheet at start of a raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">avoid-duplicate-raids</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">avoid-duplicate-raids</span></code></td>
 <td>Toggles whether to avoid more than a single raid or ex raid at a gym.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code></td>
 <td>Toggles whether bot is allowed to create channels for raids.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channel-immediately</span> <span class="pre">#raid-lobby</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channel-immediately</span> <span class="pre">#raid-lobby</span></code></td>
 <td>Toggles whether raids in this lobby should create a channel immediately or wait until someone joins.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-raid-lobbies</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-raid-lobbies</span></code></td>
 <td>Toggles whether raid messages are deleted by the bot.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">public-raid-channels</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">public-raid-channels</span></code></td>
 <td>Toggles whether raid channels should be visible to anyone in the raid lobby.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-raid-reports</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-raid-reports</span></code></td>
 <td>Toggles whether raids are reported to the mobile app.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">member-shared-quota</span> <span class="pre">50</span></code></td>
 <td>Sets the number of scans an individual can take from the shared pool.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">assumed-t5</span> <span class="pre">mewtwo</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">assumed-t5</span> <span class="pre">mewtwo</span></code></td>
 <td>Assumes all tier 5 eggs are Mewtwo.</td>
 </tr>
 </tbody>
@@ -674,7 +665,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-notification-channel</span> <span class="pre">#channel-name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">notification-channel</span> <span class="pre">#channel-name</span></code></td>
 <td>Set a dedicated channel for notifications</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">role</span> <span class="pre">role-name</span></code></td>
@@ -749,19 +740,16 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-active-trades-channel</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">active-trades-channel</span></code></td>
 <td>Creates a new channel and publishes all future active trades there.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$enable-trade-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Enables trade commands in a channel.</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">trade-lobby</span> <span class="pre">#channel</span></code></td>
+<td>Enable / disable trade commands in a channel.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$disable-trade-lobby</span> <span class="pre">#channel</span></code></td>
-<td>Disables trade commands in a channel.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">trade-request-limit</span> <span class="pre">5</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">trade-request-limit</span> <span class="pre">5</span></code></td>
 <td>Sets maximum number of trade requests that can be made by a given user.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">trade-duration-secs</span> <span class="pre">275000</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">trade-duration-secs</span> <span class="pre">275000</span></code></td>
 <td>Sets the amount of time before trades expire on your server.</td>
 </tr>
 </tbody>

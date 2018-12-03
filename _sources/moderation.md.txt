@@ -15,15 +15,15 @@ All of the following features are utlitized using commands run inside the `#poke
 
    ``$quickstart``, "Previews quickstart installation of PokeNav."
    ``$quickstart YES``, "Sets up PokeNav installation"
-   ``$set-mod-channel #channel``, "Changes the moderation channel."
+   ``$set mod-channel #channel``, "Changes the moderation channel."
    ``$set prefix $``, "Changes the prefix used by PokeNav for your server."
    ``$set timezone US/Eastern``, "Sets the timezone localization for this server."
    ``$set location 45.123 -75.123123``, "Sets the center point of a community play area."
    ``$set radius 20``, "Sets the minimum radius of your community (in kilometers)."
-   ``$show-settings``, "Shows all your bot configuration settings for this server."
+   ``$show settings``, "Shows all your bot configuration settings for this server."
    ``$report quota``, "Shows a quota report, along with a top contributors list."
-   ``$set-bot-announcement-channel #news``, "Updates where bot announcements are sent (default: moderation channel)."
-   ``$set-profile-channel #profile-setup``, "Updates where scans profile images for setting teams."
+   ``$set bot-announcement-channel #news``, "Updates where bot announcements are sent (default: moderation channel)."
+   ``$set profile-channel #profile-setup``, "Updates where scans profile images for setting teams."
    ``$toggle 24-hour-time``, "Toggles timestamps as 24-hour time instead of AM/PM."
    ``$toggle share-invite-url``, "Toggles sharing a public invite for your server."
    ``$toggle third-party-access``, "Toggles sharing report data with third party developers."
@@ -57,7 +57,7 @@ Third Parties never gain access to personal information such as which trainer re
    ``$revoke-badge 1 raid-mewtwo-123``, "Revokes badge #1 from everyone in the role raid-mewtwo-123."
    ``$toggle-badge 1``, "Toggles whether badge #1 appears in the `$available-badges` list."
    ``$report badge 1``, "Shows a report showing recent recipients and up to 150 trainers who earned the badge."
-   ``$set-badge-channel #trophy-room``, "Badges will be awarded will be announced in #trophy-room."
+   ``$set badge-channel #trophy-room``, "Badges will be awarded will be announced in #trophy-room."
 
 ```
 
@@ -115,9 +115,9 @@ In addition to `$available-badges`, mods have access to `$all-badges` which also
 
 #### Setting a Badge Announcement Channel
 
-When you grant a badge, you can have the award be pubicly announced in the badge announcement channel. This will be created for you by `$quickstart`, but if you need to set it you can use the `$set-badge-channel` command:
+When you grant a badge, you can have the award be pubicly announced in the badge announcement channel. This will be created for you by `$quickstart`, but if you need to set it you can use the `$set badge-channel` command:
 
-`$set-badge-channel #trophy-room`
+`$set badge-channel #trophy-room`
 
 #### Granting Badges
 
@@ -153,7 +153,7 @@ If you need to take back a badge, use `$revoke-badge` that same way you used `$g
    :header: "Command", "Description"
    :widths: 5, 20
    
-   ``$set-team-role mystic team-mystic``, "Sets the role used to track a members in-game team."
+   ``$set team-role mystic team-mystic``, "Sets the role used to track a members in-game team."
    ``$toggle auto-assign-team``, "Toggles whether  users will be auto assigned a team role when joining your community."
 ```
 
@@ -197,18 +197,15 @@ When a user joins your server, if you have this setting enabled, they will autom
    :header: "Command", "Description"
    :widths: 5, 20
 
-   ``$disable-ex-raid-lobby #channel``, "Disables EX raid announcements in the channel."
-   ``$disable-raid-lobby #channel``, "Disables raid announcements."
-   ``$enable-ex-raid-lobby #channel``, "Enables EX raid announcements in the channel."
-   ``$enable-raid-lobby #channel``, "Enables raid announcements in the channel."
-   ``$create-active-raids-channel``, "Creates a new channel and publishes all future active raids there."
-   ``$create-active-ex-raids-channel``, "Creates a new channel and publishes all future active EX raids there."
+   ``$toggle ex-raid-lobby #channel``, "Enable / disables EX raid announcements."
+   ``$toggle raid-lobby #channel``, "Enable / disables raid announcements."
+   ``$create active-raids-channel``, "Creates a new channel and publishes all future active raids there."
+   ``$create active-ex-raids-channel``, "Creates a new channel and publishes all future active EX raids there."
+   ``$set raid-duration-secs 7200``, "Maximum amount of time a raid channel can exist, in seconds."
    ``$create-ex-raid-category Category Name``, "Creates a new category where EX raids will be placed."
-   ``$set-ex-raid-duration-secs 604800``, "Maximum amount of time an EX raid channel can exist, in seconds."
    ``$create-raid-category Category Name``, "Creates a new category where raids will be placed."
-   ``$set-raid-duration-secs 7200``, "Maximum amount of time a raid channel can exist, in seconds."
-   ``$set-raid-moderation-role raid-moderator``, "The role that can take privledged actions in raid channels (like ending it)."
-   ``$set-raid-viewer-role raid-viewer``, "The role that can view all active raid channels."
+   ``$set raid-moderation-role raid-moderator``, "The role that can take privledged actions in raid channels (like ending it)."
+   ``$set raid-viewer-role raid-viewer``, "The role that can view all active raid channels."
    ``$toggle restrict-status``, "Toggles whether you allow anyone to update the status in a raid."
    ``$toggle auto-insert-counters``, "Toggles whether raid boss counters get automatically inserted in a raid."
    ``$toggle auto-insert-cheatsheet``, "Toggles whether to insert cheatsheet at start of a raid."
@@ -218,7 +215,7 @@ When a user joins your server, if you have this setting enabled, they will autom
    ``$toggle clean-raid-lobbies``, "Toggles whether raid messages are deleted by the bot."
    ``$toggle public-raid-channels``, "Toggles whether raid channels should be visible to anyone in the raid lobby."
    ``$toggle share-raid-reports``, "Toggles whether raids are reported to the mobile app."
-   ``$set-member-shared-quota``, "Sets the number of scans an individual can take from the shared pool."
+   ``$set member-shared-quota 50``, "Sets the number of scans an individual can take from the shared pool."
    ``$set assumed-t5 mewtwo``, "Assumes all tier 5 eggs are Mewtwo."
 ```
 
@@ -356,7 +353,7 @@ We're still working on the verification system, check in later for more informat
    :header: "Command", "Description"
    :widths: 5, 20
 
-   ``$set-notification-channel #channel-name``, "Set a dedicated channel for notifications"
+   ``$set notification-channel #channel-name``, "Set a dedicated channel for notifications"
    ``$create role role-name``, "Creates a mentionable role"
    ``$create notify-rule role-name "gym: Gym Name"``, "Mentions `role-name` when any raid occurs at the gym"
    ``$create notify-rule role-name "tier: 5" "gym: Gym Name"``, "Mentions `role-name` when a tier 5 raid occurs at the gym"
@@ -409,9 +406,8 @@ When the boss rotates to a new PokeDraft boss, say Alakazam; you can clear the r
    :header: "Command", "Description"
    :widths: 5, 20
 
-   ``$create-active-trades-channel``, "Creates a new channel and publishes all future active trades there."
-   ``$enable-trade-lobby #channel``, "Enables trade commands in a channel."
-   ``$disable-trade-lobby #channel``, "Disables trade commands in a channel."
+   ``$create active-trades-channel``, "Creates a new channel and publishes all future active trades there."
+   ``$toggle trade-lobby #channel``, "Enable / disable trade commands in a channel."
    ``$set trade-request-limit 5``, "Sets maximum number of trade requests that can be made by a given user."
    ``$set trade-duration-secs 275000``, "Sets the amount of time before trades expire on your server."
 ```
