@@ -27,6 +27,7 @@ All of the following features are utlitized using commands run inside the `#poke
    ``$toggle 24-hour-time``, "Toggles timestamps as 24-hour time instead of AM/PM."
    ``$toggle share-invite-url``, "Toggles sharing a public invite for your server."
    ``$toggle third-party-access``, "Toggles sharing report data with third party developers."
+   ``$reset-leaderboard raids-reported``, "Resets everyone's Raids Reported leaderboard scores (recent only)."
 ```
 
 ### Guide
