@@ -14,7 +14,10 @@ This means your profile may look different depending on where the command was ru
    :header: "Command", "Who", "Where", "Description"
    :widths: 15, 10, 10, 20
 
-   ``$top``, Anyone, Guild, "Shows the top 10 users in all leaderboards."
+   ``$top``, Anyone, Guild, "Shows the top 10 users in all leaderboards (since last reset)."
+   ``$top lifetime``, Anyone, Guild, "Shows the top 10 users in all leaderboards (lifetime)."
+   ``$top recent raids-reported 50``, Anyone, Guild, "Shows the top 50 users in all the raids reported leaderboard (since last reset)."
+   ``$top lifetime raids-reported 50``, Anyone, Guild, "Shows the top 50 users in all the raids reported leaderboard (lifetime)."
    ``$trainer``, Anyone, Guild, "Shows your leaderboard scores in a guild."
    ``$trainer Dude16``, Anyone, Guild, "Shows Dude16's scores in a guild."
 ```
@@ -24,7 +27,7 @@ This means your profile may look different depending on where the command was ru
 
 ### Profile Medals
 
-If you are in the top 10, a medal will display in your profile under the appropriate statistic. 
+If you are in the top 10, a medal will display in your profile under the appropriate statistic. This shows only lifetime scores.
 
 There are special medals for 1st, 2nd and 3rd place:
 
