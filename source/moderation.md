@@ -216,6 +216,7 @@ When a user joins your server, if you have this setting enabled, they will autom
    ``$toggle clean-raid-lobbies``, "Toggles whether raid messages are deleted by the bot."
    ``$toggle public-raid-channels``, "Toggles whether raid channels should be visible to anyone in the raid lobby."
    ``$toggle share-raid-reports``, "Toggles whether raids are reported to the mobile app."
+   ``$toggle tag-egg-on-hatch``, "Toggles whether the raid party should be tagged on hatch."
    ``$set member-shared-quota 50``, "Sets the number of scans an individual can take from the shared pool."
    ``$set assumed-t5 mewtwo``, "Assumes all tier 5 eggs are Mewtwo."
 ```
