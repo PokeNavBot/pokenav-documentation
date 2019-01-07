@@ -114,6 +114,80 @@ You should use `updated` field to determine if a record is newer for a given rai
 
 [See the source code for the raid reports loader.](https://github.com/PokeNavBot/pokenav-open-data/blob/master/src/pokenav_data/raid_reports_loader.py)
 
+### Research Stream API
+
+#### Endpoint
+
+`https://api.pokenavbot.com/research/v1/stream?lookback=<minutes>`
+
+#### Params
+
+<dl>
+    <dt>lookback</dt>
+    <dd>Integer, minutes to lookback from the last cached time (supported values: 1, 2, 5, 10).</dd>
+</dl>
+
+#### Description
+
+Returns back a paginated list of research reports that have changed in PokeNav in the lookback period.
+
+#### Behavior & Usage Guide
+
+This API is cached, and returns all created and updated research reports, ordered by most recently updated, since the last cache period.
+
+Research will show up in the stream when archived so that utilities can determine when regional reports have been cleared / rotated out.
+
+Updates are gauranteed to be cached / delayed by no more than 60 seconds. Pulling more frequently than 60 seconds is not advised, and will not consistently return new data.
+
+Recommended usage pattern is to pull from the stream at a usage interval of N, where 60 <= N < lookback seconds. See usage example for a real world use of the research stream.
+
+You should use `updated` field to determine if a record is newer for a given research report.
+
+For any given research report, one of the following will be always populated: `encounter`, `item`, `item_name`.
+
+#### Output Example
+
+
+```
+{
+    "count": 11,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 11867,
+            "created": "2019-01-07T17:30:27.381368Z",
+            "updated": "2019-01-07T17:30:27.381440Z",
+            "archived": null,
+            "pokestop": {
+                "id": 127140,
+                "name": "The White Hart (15th Century Inn)",
+                "lat": 51.619937,
+                "lon": 0.300315
+            },
+            "encounter": {
+                "name": "aerodactyl",
+                "display_name": "Aerodactyl"
+            },
+            "item": null,
+            "item_name": null,
+            "quantity": null,
+            "task_description": null,
+            "community": {
+                "id": 1922,
+                "name": "Brentwood Raiders",
+                "member_count": 28,
+                "invite_url": "..."
+            }
+        },
+	...
+}
+```
+
+#### Usage Example
+
+[See the source code for the research reports loader.](https://github.com/PokeNavBot/pokenav-open-data/blob/master/src/pokenav_data/research_reports_loader.py)
+
 ### General API Notes
 
 In PokeNav's APIs, the pagination links `next` & `previous` are path fragments (i.e. `/raids/v1/stream/?limit=1&lookback=10&offset=1`). You must recombine them with the endpoint host `https://api.pokenavbot.com` to access the next page.
@@ -127,7 +201,7 @@ The public dataset can be accessed by querying `pokenav-production.pokenav.*`.
 Currently available datasets:
 
     pokenav-production.pokenav.raid_reports
-
+    pokenav-production.pokenav.research_reports
 
 To test out querying through the bq web ui: [https://bigquery.cloud.google.com](https://bigquery.cloud.google.com)
 
