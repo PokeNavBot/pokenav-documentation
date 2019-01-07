@@ -240,6 +240,29 @@ If you make a channel immediately, then when a user posts a screenshot they can 
 PokeNav uses a channel and role to coordinate raids. This is a limited discord resource, so you may want to report many raids but delay creating channels until people need them, avoiding using a role unless it is necessary.
 
 
+## Research
+
+### Commands
+
+```eval_rst
+.. csv-table:: Moderating Research
+   :header: "Command", "Description"
+   :widths: 5, 20
+
+   ``$toggle research-lobby #channel``, "Enable / disables research announcements and screenshots."
+   ``$create active-research-channel``, "Creates a new channel and publishes all future research there."
+   ``$toggle clean-research-lobbies``, "Enable / disables deletion of screenshots and commands in all research lobbies."
+   ``$toggle interactive-research-report``, "Enable / disables prompting for research when a pokestop screenshot is posted."
+   ``$delete all-research``, "Clears all current server research reports for the day, such as when an event occurs."
+   ``$set research-moderation-role research-moderator``, "The role that can take privledged actions on research (like editing, deleting)."
+```
+
+### Guide
+
+#### Research Reports
+
+You can report research using screenshots or commands. Setting up a research lobby is how you control whether your server allows research reporting through PokeNav.
+
 ## POI
 
 ### Commands
