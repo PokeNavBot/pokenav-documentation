@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Trading" href="trading.html" />
+    <link rel="next" title="Research" href="research.html" />
     <link rel="prev" title="Trainer Profile &amp; Settings" href="trainer.html" /> 
 
   
@@ -127,6 +127,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="research.html">Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trading.html">Trading</a></li>
 <li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
@@ -227,97 +228,112 @@
 <td>Raid Lobby</td>
 <td>Starts a latios raid at St. David&#8217;s Church hatching in 45 minutes.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$exraid</span> <span class="pre">&quot;Burpee</span> <span class="pre">Park&quot;</span> <span class="pre">&quot;July</span> <span class="pre">4th</span> <span class="pre">2018</span> <span class="pre">1:00pm&quot;</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$list</span> <span class="pre">r</span></code></td>
+<td>Anyone</td>
+<td>Anywhere</td>
+<td>Lists active raids grouped by tier.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$list</span> <span class="pre">r</span> <span class="pre">heatran</span></code></td>
+<td>Anyone</td>
+<td>Anywhere</td>
+<td>Lists active raids and filters by the tier / boss.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$list</span> <span class="pre">ex</span></code></td>
+<td>Anyone</td>
+<td>Anywhere</td>
+<td>Lists active EX raids grouped by tier (single tier 5).</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$exraid</span> <span class="pre">&quot;Burpee</span> <span class="pre">Park&quot;</span> <span class="pre">&quot;July</span> <span class="pre">4th</span> <span class="pre">2018</span> <span class="pre">1:00pm&quot;</span></code></td>
 <td>Anyone</td>
 <td>EX Raid Lobby</td>
 <td>Starts a mewtwo ex raid party for Burpee Park at 1pm on July 4th.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$boss</span> <span class="pre">latios</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$boss</span> <span class="pre">latios</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Changes the raid boss to latios.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$counters</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$counters</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the counters for the raid boss.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$counters</span> <span class="pre">windy</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$counters</span> <span class="pre">windy</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the counters for the raid boss in windy weather</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$end</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$end</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Immediatelly ends the raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$here</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$here</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Marks you as having arrived at the raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$here</span> <span class="pre">&#64;IVpips</span> <span class="pre">&#64;koshermuffin</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$here</span> <span class="pre">&#64;IVpips</span> <span class="pre">&#64;koshermuffin</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Marks IVpips and koshermuffin as having arrived at the raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$leave</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$leave</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Leaves the raid party immediatelly.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$address</span> <span class="pre">123</span> <span class="pre">Main</span> <span class="pre">St</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$address</span> <span class="pre">123</span> <span class="pre">Main</span> <span class="pre">St</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Sets the location of the raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$gym</span> <span class="pre">Deep</span> <span class="pre">Meadow</span> <span class="pre">Park</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$gym</span> <span class="pre">Deep</span> <span class="pre">Meadow</span> <span class="pre">Park</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Sets the location to the gym in your play area.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$time</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$time</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the time remaining until egg hatch, raid end and channel expiration.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$members</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$members</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the list of members participating in the raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$reset</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$reset</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Resets everyones arrival status.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-despawn</span> <span class="pre">45</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-despawn</span> <span class="pre">45</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Sets the despawn time in minutes.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set-hatch</span> <span class="pre">45</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set-hatch</span> <span class="pre">45</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Sets the hatch time in minutes.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$extend</span> <span class="pre">10</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$extend</span> <span class="pre">10</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Extends the channels expiration time by 10 minutes.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$status</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$status</span></code></td>
 <td>Creator / Moderator</td>
 <td>Raid Party</td>
 <td>Updates the public status of the raid party.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$with</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$with</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Sets your companion accounts for this raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$where</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$where</span></code></td>
 <td>Anyone</td>
 <td>Raid Party</td>
 <td>Gets the current location of the raid.</td>
@@ -484,7 +500,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="trading.html" class="btn btn-neutral float-right" title="Trading" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="research.html" class="btn btn-neutral float-right" title="Research" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="trainer.html" class="btn btn-neutral" title="Trainer Profile &amp; Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

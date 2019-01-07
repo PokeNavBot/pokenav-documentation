@@ -73,6 +73,7 @@ It has many features, including:
    developers 
    trainer
    raids
+   research 
    trading 
    badges
    leaderboards

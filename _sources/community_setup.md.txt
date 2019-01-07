@@ -56,6 +56,12 @@ PokeNav will do a bunch of things for you if you type `$quickstart all`. These c
 <dt>Trade Lobby (#announce-trades-here)</dt>
 <dd>A single channel where users can post new desired trades (wants). Commands to start trades will be ignored anywhere but in this channel.</dd>
 
+<dt>Active Research (#active-research)</dt>
+<dd>A single channel where all research in your server appear, no one but PokeNav can post here. Gives trainers a clutter-free view of every research report.</dd>
+
+<dt>Research Lobby (#announce-research-here)</dt>
+<dd>A single channel where users can post research. Commands to report research will be ignored anywhere but in this channel.</dd>
+
 <dt>Team Roles (mystic, instinct, valor)</dt>
 <dd>PokeNav will attempt to automatically detect your team roles, or create them if they don't exist. Roles with the words `mystic`, `instinct` or `valor` will be detected automatically.</dd>
 </dl>

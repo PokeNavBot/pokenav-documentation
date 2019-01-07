@@ -103,6 +103,15 @@
 <li class="toctree-l4"><a class="reference internal" href="#usage-example">Usage Example</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#research-stream-api">Research Stream API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#endpoint">Endpoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#params">Params</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#behavior-usage-guide">Behavior &amp; Usage Guide</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#output-example">Output Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usage-example">Usage Example</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#general-api-notes">General API Notes</a></li>
 </ul>
 </li>
@@ -111,6 +120,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile &amp; Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="raids.html">Raiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="research.html">Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trading.html">Trading</a></li>
 <li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
@@ -289,6 +299,74 @@
 <p><a class="reference external" href="https://github.com/PokeNavBot/pokenav-open-data/blob/master/src/pokenav_data/raid_reports_loader.py">See the source code for the raid reports loader.</a></p>
 </div>
 </div>
+<div class="section" id="research-stream-api">
+<span id="research-stream-api"></span><h3>Research Stream API<a class="headerlink" href="#research-stream-api" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="endpoint">
+<span id="id1"></span><h4>Endpoint<a class="headerlink" href="#endpoint" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal"><span class="pre">https://api.pokenavbot.com/research/v1/stream?lookback=&lt;minutes&gt;</span></code></p>
+</div>
+<div class="section" id="params">
+<span id="id2"></span><h4>Params<a class="headerlink" href="#params" title="Permalink to this headline">¶</a></h4>
+<dl>
+    <dt>lookback</dt>
+    <dd>Integer, minutes to lookback from the last cached time (supported values: 1, 2, 5, 10).</dd>
+</dl></div>
+<div class="section" id="description">
+<span id="id3"></span><h4>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h4>
+<p>Returns back a paginated list of research reports that have changed in PokeNav in the lookback period.</p>
+</div>
+<div class="section" id="behavior-usage-guide">
+<span id="id4"></span><h4>Behavior &amp; Usage Guide<a class="headerlink" href="#behavior-usage-guide" title="Permalink to this headline">¶</a></h4>
+<p>This API is cached, and returns all created and updated research reports, ordered by most recently updated, since the last cache period.</p>
+<p>Research will show up in the stream when archived so that utilities can determine when regional reports have been cleared / rotated out.</p>
+<p>Updates are gauranteed to be cached / delayed by no more than 60 seconds. Pulling more frequently than 60 seconds is not advised, and will not consistently return new data.</p>
+<p>Recommended usage pattern is to pull from the stream at a usage interval of N, where 60 &lt;= N &lt; lookback seconds. See usage example for a real world use of the research stream.</p>
+<p>You should use <code class="docutils literal"><span class="pre">updated</span></code> field to determine if a record is newer for a given research report.</p>
+<p>For any given research report, one of the following will be always populated: <code class="docutils literal"><span class="pre">encounter</span></code>, <code class="docutils literal"><span class="pre">item</span></code>, <code class="docutils literal"><span class="pre">item_name</span></code>.</p>
+</div>
+<div class="section" id="output-example">
+<span id="id5"></span><h4>Output Example<a class="headerlink" href="#output-example" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
+    <span class="s2">&quot;next&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;previous&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">11867</span><span class="p">,</span>
+            <span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-01-07T17:30:27.381368Z&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-01-07T17:30:27.381440Z&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;archived&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+            <span class="s2">&quot;pokestop&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">127140</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;The White Hart (15th Century Inn)&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;lat&quot;</span><span class="p">:</span> <span class="mf">51.619937</span><span class="p">,</span>
+                <span class="s2">&quot;lon&quot;</span><span class="p">:</span> <span class="mf">0.300315</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;encounter&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;aerodactyl&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Aerodactyl&quot;</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+            <span class="s2">&quot;item_name&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+            <span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+            <span class="s2">&quot;task_description&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+            <span class="s2">&quot;community&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1922</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Brentwood Raiders&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;member_count&quot;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+                <span class="s2">&quot;invite_url&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage-example">
+<span id="id6"></span><h4>Usage Example<a class="headerlink" href="#usage-example" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/PokeNavBot/pokenav-open-data/blob/master/src/pokenav_data/research_reports_loader.py">See the source code for the research reports loader.</a></p>
+</div>
+</div>
 <div class="section" id="general-api-notes">
 <span id="general-api-notes"></span><h3>General API Notes<a class="headerlink" href="#general-api-notes" title="Permalink to this headline">¶</a></h3>
 <p>In PokeNav&#8217;s APIs, the pagination links <code class="docutils literal"><span class="pre">next</span></code> &amp; <code class="docutils literal"><span class="pre">previous</span></code> are path fragments (i.e. <code class="docutils literal"><span class="pre">/raids/v1/stream/?limit=1&amp;lookback=10&amp;offset=1</span></code>). You must recombine them with the endpoint host <code class="docutils literal"><span class="pre">https://api.pokenavbot.com</span></code> to access the next page.</p>
@@ -300,6 +378,7 @@
 <p>The public dataset can be accessed by querying <code class="docutils literal"><span class="pre">pokenav-production.pokenav.*</span></code>.</p>
 <p>Currently available datasets:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pokenav</span><span class="o">-</span><span class="n">production</span><span class="o">.</span><span class="n">pokenav</span><span class="o">.</span><span class="n">raid_reports</span>
+<span class="n">pokenav</span><span class="o">-</span><span class="n">production</span><span class="o">.</span><span class="n">pokenav</span><span class="o">.</span><span class="n">research_reports</span>
 </pre></div>
 </div>
 <p>To test out querying through the bq web ui: <a class="reference external" href="https://bigquery.cloud.google.com">https://bigquery.cloud.google.com</a></p>

@@ -9,6 +9,9 @@
 
    ``$raid latios "St. David's Church" 45``, Anyone, Raid Lobby, "Starts a latios raid at St. David's Church despawning in 45 minutes."
    ``$egg latios "St. David's Church" 45``, Anyone, Raid Lobby, "Starts a latios raid at St. David's Church hatching in 45 minutes."
+   ``$list r``, Anyone, Anywhere, "Lists active raids grouped by tier."
+   ``$list r heatran``, Anyone, Anywhere, "Lists active raids and filters by the tier / boss."
+   ``$list ex``, Anyone, Anywhere, "Lists active EX raids grouped by tier (single tier 5)."
    ``$exraid "Burpee Park" "July 4th 2018 1:00pm"``, Anyone, EX Raid Lobby, "Starts a mewtwo ex raid party for Burpee Park at 1pm on July 4th."
    ``$boss latios``, Anyone, Raid Party, "Changes the raid boss to latios."
    ``$counters``, Anyone, Raid Party, "Gets the counters for the raid boss."

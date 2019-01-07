@@ -125,6 +125,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#research">Research</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#guide">Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#research-reports">Research Reports</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#poi">POI</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#guide">Guide</a><ul>
@@ -159,6 +167,7 @@
 <li class="toctree-l1"><a class="reference internal" href="developers.html">Developer&#8217;s Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile &amp; Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="raids.html">Raiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="research.html">Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trading.html">Trading</a></li>
 <li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
 <li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
@@ -231,14 +240,18 @@
             
   <div class="section" id="admin-s-guide">
 <span id="admin-s-guide"></span><h1>Admin&#8217;s Guide<a class="headerlink" href="#admin-s-guide" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Research is currently in Beta and may not be available by default. You can use <cite>quickstart research</cite> to opt-in to the beta.</p>
+</div>
 <p>PokeNav has many features, which you as the admin have the ability to leverage and enabled.</p>
 <p>All of the following features are utlitized using commands run inside the <code class="docutils literal"><span class="pre">#pokenav</span></code> channel.</p>
 <div class="section" id="server-settings">
 <span id="server-settings"></span><h2>Server Settings<a class="headerlink" href="#server-settings" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
 <span id="commands"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id13">
-<caption><span class="caption-text">Managing Your PokeNav Installation</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<table border="1" class="colwidths-given docutils" id="id15">
+<caption><span class="caption-text">Managing Your PokeNav Installation</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -313,8 +326,8 @@
 <span id="badges"></span><h2>Badges<a class="headerlink" href="#badges" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
 <span id="id1"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id14">
-<caption><span class="caption-text">Moderating Badges </span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<table border="1" class="colwidths-given docutils" id="id16">
+<caption><span class="caption-text">Moderating Badges </span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -409,8 +422,8 @@
 <span id="teams"></span><h2>Teams<a class="headerlink" href="#teams" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
 <span id="id4"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id15">
-<caption><span class="caption-text">Moderating Teams</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<table border="1" class="colwidths-given docutils" id="id17">
+<caption><span class="caption-text">Moderating Teams</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -457,8 +470,8 @@
 <span id="raiding"></span><h2>Raiding<a class="headerlink" href="#raiding" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
 <span id="id6"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id16">
-<caption><span class="caption-text">Moderating Raids</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<table border="1" class="colwidths-given docutils" id="id18">
+<caption><span class="caption-text">Moderating Raids</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -523,10 +536,13 @@
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-raid-reports</span></code></td>
 <td>Toggles whether raids are reported to the mobile app.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">member-shared-quota</span> <span class="pre">50</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">tag-egg-on-hatch</span></code></td>
+<td>Toggles whether the raid party should be tagged on hatch.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">member-shared-quota</span> <span class="pre">50</span></code></td>
 <td>Sets the number of scans an individual can take from the shared pool.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">assumed-t5</span> <span class="pre">mewtwo</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">assumed-t5</span> <span class="pre">mewtwo</span></code></td>
 <td>Assumes all tier 5 eggs are Mewtwo.</td>
 </tr>
 </tbody>
@@ -550,12 +566,57 @@
 </div>
 </div>
 </div>
+<div class="section" id="research">
+<span id="research"></span><h2>Research<a class="headerlink" href="#research" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="commands">
+<span id="id8"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id19">
+<caption><span class="caption-text">Moderating Research</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">research-lobby</span> <span class="pre">#channel</span></code></td>
+<td>Enable / disables research announcements and screenshots.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">active-research-channel</span></code></td>
+<td>Creates a new channel and publishes all future research there.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-research-lobbies</span></code></td>
+<td>Enable / disables deletion of screenshots and commands in all research lobbies.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">interactive-research-report</span></code></td>
+<td>Enable / disables prompting for research when a pokestop screenshot is posted.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">all-research</span></code></td>
+<td>Clears all current server research reports for the day, such as when an event occurs.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">research-moderation-role</span> <span class="pre">research-moderator</span></code></td>
+<td>The role that can take privledged actions on research (like editing, deleting).</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="guide">
+<span id="id9"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="research-reports">
+<span id="research-reports"></span><h4>Research Reports<a class="headerlink" href="#research-reports" title="Permalink to this headline">¶</a></h4>
+<p>You can report research using screenshots or commands. Setting up a research lobby is how you control whether your server allows research reporting through PokeNav.</p>
+</div>
+</div>
+</div>
 <div class="section" id="poi">
 <span id="poi"></span><h2>POI<a class="headerlink" href="#poi" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
-<span id="id8"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id17">
-<caption><span class="caption-text">Moderating POI</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<span id="id10"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id20">
+<caption><span class="caption-text">Moderating POI</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -588,7 +649,7 @@
 </table>
 </div>
 <div class="section" id="guide">
-<span id="id9"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<span id="id11"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="what-are-poi">
 <span id="what-are-poi"></span><h4>What Are POI?<a class="headerlink" href="#what-are-poi" title="Permalink to this headline">¶</a></h4>
 <p>POI, or Points of Interest, are in-game locations, stored in PokeNav&#8217;s database, which can be used to enable all sorts of useful features, including raid deduplication, directions, app visibility and more.</p>
@@ -655,9 +716,9 @@
 <div class="section" id="notifications">
 <span id="notifications"></span><h2>Notifications<a class="headerlink" href="#notifications" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
-<span id="id10"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id18">
-<caption><span class="caption-text">Moderating Notifications</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<span id="id12"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id21">
+<caption><span class="caption-text">Moderating Notifications</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -705,7 +766,7 @@
 </table>
 </div>
 <div class="section" id="guide">
-<span id="id11"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
+<span id="id13"></span><h3>Guide<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h3>
 <p>You can configure PokeNav to automatically tag roles when certain raid conditions are met, for example, when a tier 5 raid occurs at one of several EX gyms, or when a Jynx raid is called out. You do this by defining &#8220;notify rules&#8221;, which are checked when someone announced a raid on your server.</p>
 <p>You can have up to 25 roles checked for notifications and 15 rules per role (at the time of this writing). You can specify multiple rules per role, and if any of them are true, the role will be mentioned.</p>
 <p>If the raid changes to match a rule, like when a boss is updated &#8211; it will issue a follow up notification in the raid lobby or notification channel. Only the newly qualified role will be mentioned. A single raid will never tag the same role more than once.</p>
@@ -730,9 +791,9 @@
 <div class="section" id="trading">
 <span id="trading"></span><h2>Trading<a class="headerlink" href="#trading" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="commands">
-<span id="id12"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils" id="id19">
-<caption><span class="caption-text">Moderating Trades</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<span id="id14"></span><h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="colwidths-given docutils" id="id22">
+<caption><span class="caption-text">Moderating Trades</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
