@@ -88,7 +88,7 @@ The following are a list of aliases and artwork supported for all research rewar
    Pokeball, Poke ball(s) | Pokeball(s) | Poké ball(s) | Pokéball(s),  ✅
    Greatball, Great ball(s) | Greatball(s),  ✅
    Ultraball, Ultra ball(s) | Ultraball(s),  ✅
-   Stardust, Stardust, ✅
+   Stardust, Stardust | Dust, ✅
    Rare Candy, Rare Candies, ✅
    ???, Unknown | u | ?, ❌
 
