@@ -1,10 +1,5 @@
 # Research
 
-```eval_rst
-
-.. note:: Research is currently in Beta and may not be available by default.
-```
-
 ## Commands
 
 ```eval_rst
