@@ -44,6 +44,11 @@ It has many features, including:
     * Update your current raid status to the rest of discord
     * Rule-based automatic notifications via discord
 
+* Research support
+    * Report research rewards at pokestops
+    * Scan pokestop screenshots to automate location reporting
+    * Admin controlled clearing of research reports on event start
+
 * Trading support
     * Advertise your want / offers for trades and let PokeNav act as a notification inbox.
 
