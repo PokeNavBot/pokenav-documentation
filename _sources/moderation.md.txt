@@ -1,10 +1,5 @@
 # Admin's Guide
 
-```eval_rst
-
-.. note:: Research is currently in Beta and may not be available by default. You can use `quickstart research` to opt-in to the beta.
-```
-
 PokeNav has many features, which you as the admin have the ability to leverage and enabled.
 
 All of the following features are utlitized using commands run inside the `#pokenav` channel. 
