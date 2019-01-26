@@ -278,6 +278,8 @@ You can report research using screenshots or commands. Setting up a research lob
    ``$update poi 12345 "type: gym"``, "Updates POI #12345 and sets its type to be gym."
    ``$delete poi 12345``, "Removes POI #12345 from your community."
    ``$poi``, "Shows a detailed POI summary for your server."
+   ``$create poi-alias 12345 church, "Creates a shortcut alias for poi #12345 called church."
+   ``$delete poi-alias church, "Removes the POI alias, church, from your server."
 ```
 
 ### Guide
