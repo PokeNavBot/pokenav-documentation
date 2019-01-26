@@ -298,6 +298,10 @@ PokeNav's POI system was re-written in October 2018 to give server admins comple
 
 To use POI you must `$set location` for your server and adjust `$set radius` to an appropriate setting. When a POI lookup is done on your server, PokeNav filters the POI by the play area set and typically looks up the best match, if any.
 
+#### POI Aliases
+
+You can create an "alias" for a POI. This is an alternate name that is used as a fallback for looking up the POI when no other match is found. This is useful for specifying local nick names for popular gyms or shortening the name of a gym to one word so it doesn't require quotes. Aliases must be unique per server (for example, you cannot have two aliases called "church"). Aliases only act as fallback names, they never take priority over full names. You can use an alias any where you use a name of a gym or pokestop.
+
 #### Adding A New Gym / Pokestop
 
 Do the following when a gym or pokestop is missing from your community (either because it was recently added or your community is new):
