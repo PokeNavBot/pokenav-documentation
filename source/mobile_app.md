@@ -37,7 +37,7 @@ Use `$set location` to tell PokeNav where your server is located. This allows Po
 
 ### Ensure You Have POI / Gym Coverage
 
-PokeNav needs to know about the gyms in your area. If `$show-settings` shows no gyms after setting a location, you will need to request POI coverage, see the [PokeNav Discord Server](https://discord.gg/7M9quNd) for support and information on how to get coverage. Even if it does, you should request it anyway.
+PokeNav needs to know about the gyms in your area. If `$show-settings` shows no gyms after setting a location, you'll need to add your gyms, see [POI Commands](moderation.md#poi).
 
 ## Tips For Successful App Use
 
