@@ -412,6 +412,7 @@ If say you have three EX gyms in your area, and you want to notify an ex-eligibl
 `$create notify-rule ex-eligible "tier: 5" "gym: Gym 1"`
 `$create notify-rule ex-eligible "tier: 5" "gym: Gym 2"`
 `$create notify-rule ex-eligible "tier: 5" "gym: Gym 3"`
+`$create notify-rule ex-eligible "tier: 5" "region: 45.0, -75.0, 15"`
 
 
 ##### Example: PokeDraft
