@@ -172,7 +172,7 @@ Disabled by default, you can set a profile channel. When this is set, users can 
 
 .. note::
     
-    To prevent accidently changing teams, PokeNav will only assign your team if you do not have a team role assigned on that server. You can change your team with the `$team` command.
+    To prevent accidently changing teams, PokeNav will only assign your team if you do not have a team role assigned on that server. You can change your team with the `$team` command. You can use the settings below to override this, but we don't recommend changing it unless you are sure!
 ```
 
 #### Restrict Team Screenshots
