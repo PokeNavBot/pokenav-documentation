@@ -156,6 +156,8 @@ If you need to take back a badge, use `$revoke-badge` that same way you used `$g
    
    ``$set team-role mystic team-mystic``, "Sets the role used to track a members in-game team."
    ``$toggle auto-assign-team``, "Toggles whether  users will be auto assigned a team role when joining your community."
+   ``$toggle restrict-team-screenshots``, "Toggles reading screenshots when a team role is set."
+   ``$toggle team-command``, "Toggles the team command in your server."
 ```
 
 ### Guide
@@ -172,6 +174,12 @@ Disabled by default, you can set a profile channel. When this is set, users can 
     
     To prevent accidently changing teams, PokeNav will only assign your team if you do not have a team role assigned on that server. You can change your team with the `$team` command.
 ```
+
+#### Restrict Team Screenshots
+
+By default, PokeNav will only read team screenshots if the user didn't have a team role set (preventing the user from switching teams).
+
+You can allow them to switch teams, even if they already had one, by toggling this feature OFF.
 
 #### Auto Assign Team Roles
 
