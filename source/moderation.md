@@ -70,7 +70,7 @@ Most badge operations work by referencing a badges unique id. When you create a 
 
 #### Creating Badges
 
-To create a badge, use the `$create-badge` command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description. 
+To create a badge, use the `$create badge` command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description. 
 
 You must quote the name and requirements to capture it properly. Names are limited to 80 characters and requirements to 256. Emoji can be animted and it actually makes the badge that much cooler.
 
@@ -87,7 +87,7 @@ Its recommended to make the requirements brief and describe what needs to be don
 
 #### Updating Badges
 
-If you need to update a badges emoji, name or requirements you can use the `$update-badge` command, which works EXACTLY like `$create-badge` but takes the badge id as the first item and updates that badge instead of creating a new one:
+If you need to update a badges emoji, name or requirements you can use the `$update-badge` command, which works EXACTLY like `$create badge` but takes the badge id as the first item and updates that badge instead of creating a new one:
 
 
 ```eval_rst
