@@ -375,7 +375,7 @@
 <p>Most badge operations work by referencing a badges unique id. When you create a badge, PokeNav will generate a unique id and display it alongside the badge when it is displayed. This id is also used to grant and revoke badges, as well as update its description.</p>
 <div class="section" id="creating-badges">
 <span id="id3"></span><h4>Creating Badges<a class="headerlink" href="#creating-badges" title="Permalink to this headline">¶</a></h4>
-<p>To create a badge, use the <code class="docutils literal"><span class="pre">$create-badge</span></code> command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description.</p>
+<p>To create a badge, use the <code class="docutils literal"><span class="pre">$create</span> <span class="pre">badge</span></code> command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description.</p>
 <p>You must quote the name and requirements to capture it properly. Names are limited to 80 characters and requirements to 256. Emoji can be animted and it actually makes the badge that much cooler.</p>
 <p>Its recommended to make the requirements brief and describe what needs to be done to obtain it, as well as reference a channel where more information might be obtained.</p>
 <div class="video-container">
@@ -383,7 +383,7 @@
 </div></div>
 <div class="section" id="updating-badges">
 <span id="updating-badges"></span><h4>Updating Badges<a class="headerlink" href="#updating-badges" title="Permalink to this headline">¶</a></h4>
-<p>If you need to update a badges emoji, name or requirements you can use the <code class="docutils literal"><span class="pre">$update-badge</span></code> command, which works EXACTLY like <code class="docutils literal"><span class="pre">$create-badge</span></code> but takes the badge id as the first item and updates that badge instead of creating a new one:</p>
+<p>If you need to update a badges emoji, name or requirements you can use the <code class="docutils literal"><span class="pre">$update-badge</span></code> command, which works EXACTLY like <code class="docutils literal"><span class="pre">$create</span> <span class="pre">badge</span></code> but takes the badge id as the first item and updates that badge instead of creating a new one:</p>
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/MX3mVot12m4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div></div>
@@ -503,58 +503,55 @@
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">active-ex-raids-channel</span></code></td>
 <td>Creates a new channel and publishes all future active EX raids there.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">raid-duration-secs</span> <span class="pre">7200</span></code></td>
-<td>Maximum amount of time a raid channel can exist, in seconds.</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-ex-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-ex-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
 <td>Creates a new category where EX raids will be placed.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$create-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create-raid-category</span> <span class="pre">Category</span> <span class="pre">Name</span></code></td>
 <td>Creates a new category where raids will be placed.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">raid-moderation-role</span> <span class="pre">raid-moderator</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">raid-moderation-role</span> <span class="pre">raid-moderator</span></code></td>
 <td>The role that can take privledged actions in raid channels (like ending it).</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">raid-viewer-role</span> <span class="pre">raid-viewer</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">raid-viewer-role</span> <span class="pre">raid-viewer</span></code></td>
 <td>The role that can view all active raid channels.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">restrict-status</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">restrict-status</span></code></td>
 <td>Toggles whether you allow anyone to update the status in a raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-counters</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-counters</span></code></td>
 <td>Toggles whether raid boss counters get automatically inserted in a raid.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-cheatsheet</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">auto-insert-cheatsheet</span></code></td>
 <td>Toggles whether to insert cheatsheet at start of a raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">avoid-duplicate-raids</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">avoid-duplicate-raids</span></code></td>
 <td>Toggles whether to avoid more than a single raid or ex raid at a gym.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channels</span></code></td>
 <td>Toggles whether bot is allowed to create channels for raids.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channel-immediately</span> <span class="pre">#raid-lobby</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">create-raid-channel-immediately</span> <span class="pre">#raid-lobby</span></code></td>
 <td>Toggles whether raids in this lobby should create a channel immediately or wait until someone joins.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-raid-lobbies</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">clean-raid-lobbies</span></code></td>
 <td>Toggles whether raid messages are deleted by the bot.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">public-raid-channels</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">public-raid-channels</span></code></td>
 <td>Toggles whether raid channels should be visible to anyone in the raid lobby.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-raid-reports</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">share-raid-reports</span></code></td>
 <td>Toggles whether server (and its raids) are reported to the mobile app.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">tag-egg-on-hatch</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">tag-egg-on-hatch</span></code></td>
 <td>Toggles whether the raid party should be tagged on hatch.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">allow-bot-screenshots</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">allow-bot-screenshots</span></code></td>
 <td>Toggles whether PokeNav reads screenshots from other bots.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">member-shared-quota</span> <span class="pre">50</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">member-shared-quota</span> <span class="pre">50</span></code></td>
 <td>Sets the number of scans an individual can take from the shared pool.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">assumed-t5</span> <span class="pre">mewtwo</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">assumed-t5</span> <span class="pre">mewtwo</span></code></td>
 <td>Assumes all tier 5 eggs are Mewtwo.</td>
 </tr>
 </tbody>

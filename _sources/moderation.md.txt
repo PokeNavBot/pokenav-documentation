@@ -70,7 +70,7 @@ Most badge operations work by referencing a badges unique id. When you create a 
 
 #### Creating Badges
 
-To create a badge, use the `$create-badge` command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description. 
+To create a badge, use the `$create badge` command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description. 
 
 You must quote the name and requirements to capture it properly. Names are limited to 80 characters and requirements to 256. Emoji can be animted and it actually makes the badge that much cooler.
 
@@ -87,7 +87,7 @@ Its recommended to make the requirements brief and describe what needs to be don
 
 #### Updating Badges
 
-If you need to update a badges emoji, name or requirements you can use the `$update-badge` command, which works EXACTLY like `$create-badge` but takes the badge id as the first item and updates that badge instead of creating a new one:
+If you need to update a badges emoji, name or requirements you can use the `$update-badge` command, which works EXACTLY like `$create badge` but takes the badge id as the first item and updates that badge instead of creating a new one:
 
 
 ```eval_rst
@@ -210,7 +210,6 @@ When a user joins your server, if you have this setting enabled, they will autom
    ``$toggle raid-lobby #channel``, "Enable / disables raid announcements."
    ``$create active-raids-channel``, "Creates a new channel and publishes all future active raids there."
    ``$create active-ex-raids-channel``, "Creates a new channel and publishes all future active EX raids there."
-   ``$set raid-duration-secs 7200``, "Maximum amount of time a raid channel can exist, in seconds."
    ``$create-ex-raid-category Category Name``, "Creates a new category where EX raids will be placed."
    ``$create-raid-category Category Name``, "Creates a new category where raids will be placed."
    ``$set raid-moderation-role raid-moderator``, "The role that can take privledged actions in raid channels (like ending it)."
