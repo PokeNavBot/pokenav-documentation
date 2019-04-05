@@ -210,7 +210,6 @@ When a user joins your server, if you have this setting enabled, they will autom
    ``$toggle raid-lobby #channel``, "Enable / disables raid announcements."
    ``$create active-raids-channel``, "Creates a new channel and publishes all future active raids there."
    ``$create active-ex-raids-channel``, "Creates a new channel and publishes all future active EX raids there."
-   ``$set raid-duration-secs 7200``, "Maximum amount of time a raid channel can exist, in seconds."
    ``$create-ex-raid-category Category Name``, "Creates a new category where EX raids will be placed."
    ``$create-raid-category Category Name``, "Creates a new category where raids will be placed."
    ``$set raid-moderation-role raid-moderator``, "The role that can take privledged actions in raid channels (like ending it)."
