@@ -70,11 +70,13 @@ Most badge operations work by referencing a badges unique id. When you create a 
 
 #### Creating Badges
 
-To create a badge, use the `$create badge` command. A badge requires a custom emoji owned by your server, a unique name (unique to the server it exists under) and a requirements description. 
+To create a badge, use the `$create badge` command. A badge requires a custom emoji owned by your server (or by a server PokeNav is in and you can reference it with discord nitro), a unique name (unique to your server) and a requirements description. 
 
-You must quote the name and requirements to capture it properly. Names are limited to 80 characters and requirements to 256. Emoji can be animted and it actually makes the badge that much cooler.
+You must quote the name and requirements to capture it properly. Names are limited to 80 characters and requirements to 256. Emoji can be animated and it actually makes the badge that much cooler.
 
-Its recommended to make the requirements brief and describe what needs to be done to obtain it, as well as reference a channel where more information might be obtained.
+It's recommended to make the requirements brief and describe what needs to be done to obtain it, as well as reference a channel where more information might be obtained.
+
+If you used an emoji from another server and that server gets rid of PokeNav, PokeNav may lose the ability to post that emoji, but the badge image will be preserved. 
 
 
 ```eval_rst
