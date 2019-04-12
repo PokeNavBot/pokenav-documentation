@@ -402,7 +402,7 @@ We're still working on the verification system, check in later for more informat
    ``$delete notify-rule 123``, "Deletes the notification role #123"
    ``$delete notify-rule role-name``, "Deletes all rules for `role-name`"
    ``$subs``, "Shows all subscriptions on your server, along with rules"
-   ``$subs role-name``, "Shows all roles for the role, if any exist"
+   ``$subs role-name``, "Shows all rules for the role, if any exist"
    ``$sub role-name``, "Subscribes the user to that role"
    ``$unsub role-name``, "Unsubscribes the user from that role"
 ```
