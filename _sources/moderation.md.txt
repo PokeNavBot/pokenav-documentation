@@ -53,12 +53,15 @@ Third Parties never gain access to personal information such as which trainer re
    ``$create badge :emoji: "Name" "Requirements"``, "Creates a new badge with the given emoji, name and requirements."
    ``$update badge 1 :emoji: "Name" "Requirements"``, "Updates badge #1 with new emoji, name and requirements."
    ``$grant-badge 1 Dude16``, "Grants badge #1 to Dude16."
+   ``$grant-badge :emoji: Dude16``, "Grants badge with :emoji: to Dude16."
+   ``$grant-badge :emoji: @Dude16``, "Grants badge with :emoji: to Dude16."
    ``$grant-badge 1 raid-mewtwo-123``, "Grants badge #1 to everyone in the role raid-mewtwo-123."
    ``$revoke-badge 1 Dude16``, "Revokes badge #1 from Dude16."
    ``$revoke-badge 1 raid-mewtwo-123``, "Revokes badge #1 from everyone in the role raid-mewtwo-123."
-   ``$toggle-badge 1``, "Toggles whether badge #1 appears in the `$available-badges` list."
+   ``$toggle badge 1``, "Toggles whether badge #1 appears in the `$available-badges` list."
    ``$report badge 1``, "Shows a report showing recent recipients and up to 150 trainers who earned the badge."
    ``$set badge-channel #trophy-room``, "Badges will be awarded will be announced in #trophy-room."
+   ``$set badge-moderation-role badge-moderator``, "Sets the role that can be used to grant badges anywhere."
 
 ```
 
@@ -89,7 +92,7 @@ If you used an emoji from another server and that server gets rid of PokeNav, Po
 
 #### Updating Badges
 
-If you need to update a badges emoji, name or requirements you can use the `$update-badge` command, which works EXACTLY like `$create badge` but takes the badge id as the first item and updates that badge instead of creating a new one:
+If you need to update a badges emoji, name or requirements you can use the `$update badge` command, which works EXACTLY like `$create badge` but takes the badge id as the first item and updates that badge instead of creating a new one:
 
 
 ```eval_rst
@@ -102,7 +105,7 @@ If you need to update a badges emoji, name or requirements you can use the `$upd
 
 #### Hiding Badges
 
-Sometimes you don't want badges to be visible or you want to retire them. `$toggle-badge` will hide it from the `$available-badges` list. You can still grant and change it, but it won't be visible to non-mods.
+Sometimes you don't want badges to be visible or you want to retire them. `$toggle badge` will hide it from the `$available-badges` list. You can still grant and change it, but it won't be visible to non-mods.
 
 ```eval_rst
 .. raw:: html
@@ -124,7 +127,7 @@ When you grant a badge, you can have the award be pubicly announced in the badge
 
 #### Granting Badges
 
-To grant a user a badge, use `$grant-badge` and provide the badge id and the name of the user. Like all commands the name can either be the user nickname or their full discord name with discriminator:
+To grant a user a badge, use `$grant-badge` and provide the badge id and the name of the user. You can also use a user or role mention instead. Like all commands the name can either be the user nickname or their full discord name with discriminator:
 
 ```eval_rst
 .. raw:: html

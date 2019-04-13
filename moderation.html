@@ -348,6 +348,12 @@
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">Dude16</span></code></td>
 <td>Grants badge #1 to Dude16.</td>
 </tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">:emoji:</span> <span class="pre">Dude16</span></code></td>
+<td>Grants badge with :emoji: to Dude16.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">:emoji:</span> <span class="pre">&#64;Dude16</span></code></td>
+<td>Grants badge with :emoji: to Dude16.</td>
+</tr>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$grant-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
 <td>Grants badge #1 to everyone in the role raid-mewtwo-123.</td>
 </tr>
@@ -357,7 +363,7 @@
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$revoke-badge</span> <span class="pre">1</span> <span class="pre">raid-mewtwo-123</span></code></td>
 <td>Revokes badge #1 from everyone in the role raid-mewtwo-123.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle-badge</span> <span class="pre">1</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">badge</span> <span class="pre">1</span></code></td>
 <td>Toggles whether badge #1 appears in the <cite>$available-badges</cite> list.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$report</span> <span class="pre">badge</span> <span class="pre">1</span></code></td>
@@ -365,6 +371,9 @@
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">badge-channel</span> <span class="pre">#trophy-room</span></code></td>
 <td>Badges will be awarded will be announced in #trophy-room.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">badge-moderation-role</span> <span class="pre">badge-moderator</span></code></td>
+<td>Sets the role that can be used to grant badges anywhere.</td>
 </tr>
 </tbody>
 </table>
@@ -384,13 +393,13 @@
 </div></div>
 <div class="section" id="updating-badges">
 <span id="updating-badges"></span><h4>Updating Badges<a class="headerlink" href="#updating-badges" title="Permalink to this headline">¶</a></h4>
-<p>If you need to update a badges emoji, name or requirements you can use the <code class="docutils literal"><span class="pre">$update-badge</span></code> command, which works EXACTLY like <code class="docutils literal"><span class="pre">$create</span> <span class="pre">badge</span></code> but takes the badge id as the first item and updates that badge instead of creating a new one:</p>
+<p>If you need to update a badges emoji, name or requirements you can use the <code class="docutils literal"><span class="pre">$update</span> <span class="pre">badge</span></code> command, which works EXACTLY like <code class="docutils literal"><span class="pre">$create</span> <span class="pre">badge</span></code> but takes the badge id as the first item and updates that badge instead of creating a new one:</p>
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/MX3mVot12m4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div></div>
 <div class="section" id="hiding-badges">
 <span id="hiding-badges"></span><h4>Hiding Badges<a class="headerlink" href="#hiding-badges" title="Permalink to this headline">¶</a></h4>
-<p>Sometimes you don&#8217;t want badges to be visible or you want to retire them. <code class="docutils literal"><span class="pre">$toggle-badge</span></code> will hide it from the <code class="docutils literal"><span class="pre">$available-badges</span></code> list. You can still grant and change it, but it won&#8217;t be visible to non-mods.</p>
+<p>Sometimes you don&#8217;t want badges to be visible or you want to retire them. <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">badge</span></code> will hide it from the <code class="docutils literal"><span class="pre">$available-badges</span></code> list. You can still grant and change it, but it won&#8217;t be visible to non-mods.</p>
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/dgFuMmwB-L4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div></div>
@@ -405,7 +414,7 @@
 </div>
 <div class="section" id="granting-badges">
 <span id="granting-badges"></span><h4>Granting Badges<a class="headerlink" href="#granting-badges" title="Permalink to this headline">¶</a></h4>
-<p>To grant a user a badge, use <code class="docutils literal"><span class="pre">$grant-badge</span></code> and provide the badge id and the name of the user. Like all commands the name can either be the user nickname or their full discord name with discriminator:</p>
+<p>To grant a user a badge, use <code class="docutils literal"><span class="pre">$grant-badge</span></code> and provide the badge id and the name of the user. You can also use a user or role mention instead. Like all commands the name can either be the user nickname or their full discord name with discriminator:</p>
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/FCj8nA4pr90" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div></div>
