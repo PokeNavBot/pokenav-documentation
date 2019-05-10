@@ -11,6 +11,7 @@
    ``$stc 1234 1234 1234``, Anyone, Anywhere, "Sets a trainer code in the users profile."
    ``$get-trainer-code IVpips``, Anyone, Anywhere, "Gets a trainer code in the users profile (can be copy and pasted)."
    ``$gtc IVpips``, Anyone, Anywhere, "Gets a trainer code in the users profile (can be copy and pasted)."
+   ``$lucky @username``, Anyone, Trade Lobby, "Tags both users and lets them know they are lucky, showing recent trades."
    ``$want togepi``, Anyone, Trade Lobby, "Asking for a togepi -- no specifications."
    ``$want togepi shiny``, Anyone, Trade Lobby, "Asking for a shiny togepi."
    ``$want togepi gender:male``, Anyone, Trade Lobby, "Looking for a male togepi."
@@ -44,6 +45,7 @@ You announce a trade with the `$want` command. Its most basic form typically tak
 PokeNav is designed to make it easy to request a trade for a Pokemon. If you need to get specific, you can add modifiers. Modifiers are typically a "keyword:value". Sometimes the value is optional. Valid modifiers are:
 
 * `shiny` - Indicates that you want the shiny form.
+* `lucky` - Indicates the user probably only wants this on a lucky trade.
 * `gender:male` - Indicates you want a certain gender (valid values are male, female, m, f, none).
 * `move:shadow claw` - Indicates you want a specific move. Move must be in PokeNav's movedex (i.e. in the game master file).
 * `note:ash hat / witch hat` - Indicates you are adding a note to specify a special attribute or constraint PokeNav doesn't support. For example hat pikachus or level requirements.
