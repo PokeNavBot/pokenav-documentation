@@ -171,7 +171,7 @@ Using `$set-despawn 30` will set the raid to assume the boss will despawn in 30 
 
 ### Updating the Boss
 
-If the channels boss isn't set, use the `$boss` command to set it. PokeNav doesn't care about the boss if its an egg at the moment, so if its an egg, wait until the boss is known to set it.
+If the channels boss isn't set, use the `$boss` command to set it(for boss names see [the Pokedex section](pokedex.md#looking-up-pokemon)). PokeNav doesn't care about the boss if its an egg at the moment, so if its an egg, wait until the boss is known to set it.
 
 ```eval_rst
 .. raw:: html
