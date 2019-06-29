@@ -227,25 +227,21 @@
 <p>Using <code class="docutils literal"><span class="pre">$quickstart</span></code> described above can be valuable even if you don&#8217;t want the exact setup it provides, since it will save you several steps (creating roles and setting team roles manually). There are commands to do everything done in <code class="docutils literal"><span class="pre">$quickstart</span></code> so see the moderation commands section for details.</p>
 <div class="section" id="multiple-raid-lobby-channels">
 <span id="multiple-raid-lobby-channels"></span><h4>Multiple Raid Lobby Channels<a class="headerlink" href="#multiple-raid-lobby-channels" title="Permalink to this headline">¶</a></h4>
-<p>A common configuration is a server for a large area where each channel represent a town or neighborhood of gyms. PokeNav can handle an arbitrary number of raid lobby channels, simply run the following command in your moderation channel for each one you want to enable:</p>
-<p><code class="docutils literal"><span class="pre">$enable-raid-lobby</span> <span class="pre">#channel-name</span></code></p>
+<p>A common configuration is a server for a large area where each channel represent a town or neighborhood of gyms. PokeNav can handle an arbitrary number of raid lobby channels, simply run the following command in your moderation channel for each one you want to enable / disable:</p>
+<p><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">raid-lobby</span> <span class="pre">#channel-name</span></code></p>
 <p>If you also want to allow EX raid announcements, run:</p>
-<p><code class="docutils literal"><span class="pre">$enable-ex-raid-lobby</span> <span class="pre">#channel-name</span></code></p>
-<p>You can disable a raid lobby by deleting the channel, or by running:</p>
-<p><code class="docutils literal"><span class="pre">$disable-raid-lobby</span> <span class="pre">#channel-name</span></code></p>
-<p>You can disable an ex raid lobby by deleting the channel, or by running:</p>
-<p><code class="docutils literal"><span class="pre">$disable-ex-raid-lobby</span> <span class="pre">#channel-name</span></code></p>
+<p><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">ex-raid-lobby</span> <span class="pre">#channel-name</span></code></p>
 </div>
 </div>
 <div class="section" id="post-install">
 <span id="post-install"></span><h3>Post Install<a class="headerlink" href="#post-install" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="setting-your-time-zone">
 <span id="setting-your-time-zone"></span><h4>Setting Your Time Zone<a class="headerlink" href="#setting-your-time-zone" title="Permalink to this headline">¶</a></h4>
-<p>Make sure you use <code class="docutils literal"><span class="pre">$set-timezone</span></code> if you are not located in the default timezone (US/Eastern). You can find a full list of timezones <a class="reference external" href="https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568">at this gist</a>.</p>
+<p>Make sure you use <code class="docutils literal"><span class="pre">$set</span> <span class="pre">timezone</span></code> if you are not located in the default timezone (US/Eastern). You can find a full list of timezones <a class="reference external" href="https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568">at this gist</a>.</p>
 </div>
 <div class="section" id="changing-your-moderation-channel">
 <span id="changing-your-moderation-channel"></span><h4>Changing Your Moderation Channel<a class="headerlink" href="#changing-your-moderation-channel" title="Permalink to this headline">¶</a></h4>
-<p>You can use <code class="docutils literal"><span class="pre">$set-mod-channel</span></code> to change the moderation channel &#8211; if you already have a bot channel for admins.</p>
+<p>You can use <code class="docutils literal"><span class="pre">$set</span> <span class="pre">mod-channel</span></code> to change the moderation channel &#8211; if you already have a bot channel for admins.</p>
 </div>
 <div class="section" id="setup-your-mods">
 <span id="setup-your-mods"></span><h4>Setup Your Mods<a class="headerlink" href="#setup-your-mods" title="Permalink to this headline">¶</a></h4>
