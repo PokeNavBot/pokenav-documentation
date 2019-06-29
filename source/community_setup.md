@@ -78,31 +78,23 @@ Using `$quickstart` described above can be valuable even if you don't want the e
 
 #### Multiple Raid Lobby Channels
 
-A common configuration is a server for a large area where each channel represent a town or neighborhood of gyms. PokeNav can handle an arbitrary number of raid lobby channels, simply run the following command in your moderation channel for each one you want to enable:
+A common configuration is a server for a large area where each channel represent a town or neighborhood of gyms. PokeNav can handle an arbitrary number of raid lobby channels, simply run the following command in your moderation channel for each one you want to enable / disable:
 
-`$enable-raid-lobby #channel-name`
+`$toggle raid-lobby #channel-name`
 
 If you also want to allow EX raid announcements, run:
 
-`$enable-ex-raid-lobby #channel-name`
-
-You can disable a raid lobby by deleting the channel, or by running:
-
-`$disable-raid-lobby #channel-name`
-
-You can disable an ex raid lobby by deleting the channel, or by running:
-
-`$disable-ex-raid-lobby #channel-name`
+`$toggle ex-raid-lobby #channel-name`
 
 ### Post Install
 
 #### Setting Your Time Zone 
 
-Make sure you use `$set-timezone` if you are not located in the default timezone (US/Eastern). You can find a full list of timezones [at this gist](https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568).
+Make sure you use `$set timezone` if you are not located in the default timezone (US/Eastern). You can find a full list of timezones [at this gist](https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568).
 
 #### Changing Your Moderation Channel
 
-You can use `$set-mod-channel` to change the moderation channel -- if you already have a bot channel for admins.
+You can use `$set mod-channel` to change the moderation channel -- if you already have a bot channel for admins.
 
 #### Setup Your Mods
 
