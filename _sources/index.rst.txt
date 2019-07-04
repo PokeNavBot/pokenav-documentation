@@ -10,9 +10,7 @@ Trainer's Guide
 .. note::
     This guide is being actively updated over time. 
     
-    Some sections may be incomplete but are being worked on in priority order.
-
-    If you want to help improve these docs, stay tuned...
+    You can help improve these docs, see https://github.com/pokenavbot/pokenav-documentation
 
 
 **Welcome, Trainer!**
@@ -78,6 +76,7 @@ It has many features, including:
    developers 
    trainer
    raids
+   raid_trains
    research 
    trading 
    badges
