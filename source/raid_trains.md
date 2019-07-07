@@ -21,7 +21,7 @@
    ``$rt all``, Anyone, Raid Train Channel, "Shows all the gyms on the route."
    ``$rt up``, Anyone, Raid Train Channel, "Shows upcoming the gyms on the route."
    ``$rt add Gym Name``, Raid Moderator, Raid Train Channel, "Adds a gym to the end of a raid train."
-   ``$rt remove Gym Name``, Raid Moderator, Raid Train Channel, "Adds a gym to the end of a raid train."
+   ``$rt remove Gym Name``, Raid Moderator, Raid Train Channel, "Removes a gym from a raid train."
    ``$rt next``, Raid Moderator, Raid Train Channel, "Advances to next gym, resets everyone's arrival status."
    ``$rt save Route Name``, Raid Moderator, Raid Train Channel, "Saves the current train schedule as a new route."
    ``$rt load Route Name``, Raid Moderator, Raid Train Channel, "Clears the schedule and loads the named route as the new schedule."
