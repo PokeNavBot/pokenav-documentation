@@ -209,52 +209,57 @@
 <td>Raid Lobby</td>
 <td>Starts a raid train channel called <cite>Horsham Park Train</cite>.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">all</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$title</span> <span class="pre">New</span> <span class="pre">Name</span> <span class="pre">Of</span> <span class="pre">Train</span></code></td>
+<td>Raid Moderator</td>
+<td>Raid Train Channel</td>
+<td>Updates the name of the raid train.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">all</span></code></td>
 <td>Anyone</td>
 <td>Raid Train Channel</td>
 <td>Shows all the gyms on the route.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">up</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">up</span></code></td>
 <td>Anyone</td>
 <td>Raid Train Channel</td>
 <td>Shows upcoming the gyms on the route.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">add</span> <span class="pre">Gym</span> <span class="pre">Name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">add</span> <span class="pre">Gym</span> <span class="pre">Name</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Adds a gym to the end of a raid train.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">remove</span> <span class="pre">Gym</span> <span class="pre">Name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">remove</span> <span class="pre">Gym</span> <span class="pre">Name</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
-<td>Adds a gym to the end of a raid train.</td>
+<td>Removes a gym from a raid train.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">next</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">next</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Advances to next gym, resets everyone&#8217;s arrival status.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">save</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">save</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Saves the current train schedule as a new route.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">load</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">load</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Clears the schedule and loads the named route as the new schedule.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$list</span> <span class="pre">routes</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$list</span> <span class="pre">routes</span></code></td>
 <td>Anyone</td>
 <td>Anywhere</td>
 <td>Shows a list of saved routes owned by your community.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$show</span> <span class="pre">route</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$show</span> <span class="pre">route</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
 <td>Anyone</td>
 <td>Anywhere</td>
 <td>Shows all the locations in the specified route.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">route</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">route</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
 <td>Anyone</td>
 <td>Moderation Channel</td>
 <td>Deletes a route from your community.</td>
@@ -286,6 +291,7 @@ the progress of the group and reporting raids becomes cumbersome.</p>
 <li>View a list or complete gym list of saved community routes.</li>
 <li>Delete community saved routes.</li>
 <li>Default 4 hour duration.</li>
+<li>Gyms marked as EX eligible in the database are marked as such in the schedule.</li>
 </ul>
 </div>
 <div class="section" id="removed-features">
