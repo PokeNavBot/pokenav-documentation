@@ -2,7 +2,9 @@
 ```eval_rst
 
 .. note::
-    Raid train support is currently in **closed** beta.
+    Raid train support is currently in **open** beta.
+
+    Run `$toggle beta-raid-trains` to enable.
 
     The content of this document, as well as all commands is subject to command changes.
 
@@ -25,6 +27,7 @@
    ``$rt next``, Raid Moderator, Raid Train Channel, "Advances to next gym, resets everyone's arrival status."
    ``$rt save Route Name``, Raid Moderator, Raid Train Channel, "Saves the current train schedule as a new route."
    ``$rt load Route Name``, Raid Moderator, Raid Train Channel, "Clears the schedule and loads the named route as the new schedule."
+   ``$rt clear``, Raid Moderator, Raid Train Channel, "Clears all gyms from the route."
    ``$list routes``, Anyone, Anywhere, "Shows a list of saved routes owned by your community."
    ``$show route Route Name``, Anyone, Anywhere, "Shows all the locations in the specified route."
    ``$delete route Route Name``, Anyone, Moderation Channel, "Deletes a route from your community."
