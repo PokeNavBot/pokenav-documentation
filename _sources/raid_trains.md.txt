@@ -24,9 +24,14 @@
    ``$rt up``, Anyone, Raid Train Channel, "Shows upcoming the gyms on the route."
    ``$rt add Gym Name``, Raid Moderator, Raid Train Channel, "Adds a gym to the end of a raid train."
    ``$rt remove Gym Name``, Raid Moderator, Raid Train Channel, "Removes a gym from a raid train."
+   ``$rt move "Gym Name 1" "Game Name 2"``, Raid Moderator, Raid Train Channel, "Moves the first gym to be before the second."
    ``$rt next``, Raid Moderator, Raid Train Channel, "Advances to next gym, resets everyone's arrival status."
    ``$rt save Route Name``, Raid Moderator, Raid Train Channel, "Saves the current train schedule as a new route."
    ``$rt load Route Name``, Raid Moderator, Raid Train Channel, "Clears the schedule and loads the named route as the new schedule."
+   ``$rt auto-time``, Raid Moderator, Raid Train Channel, "Toggles automatic times for gyms."
+   ``$rt raid-pace 5``, Raid Moderator, Raid Train Channel, "Sets the number of minutes spent for each raid."
+   ``$rt travel-pace 40``, Raid Moderator, Raid Train Channel, "Sets the average travel speed (km/h)."
+   ``$rt start-time 2:00pm``, Raid Moderator, Raid Train Channel, "Sets the start time for the first gym in the route."
    ``$rt clear``, Raid Moderator, Raid Train Channel, "Clears all gyms from the route."
    ``$list routes``, Anyone, Anywhere, "Shows a list of saved routes owned by your community."
    ``$show route Route Name``, Anyone, Anywhere, "Shows all the locations in the specified route."
@@ -69,12 +74,6 @@ Keep in mind, instead of keeping accurate information about a singe raid at a si
 * Raid trains do not appear in the PokeNav mobile app or pgmap.org (they are discord only).
 * Raid trains can only stop at POI marked as gyms in PokeNav.
 * No deduplication of train channels.
-
-#### In Progress / Planning
-
-* The ability to associate times with gyms in the route or automatically estimate those times.
-* Converting an existing channel into a train seemlessly (one way).
-* Better manipulation of routes and schedules during a raid train.
 
 
 ### Commands To Learn
