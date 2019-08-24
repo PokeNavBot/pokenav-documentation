@@ -99,7 +99,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#quota-command"><code class="docutils literal"><span class="pre">$quota</span></code> command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#what-if-i-run-out-of-quota">What if I run out of quota?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#what-does-sharing-quota-mean">What does sharing quota mean?</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#set-member-shared-quota-command"><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code> command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-member-shared-quota-command"><code class="docutils literal"><span class="pre">$set</span> <span class="pre">member-shared-quota</span></code> command</a></li>
 </ul>
 </li>
 </ul>
@@ -191,7 +191,7 @@
 <p>For example, if koshermuffin is a Patreon subscriber receiving 200 individual screenshot scans per month, she may use the <code class="docutils literal"><span class="pre">$share-quota</span></code> command to share the entire 200 quota with the rest of her server. Multiple people can share their quota with the server, creating a larger pool of available scans.</p>
 <p>If another user, IVpips, exceeds his individual quota of 20 scans in a given month, he may use up to <strong>30 additional scans</strong> (this number can be set by server admins) from the shared quota.</p>
 <div class="section" id="set-member-shared-quota-command">
-<span id="set-member-shared-quota-command"></span><h4><code class="docutils literal"><span class="pre">$set-member-shared-quota</span></code> command<a class="headerlink" href="#set-member-shared-quota-command" title="Permalink to this headline">¶</a></h4>
+<span id="set-member-shared-quota-command"></span><h4><code class="docutils literal"><span class="pre">$set</span> <span class="pre">member-shared-quota</span></code> command<a class="headerlink" href="#set-member-shared-quota-command" title="Permalink to this headline">¶</a></h4>
 <p>This command allows server admins to set a restriction on the number of scans an individual may use from the shared quota.</p>
 <p>The default limit for this is 30 scans. If a user exceeds both their individual and shared quota, they will be directed to supporting via <a class="reference external" href="https://www.patreon.com/PokeNavBot">Patreon</a> to increase their individual quota (and therefore be given the opportunity to also share this increased quota with their server).</p>
 <p>This limit is there to protect your server&#8217;s shared pool from being consumed by a malicious or unknowing user.</p>
