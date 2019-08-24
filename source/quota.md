@@ -22,7 +22,7 @@ For example, if koshermuffin is a Patreon subscriber receiving 200 individual sc
 
 If another user, IVpips, exceeds his individual quota of 20 scans in a given month, he may use up to **30 additional scans** (this number can be set by server admins) from the shared quota. 
 
-#### `$set-member-shared-quota` command
+#### `$set member-shared-quota` command
 
 This command allows server admins to set a restriction on the number of scans an individual may use from the shared quota. 
 
