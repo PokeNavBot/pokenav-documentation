@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Raid Train Beta &mdash; PokeNav  documentation</title>
+  <title>Raid Trains &mdash; PokeNav  documentation</title>
   
 
   
@@ -88,10 +88,9 @@
 <li class="toctree-l1"><a class="reference internal" href="developers.html">Developer&#8217;s Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile &amp; Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="raids.html">Raiding</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Raid Train Beta</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Raid Trains</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#enrolling-in-the-beta">Enrolling In The Beta</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#about-raid-trains">About Raid Trains</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#added-features">Added Features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#removed-features">Removed Features</a></li>
@@ -158,7 +157,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Raid Train Beta</li>
+      <li>Raid Trains</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -177,14 +176,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="raid-train-beta">
-<span id="raid-train-beta"></span><h1>Raid Train Beta<a class="headerlink" href="#raid-train-beta" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="raid-trains">
+<span id="raid-trains"></span><h1>Raid Trains<a class="headerlink" href="#raid-trains" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Raid train support is currently in <strong>open</strong> beta.</p>
-<p>Run <cite>$toggle beta-raid-trains</cite> to enable.</p>
-<p>The content of this document, as well as all commands is subject to command changes.</p>
-<p class="last">Nothing is set in stone.</p>
+<p>Raid train support is a new feature.</p>
+<p class="last">Please provide feedback if you have some on how it can be improved.</p>
 </div>
 <div class="section" id="commands">
 <span id="commands"></span><h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
@@ -209,106 +206,113 @@
 <td>Raid Lobby</td>
 <td>Starts a raid train channel called <cite>Horsham Park Train</cite>.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$title</span> <span class="pre">New</span> <span class="pre">Name</span> <span class="pre">Of</span> <span class="pre">Train</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$t</span> <span class="pre">&quot;Route</span> <span class="pre">Name&quot;</span> <span class="pre">4:00</span> <span class="pre">pm</span></code></td>
+<td>Anyone</td>
+<td>Raid Lobby</td>
+<td>Starts a raid train channel that loads the route and start time provided.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$title</span> <span class="pre">New</span> <span class="pre">Name</span> <span class="pre">Of</span> <span class="pre">Train</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Updates the name of the raid train.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">all</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">all</span></code></td>
 <td>Anyone</td>
 <td>Raid Train Channel</td>
 <td>Shows all the gyms on the route.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">up</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">up</span></code></td>
 <td>Anyone</td>
 <td>Raid Train Channel</td>
 <td>Shows upcoming the gyms on the route.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">add</span> <span class="pre">Gym</span> <span class="pre">Name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">add</span> <span class="pre">Gym</span> <span class="pre">Name</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Adds a gym to the end of a raid train.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">remove</span> <span class="pre">Gym</span> <span class="pre">Name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">remove</span> <span class="pre">Gym</span> <span class="pre">Name</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Removes a gym from a raid train.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">move</span> <span class="pre">&quot;Gym</span> <span class="pre">Name</span> <span class="pre">1&quot;</span> <span class="pre">&quot;Game</span> <span class="pre">Name</span> <span class="pre">2&quot;</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">move</span> <span class="pre">&quot;Gym</span> <span class="pre">Name</span> <span class="pre">1&quot;</span> <span class="pre">&quot;Game</span> <span class="pre">Name</span> <span class="pre">2&quot;</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Moves the first gym to be before the second.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">next</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">next</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Advances to next gym, resets everyone&#8217;s arrival status.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">save</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">save</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Saves the current train schedule as a new route.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">load</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">load</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Clears the schedule and loads the named route as the new schedule.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">auto-time</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">auto-time</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Toggles automatic times for gyms.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">raid-pace</span> <span class="pre">5</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">raid-pace</span> <span class="pre">5</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Sets the number of minutes spent for each raid.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">travel-pace</span> <span class="pre">40</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">travel-pace</span> <span class="pre">40</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Sets the average travel speed (km/h).</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">start-time</span> <span class="pre">2:00pm</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">start-time</span> <span class="pre">2:00pm</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Sets the start time for the first gym in the route.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">clear</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rt</span> <span class="pre">clear</span></code></td>
 <td>Raid Moderator</td>
 <td>Raid Train Channel</td>
 <td>Clears all gyms from the route.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$list</span> <span class="pre">routes</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$list</span> <span class="pre">routes</span></code></td>
 <td>Anyone</td>
 <td>Anywhere</td>
 <td>Shows a list of saved routes owned by your community.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$show</span> <span class="pre">route</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$show</span> <span class="pre">route</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
 <td>Anyone</td>
 <td>Anywhere</td>
 <td>Shows all the locations in the specified route.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">route</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">route</span> <span class="pre">Route</span> <span class="pre">Name</span></code></td>
 <td>Anyone</td>
 <td>Moderation Channel</td>
 <td>Deletes a route from your community.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">raid-trains</span></code></td>
+<td>Anyone</td>
+<td>Moderation Channel</td>
+<td>Disables the <cite>$train</cite> command in raid lobbies.</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="overview">
 <span id="overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>Often, trainers will form together raiding groups which hit multiple gyms consecutively. While doing this, tracking
-the progress of the group and reporting raids becomes cumbersome.</p>
+<p>Often, trainers will form together raiding groups which hit multiple gyms consecutively. While doing this, tracking the progress of the group and reporting raids becomes cumbersome.</p>
 <p>Trains are PokeNav&#8217;s attempt to <strong>improve coordination, visibility and reporting in discord</strong> while these groups are active.</p>
-<div class="section" id="enrolling-in-the-beta">
-<span id="enrolling-in-the-beta"></span><h3>Enrolling In The Beta<a class="headerlink" href="#enrolling-in-the-beta" title="Permalink to this headline">¶</a></h3>
-<p>Trains are actively being developed, so during the beta period, you will have enable your server for trains support. In your <code class="docutils literal"><span class="pre">#pokenav</span></code> channel, run <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">beta-raid-trains</span></code>.</p>
-</div>
+<p>The train feature is designed to help the most with raid hours and events where an optimal route is saved ahead of time. For regular trains it might be easier to create a standard room, as the adminstrative setup effort is higher than a typical raid.</p>
 <div class="section" id="about-raid-trains">
 <span id="about-raid-trains"></span><h3>About Raid Trains<a class="headerlink" href="#about-raid-trains" title="Permalink to this headline">¶</a></h3>
 <p>Trains are simply raid coordination channels with special features and limitations. All raid commands are support with a few exceptions (listed below).</p>
+<p>Raid trains will <strong>always</strong> create channels in discord, you need to disable the feature if you do not want this.</p>
 <p>Keep in mind, instead of keeping accurate information about a singe raid at a single gym, trains focus on tracking lists of gyms and where the group is heading.</p>
 <div class="section" id="added-features">
 <span id="added-features"></span><h4>Added Features<a class="headerlink" href="#added-features" title="Permalink to this headline">¶</a></h4>
@@ -317,6 +321,7 @@ the progress of the group and reporting raids becomes cumbersome.</p>
 <li>Maintain (add or remove) a list of gyms where the group is heading.</li>
 <li>Tracks the current progress of the raid party.</li>
 <li>Advance to the next gym and auto-reset the raid parties arrival status.</li>
+<li>Automatically estimate arrival times and update these times as you go.</li>
 <li>Save the list of gyms as a route, which can then be loaded for future trains.</li>
 <li>View a list or complete gym list of saved community routes.</li>
 <li>Delete community saved routes.</li>
