@@ -1,12 +1,10 @@
-# Raid Train Beta 
+# Raid Trains
 ```eval_rst
 
 .. note::
-    Raid train support is currently in **closed** beta.
-
-    The content of this document, as well as all commands is subject to command changes.
-
-    Nothing is set in stone.
+    Raid train support is a new feature.
+    
+    Please provide feedback if you have some on how it can be improved.
 ```
 
 ## Commands
@@ -17,36 +15,44 @@
    :widths: 15, 10, 10, 20
 
    ``$t Horsham Park Train``, Anyone, Raid Lobby, "Starts a raid train channel called `Horsham Park Train`."
+   ``$t "Route Name" 4:00 pm``, Anyone, Raid Lobby, "Starts a raid train channel that loads the route and start time provided."
    ``$title New Name Of Train``, Raid Moderator, Raid Train Channel, "Updates the name of the raid train."
    ``$rt all``, Anyone, Raid Train Channel, "Shows all the gyms on the route."
    ``$rt up``, Anyone, Raid Train Channel, "Shows upcoming the gyms on the route."
    ``$rt add Gym Name``, Raid Moderator, Raid Train Channel, "Adds a gym to the end of a raid train."
    ``$rt remove Gym Name``, Raid Moderator, Raid Train Channel, "Removes a gym from a raid train."
+   ``$rt move "Gym Name 1" "Game Name 2"``, Raid Moderator, Raid Train Channel, "Moves the first gym to be before the second."
    ``$rt next``, Raid Moderator, Raid Train Channel, "Advances to next gym, resets everyone's arrival status."
    ``$rt save Route Name``, Raid Moderator, Raid Train Channel, "Saves the current train schedule as a new route."
    ``$rt load Route Name``, Raid Moderator, Raid Train Channel, "Clears the schedule and loads the named route as the new schedule."
+   ``$rt auto-time``, Raid Moderator, Raid Train Channel, "Toggles automatic times for gyms."
+   ``$rt raid-pace 5``, Raid Moderator, Raid Train Channel, "Sets the number of minutes spent for each raid."
+   ``$rt travel-pace 40``, Raid Moderator, Raid Train Channel, "Sets the average travel speed (km/h)."
+   ``$rt start-time 2:00pm``, Raid Moderator, Raid Train Channel, "Sets the start time for the first gym in the route."
+   ``$rt clear``, Raid Moderator, Raid Train Channel, "Clears all gyms from the route."
    ``$list routes``, Anyone, Anywhere, "Shows a list of saved routes owned by your community."
    ``$show route Route Name``, Anyone, Anywhere, "Shows all the locations in the specified route."
    ``$delete route Route Name``, Anyone, Moderation Channel, "Deletes a route from your community."
+   ``$toggle raid-trains``, Anyone, Moderation Channel, "Disables the `$train` command in raid lobbies."
 
 ```
 
 ## Overview
 
-Often, trainers will form together raiding groups which hit multiple gyms consecutively. While doing this, tracking
-the progress of the group and reporting raids becomes cumbersome.
+Often, trainers will form together raiding groups which hit multiple gyms consecutively. While doing this, tracking the progress of the group and reporting raids becomes cumbersome.
 
 Trains are PokeNav's attempt to **improve coordination, visibility and reporting in discord** while these groups are active.
 
-### Enrolling In The Beta
-
-Trains are actively being developed, so during the beta period, you will have enable your server for trains support. In your `#pokenav` channel, run `$toggle beta-raid-trains`.
+The train feature is designed to help the most with raid hours and events where an optimal route is saved ahead of time. For regular trains it might be easier to create a standard room, as the adminstrative setup effort is higher than a typical raid.
 
 ### About Raid Trains
 
 Trains are simply raid coordination channels with special features and limitations. All raid commands are support with a few exceptions (listed below).
 
+Raid trains will **always** create channels in discord, you need to disable the feature if you do not want this.
+
 Keep in mind, instead of keeping accurate information about a singe raid at a single gym, trains focus on tracking lists of gyms and where the group is heading.
+
 
 #### Added Features
 
@@ -54,6 +60,7 @@ Keep in mind, instead of keeping accurate information about a singe raid at a si
 * Maintain (add or remove) a list of gyms where the group is heading.
 * Tracks the current progress of the raid party.
 * Advance to the next gym and auto-reset the raid parties arrival status.
+* Automatically estimate arrival times and update these times as you go.
 * Save the list of gyms as a route, which can then be loaded for future trains.
 * View a list or complete gym list of saved community routes.
 * Delete community saved routes.
@@ -66,12 +73,6 @@ Keep in mind, instead of keeping accurate information about a singe raid at a si
 * Raid trains do not appear in the PokeNav mobile app or pgmap.org (they are discord only).
 * Raid trains can only stop at POI marked as gyms in PokeNav.
 * No deduplication of train channels.
-
-#### In Progress / Planning
-
-* The ability to associate times with gyms in the route or automatically estimate those times.
-* Converting an existing channel into a train seemlessly (one way).
-* Better manipulation of routes and schedules during a raid train.
 
 
 ### Commands To Learn
