@@ -774,22 +774,25 @@
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">role-name</span> <span class="pre">&quot;boss:</span> <span class="pre">jynx&quot;</span> <span class="pre">&quot;gym:</span> <span class="pre">Gym</span> <span class="pre">Name&quot;</span></code></td>
 <td>Mentions <cite>role-name</cite> when a jynx raid occurs at the gym</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">notify-rule</span> <span class="pre">123</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$create</span> <span class="pre">notify-rule</span> <span class="pre">role-name</span> <span class="pre">&quot;tier:</span> <span class="pre">5&quot;</span> <span class="pre">&quot;region:</span> <span class="pre">lat,</span> <span class="pre">long,</span> <span class="pre">2&quot;</span></code></td>
+<td>Mentions <cite>role-name</cite> when a tier 5 raid occurs within 2 km of (lat, long)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">notify-rule</span> <span class="pre">123</span></code></td>
 <td>Deletes the notification role #123</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">notify-rule</span> <span class="pre">role-name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$delete</span> <span class="pre">notify-rule</span> <span class="pre">role-name</span></code></td>
 <td>Deletes all rules for <cite>role-name</cite></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$subs</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$subs</span></code></td>
 <td>Shows all subscriptions on your server, along with rules</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$subs</span> <span class="pre">role-name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$subs</span> <span class="pre">role-name</span></code></td>
 <td>Shows all rules for the role, if any exist</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$sub</span> <span class="pre">role-name</span></code></td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$sub</span> <span class="pre">role-name</span></code></td>
 <td>Subscribes the user to that role</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">$unsub</span> <span class="pre">role-name</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$unsub</span> <span class="pre">role-name</span></code></td>
 <td>Unsubscribes the user from that role</td>
 </tr>
 </tbody>
