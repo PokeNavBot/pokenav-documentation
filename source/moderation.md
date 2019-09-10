@@ -402,6 +402,7 @@ We're still working on the verification system, check in later for more informat
    ``$create notify-rule role-name "gym: Gym Name"``, "Mentions `role-name` when any raid occurs at the gym"
    ``$create notify-rule role-name "tier: 5" "gym: Gym Name"``, "Mentions `role-name` when a tier 5 raid occurs at the gym"
    ``$create notify-rule role-name "boss: jynx" "gym: Gym Name"``, "Mentions `role-name` when a jynx raid occurs at the gym"
+   ``$create notify-rule role-name "tier: 5" "region: lat, long, 2"``, "Mentions `role-name` when a tier 5 raid occurs within 2 km of (lat, long)"
    ``$delete notify-rule 123``, "Deletes the notification role #123"
    ``$delete notify-rule role-name``, "Deletes all rules for `role-name`"
    ``$subs``, "Shows all subscriptions on your server, along with rules"
