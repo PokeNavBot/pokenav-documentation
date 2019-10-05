@@ -335,7 +335,15 @@ If the pokestop or gym is non-sponsored, you can use the ingress intel map to ge
 
 `https://www.ingress.com/intel?ll=40.207983,-75.177594&z=17&pll=40.207319,-75.177512`
 
-The coordinates after `pll` are the POIs actual location. So to create that POI you would do:
+The coordinates after `pll` are the POIs actual location. 
+
+An easier way to obtain the POI coordinates is by using the
+implemented *Display on map* feature. You can access it by enlarging
+the POIs photo via the arrow in the upper right corner. Now you can
+click the button and you'll land in e.g. Google Maps. The marker there
+will be placed at the actual POIs position.
+
+So to create that POI you would do:
 
 `$create poi gym "Deep Meadow Park" 40.207319 -75.177512`
 
