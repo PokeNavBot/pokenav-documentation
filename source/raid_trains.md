@@ -34,6 +34,8 @@
    ``$show route Route Name``, Anyone, Anywhere, "Shows all the locations in the specified route."
    ``$delete route Route Name``, Anyone, Moderation Channel, "Deletes a route from your community."
    ``$toggle raid-trains``, Anyone, Moderation Channel, "Disables the `$train` command in raid lobbies."
+   ``$set train-travel-pace 40``, Anyone, Moderation Channel, "Sets the default average travel speed (km/h) for new trains."
+   ``$set train-raid-pace 40``, Anyone, Moderation Channel, "Sets the default number of minutes spent for each raid for new trains."
 
 ```
 

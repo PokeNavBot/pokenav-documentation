@@ -232,6 +232,8 @@ When a user joins your server, if you have this setting enabled, they will autom
    ``$toggle allow-bot-screenshots``, "Toggles whether PokeNav reads screenshots from other bots."
    ``$set member-shared-quota 50``, "Sets the number of scans an individual can take from the shared pool."
    ``$set assumed-t5 mewtwo``, "Assumes all tier 5 eggs are Mewtwo."
+   ``$set train-travel-pace 40``, "Sets the default average travel speed (km/h) for new trains."
+   ``$set train-raid-pace 40``, "Sets the default number of minutes spent for each raid for new trains."
 ```
 
 ### Guide
