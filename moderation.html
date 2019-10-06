@@ -565,6 +565,12 @@
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">assumed-t5</span> <span class="pre">mewtwo</span></code></td>
 <td>Assumes all tier 5 eggs are Mewtwo.</td>
 </tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">train-travel-pace</span> <span class="pre">40</span></code></td>
+<td>Sets the default average travel speed (km/h) for new trains.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">train-raid-pace</span> <span class="pre">40</span></code></td>
+<td>Sets the default number of minutes spent for each raid for new trains.</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -703,7 +709,13 @@
 <p>Remember that the coordinates don&#8217;t need to be &#8220;exact&#8221; but should be accurate enough that if someone clicks directions, it takes them to the right place &#8211; at least within visible range of the stop.</p>
 <p>If the pokestop or gym is non-sponsored, you can use the ingress intel map to get a link to the portal. You will need to sign up for an ingress account, but if you click on a portal then press the &#8220;link&#8221; button in the upper right hand corner you can get a direct link to any portal. For example:</p>
 <p><code class="docutils literal"><span class="pre">https://www.ingress.com/intel?ll=40.207983,-75.177594&amp;z=17&amp;pll=40.207319,-75.177512</span></code></p>
-<p>The coordinates after <code class="docutils literal"><span class="pre">pll</span></code> are the POIs actual location. So to create that POI you would do:</p>
+<p>The coordinates after <code class="docutils literal"><span class="pre">pll</span></code> are the POIs actual location.</p>
+<p>An easier way to obtain the POI coordinates is by using the
+implemented <em>Display on map</em> feature. You can access it by enlarging
+the POIs photo via the arrow in the upper right corner. Now you can
+click the button and you&#8217;ll land in e.g. Google Maps. The marker there
+will be placed at the actual POIs position.</p>
+<p>So to create that POI you would do:</p>
 <p><code class="docutils literal"><span class="pre">$create</span> <span class="pre">poi</span> <span class="pre">gym</span> <span class="pre">&quot;Deep</span> <span class="pre">Meadow</span> <span class="pre">Park&quot;</span> <span class="pre">40.207319</span> <span class="pre">-75.177512</span></code></p>
 <p>Though, we recommend you making sure that the POI is not actually in the database first. Copy and paste the portal name into <code class="docutils literal"><span class="pre">$gi</span></code> or <code class="docutils literal"><span class="pre">$si</span></code> to make sure!</p>
 <p>If a POI is sponsored, it won&#8217;t be on the intel map. Instead go to Google Maps to find the business and drop a pin (press and hold) which will give you coordinates.</p>

@@ -232,6 +232,8 @@ When a user joins your server, if you have this setting enabled, they will autom
    ``$toggle allow-bot-screenshots``, "Toggles whether PokeNav reads screenshots from other bots."
    ``$set member-shared-quota 50``, "Sets the number of scans an individual can take from the shared pool."
    ``$set assumed-t5 mewtwo``, "Assumes all tier 5 eggs are Mewtwo."
+   ``$set train-travel-pace 40``, "Sets the default average travel speed (km/h) for new trains."
+   ``$set train-raid-pace 40``, "Sets the default number of minutes spent for each raid for new trains."
 ```
 
 ### Guide
@@ -333,7 +335,15 @@ If the pokestop or gym is non-sponsored, you can use the ingress intel map to ge
 
 `https://www.ingress.com/intel?ll=40.207983,-75.177594&z=17&pll=40.207319,-75.177512`
 
-The coordinates after `pll` are the POIs actual location. So to create that POI you would do:
+The coordinates after `pll` are the POIs actual location. 
+
+An easier way to obtain the POI coordinates is by using the
+implemented *Display on map* feature. You can access it by enlarging
+the POIs photo via the arrow in the upper right corner. Now you can
+click the button and you'll land in e.g. Google Maps. The marker there
+will be placed at the actual POIs position.
+
+So to create that POI you would do:
 
 `$create poi gym "Deep Meadow Park" 40.207319 -75.177512`
 
