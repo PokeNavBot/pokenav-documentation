@@ -23,9 +23,17 @@ Most Pokemon can be looked up using their standard english name. Names are case 
 
 `$dex snorlax`
 
-#### Alolan Forms
+#### Alolan & Galar Forms
+
+For querying an Alolan Form Pokémon just add the `-alola` suffix.
 
 `$dex raichu-alola`
+
+For the Galar Forms, the suffix is `-galarian`.
+
+`$dex weezing-galarian`
+
+#### Other Forms
 
 In fact, all forms are always written in PokeNav as `pokemon-form`:
 
@@ -35,10 +43,24 @@ This extends even to trade commands (which are covered more in [the trading sect
 
 `$want unown-a`
 
+Other known "form-specific" Pokémon variants include:
+
+> Nidorans - `nidoran-male`, `nidoran-female`
+
+> Burmys - `burmy-plant`, `burmy-trash`, `burmy-sandy`
+
+> Armored Mewtwo - `mewtwo-a`
+
+> Giratina - `giratina-origin`, `giratina-altered`
+
 #### Names With Punctuation and Spaces
 
 If a Pokemon isn't recognized, try it without puntuation and with quotes if the name contains spaces:
 
 `$dex "Mr Mime"`
+
+`$dex Mime-jr`
+
+`$dex Farfetchd`
 
 <img src="/_static/imgs/mr_mime_dex.png" />
