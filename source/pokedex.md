@@ -45,13 +45,13 @@ This extends even to trade commands (which are covered more in [the trading sect
 
 Other known "form-specific" Pokémon variants include:
 
-> Nidorans - `nidoran-male`, `nidoran-female`
+- Nidorans - `nidoran-male`, `nidoran-female`
 
-> Burmys - `burmy-plant`, `burmy-trash`, `burmy-sandy`
+- Burmys - `burmy-plant`, `burmy-trash`, `burmy-sandy`
 
-> Armored Mewtwo - `mewtwo-a`
+- Armored Mewtwo - `mewtwo-a`
 
-> Giratina - `giratina-origin`, `giratina-altered`
+- Giratina - `giratina-origin`, `giratina-altered`
 
 #### Names With Punctuation and Spaces
 
