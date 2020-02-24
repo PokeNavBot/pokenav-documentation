@@ -97,7 +97,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#looking-up-pokemon">Looking Up Pokemon</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#alolan-forms">Alolan Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#alolan-galar-forms">Alolan &amp; Galar Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-forms">Other Forms</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#names-with-punctuation-and-spaces">Names With Punctuation and Spaces</a></li>
 </ul>
 </li>
@@ -230,18 +231,33 @@
 <span id="looking-up-pokemon"></span><h3>Looking Up Pokemon<a class="headerlink" href="#looking-up-pokemon" title="Permalink to this headline">¶</a></h3>
 <p>Most Pokemon can be looked up using their standard english name. Names are case insensitive. At the moment, PokeNav only supports English language lookups:</p>
 <p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">snorlax</span></code></p>
-<div class="section" id="alolan-forms">
-<span id="alolan-forms"></span><h4>Alolan Forms<a class="headerlink" href="#alolan-forms" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="alolan-galar-forms">
+<span id="alolan-galar-forms"></span><h4>Alolan &amp; Galar Forms<a class="headerlink" href="#alolan-galar-forms" title="Permalink to this headline">¶</a></h4>
+<p>For querying an Alolan Form Pokémon just add the <code class="docutils literal"><span class="pre">-alola</span></code> suffix.</p>
 <p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">raichu-alola</span></code></p>
+<p>For the Galar Forms, the suffix is <code class="docutils literal"><span class="pre">-galarian</span></code>.</p>
+<p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">weezing-galarian</span></code></p>
+</div>
+<div class="section" id="other-forms">
+<span id="other-forms"></span><h4>Other Forms<a class="headerlink" href="#other-forms" title="Permalink to this headline">¶</a></h4>
 <p>In fact, all forms are always written in PokeNav as <code class="docutils literal"><span class="pre">pokemon-form</span></code>:</p>
 <p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">deoxys-attack</span></code></p>
 <p>This extends even to trade commands (which are covered more in <a class="reference internal" href="trading.html"><span class="doc">the trading section</span></a>):</p>
 <p><code class="docutils literal"><span class="pre">$want</span> <span class="pre">unown-a</span></code></p>
+<p>Other known &#8220;form-specific&#8221; Pokémon variants include:</p>
+<ul class="simple">
+<li>Nidorans - <code class="docutils literal"><span class="pre">nidoran-male</span></code>, <code class="docutils literal"><span class="pre">nidoran-female</span></code></li>
+<li>Burmys - <code class="docutils literal"><span class="pre">burmy-plant</span></code>, <code class="docutils literal"><span class="pre">burmy-trash</span></code>, <code class="docutils literal"><span class="pre">burmy-sandy</span></code></li>
+<li>Armored Mewtwo - <code class="docutils literal"><span class="pre">mewtwo-a</span></code></li>
+<li>Giratina - <code class="docutils literal"><span class="pre">giratina-origin</span></code>, <code class="docutils literal"><span class="pre">giratina-altered</span></code></li>
+</ul>
 </div>
 <div class="section" id="names-with-punctuation-and-spaces">
 <span id="names-with-punctuation-and-spaces"></span><h4>Names With Punctuation and Spaces<a class="headerlink" href="#names-with-punctuation-and-spaces" title="Permalink to this headline">¶</a></h4>
 <p>If a Pokemon isn&#8217;t recognized, try it without puntuation and with quotes if the name contains spaces:</p>
 <p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">&quot;Mr</span> <span class="pre">Mime&quot;</span></code></p>
+<p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">Mime-jr</span></code></p>
+<p><code class="docutils literal"><span class="pre">$dex</span> <span class="pre">Farfetchd</span></code></p>
 <p><img src="/_static/imgs/mr_mime_dex.png" /></p>
 </div>
 </div>
