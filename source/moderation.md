@@ -426,7 +426,7 @@ We're still working on the verification system, check in later for more informat
 
 You can configure PokeNav to automatically tag roles when certain raid conditions are met, for example, when a tier 5 raid occurs at one of several EX gyms, or when a Jynx raid is called out. You do this by defining "notify rules", which are checked when someone announced a raid on your server.
 
-You can have up to 25 roles checked for notifications and 15 rules per role (at the time of this writing). You can specify multiple rules per role, and if any of them are true, the role will be mentioned.
+You can have up to 40 roles checked for notifications and 25 rules per role (at the time of this writing). You can specify multiple rules per role, and if any of them are true, the role will be mentioned.
 
 If the raid changes to match a rule, like when a boss is updated -- it will issue a follow up notification in the raid lobby or notification channel. Only the newly qualified role will be mentioned. A single raid will never tag the same role more than once.
 
