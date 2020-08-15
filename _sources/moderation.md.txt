@@ -238,6 +238,10 @@ When a user joins your server, if you have this setting enabled, they will autom
 
 ### Guide
 
+#### Remote Raids
+
+Remote raid support is a new feature, see [Remote Raids](remote_raids.md)
+
 #### Raid Channel Settings
 
 By default, PokeNav creates a channel for every raid that is announced, when it is announced. 

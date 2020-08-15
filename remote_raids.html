@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Remote Raids &mdash; PokeNav  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Research" href="research.html" />
+    <link rel="prev" title="Raid Trains" href="raid_trains.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PokeNav
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="community_setup.html">Community Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mobile_app.html">PokeNav Companion App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_overview.html">Video Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="moderation.html">Admin&#8217;s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Developer&#8217;s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trainer.html">Trainer Profile &amp; Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="raids.html">Raiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="raid_trains.html">Raid Trains</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Remote Raids</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#motivation">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#highlights">Highlights</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#benefits">Benefits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#remote-raid-lobbies">Remote Raid Lobbies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#country-integration">Country Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#host-trainer-code">Host Trainer Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="research.html">Research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trading.html">Trading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leaderboards.html">Leaderboards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pokedex.html">Pokedex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quota.html">Quota</a></li>
+<li class="toctree-l1"><a class="reference internal" href="patreon.html">Patreon and Support</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PokeNav</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Remote Raids</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/remote_raids.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="remote-raids">
+<span id="remote-raids"></span><h1>Remote Raids<a class="headerlink" href="#remote-raids" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>This is a new feature available in 1.82.0, therefore these documents and the feature set is subject to change.</p>
+<p class="last">Please provide feedback and we will adjust the feature set and make an awesome tool for remote servers.</p>
+</div>
+<div class="section" id="motivation">
+<span id="motivation"></span><h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>PokeNav, at the time of this writing, is a 2+ year old project that has always been focused around local communities. Many of the assumptions and features are designed with local communities and in-person raids in mind.</p>
+<p>Remote Raids are an attempt to optimize PokeNav-style raid coordination for large, remote-only servers. Often these servers have too much activity for the large number of actions PokeNav performs when raids are created and hit rate limits.</p>
+<p>Remote Raids also help local servers if they want to setup channels for locally coordinating remote raids.</p>
+</div>
+<div class="section" id="highlights">
+<span id="highlights"></span><h2>Highlights<a class="headerlink" href="#highlights" title="Permalink to this headline">¶</a></h2>
+<p>Remote Raids simplifies raid coordination and adds features that are useful for remote only servers. Remote raid channels are just like regular raid channels exception for the following key differences:</p>
+<ul class="simple">
+<li><strong>Limited to 6 trainers</strong>; this is not customizable.</li>
+<li><strong>Tied to the host</strong>; if the host leaves, the raid ends immediately.</li>
+<li><strong>Smaller announcement messages</strong></li>
+<li><strong>Localized to all user</strong>; the expiration or raid end time shows in the footer in the user&#8217;s local timezone instead of the server&#8217;s timezone</li>
+<li><strong>Remote only joins</strong>; All trainers join remotely and are marked as invited by the host automatically.</li>
+<li><strong>Easy friendship</strong>; Host trainer code is shown in the top embed and users can type <code class="docutils literal"><span class="pre">$htc</span></code> to get the hosts code in-channel.</li>
+<li><strong>Shows the user&#8217;s country in the embed if no gym is matched.</strong></li>
+<li><strong>Do not create roles for raids</strong>, which eliminates the possibility of hitting the discord role creation rate limit for bots.</li>
+</ul>
+</div>
+<div class="section" id="benefits">
+<span id="benefits"></span><h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
+<p>As remote raids do less when raids are created, they create faster and are more scalable in large servers. They cut down on the number of actions users have to take when you know they are raiding remotely.</p>
+</div>
+<div class="section" id="limitations">
+<span id="limitations"></span><h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<p>Bots and webhooks cannot create remote raids.</p>
+<p>The <code class="docutils literal"><span class="pre">onsite</span></code>, <code class="docutils literal"><span class="pre">remote</span></code> and <code class="docutils literal"><span class="pre">remote</span> <span class="pre">i</span></code> commands are disabled for remote raids.</p>
+</div>
+<div class="section" id="getting-started">
+<span id="getting-started"></span><h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>If you are a remote only server, you can get convert all your raid lobbies into remote raid lobbies using <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">all-raid-lobbies-remote</span></code>.</p>
+<p>If you are in a local server, you can toggle a channel into a remote raid lobby using <code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">remote-raid-lobby</span> <span class="pre">#channel</span></code>.</p>
+<div class="section" id="remote-raid-lobbies">
+<span id="remote-raid-lobbies"></span><h3>Remote Raid Lobbies<a class="headerlink" href="#remote-raid-lobbies" title="Permalink to this headline">¶</a></h3>
+<p>Remote raid lobbies are just like regular raid lobbies, but all <code class="docutils literal"><span class="pre">$raid</span></code> commands will create remote raids instead of regular raids. If you don&#8217;t like remote raids, you can go back to the old behavior by running the toggle command again.</p>
+<p>You can still make remote raids in a regular lobby if you make a raid with <code class="docutils literal"><span class="pre">$remote-raid</span></code> or <code class="docutils literal"><span class="pre">$rr</span></code> instead of the normal raid command.</p>
+<p><code class="docutils literal"><span class="pre">$show</span> <span class="pre">settings</span></code> will show your remote lobbys with a globe next to them.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You do not need to user the <cite>$rr</cite> command to make a remote raid. All raid commands make remote raids in a remote raid lobby. Use <cite>$rr</cite> to test out remote raids in a regular lobby.</p>
+</div>
+</div>
+<div class="section" id="country-integration">
+<span id="country-integration"></span><h3>Country Integration<a class="headerlink" href="#country-integration" title="Permalink to this headline">¶</a></h3>
+<p>As a remote server you will probably have a better experience if you instruct your users to set their country with <code class="docutils literal"><span class="pre">$set</span> <span class="pre">country</span> <span class="pre">USA</span></code>, for example. Supports the name of the country or its country code using a fuzzy search.</p>
+<p><img src="/_static/imgs/set-country.png" /></p>
+<p>This country will be displayed in the remote raid embed.</p>
+<p><img src="/_static/imgs/remote-raid-announcement.png" /></p>
+</div>
+<div class="section" id="host-trainer-code">
+<span id="host-trainer-code"></span><h3>Host Trainer Code<a class="headerlink" href="#host-trainer-code" title="Permalink to this headline">¶</a></h3>
+<p>The hosts trainer code is shown in the top level message:</p>
+<p><img src="/_static/imgs/remote-raid-in-channel.png" /></p>
+<p>Additionally, you can type <code class="docutils literal"><span class="pre">$htc</span></code> to easily get a copy of the host trainer code which can be pasted into the game.</p>
+<p><img src="/_static/imgs/htc.png" /></p>
+</div>
+</div>
+<div class="section" id="commands">
+<span id="commands"></span><h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils" id="id1">
+<caption><span class="caption-text">Commands Specific To Remote Raids</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="27%" />
+<col width="18%" />
+<col width="18%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Who</th>
+<th class="head">Where</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">remote-raid-lobby</span> <span class="pre">#channel</span></code></td>
+<td>Anyone</td>
+<td>Moderation Channel</td>
+<td>Turns a channel into a remote raid lobby.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$toggle</span> <span class="pre">all-raid-lobbies-remote</span></code></td>
+<td>Anyone</td>
+<td>Moderation Channel</td>
+<td>Turns all your raid lobbies into remote raid lobbies.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$rr</span> <span class="pre">genesect</span></code></td>
+<td>Anyone</td>
+<td>Raid Lobby</td>
+<td>Creates a remote raid in a regular raid lobby.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$rr</span> <span class="pre">genesect</span> <span class="pre">starbucks</span> <span class="pre">35</span></code></td>
+<td>Anyone</td>
+<td>Raid Lobby</td>
+<td>Creates a remote raid in a regular raid lobby.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">$htc</span></code></td>
+<td>Anyone</td>
+<td>Remote Raid Channel</td>
+<td>Returns a copyable trainer code for the host.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">$set</span> <span class="pre">country</span> <span class="pre">usa</span></code></td>
+<td>Anyone</td>
+<td>Anywhere</td>
+<td>Sets your location to be displayed in remote raid announcements.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="research.html" class="btn btn-neutral float-right" title="Research" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="raid_trains.html" class="btn btn-neutral" title="Raid Trains" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, PokeNavBot.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script>
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40389189-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40389189-3');
+</script>
+
+
+</body>
+</html>
