@@ -4,7 +4,7 @@
 
 .. note:: 
     
-    This is a new feature, therefore these documents and the feature set is subject to change.
+    This is a new feature available in 1.82.0, therefore these documents and the feature set is subject to change.
 
     Please provide feedback and we will adjust the feature set and make an awesome tool for remote servers.
 
