@@ -103,3 +103,5 @@ Once PokeNav is configured, add all your mods and admins to `raid-moderators` so
 #### Additional Experimental Features
 
 You can also setup some optional new or experimental features. To read more about these features, and how to opt in, head over to the [Server Settings Page](moderation.md)
+
+Additionally, for remote only servers see [Remote Raids](remote_raids.md)

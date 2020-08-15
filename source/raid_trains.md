@@ -1,11 +1,4 @@
 # Raid Trains
-```eval_rst
-
-.. note::
-    Raid train support is a new feature.
-    
-    Please provide feedback if you have some on how it can be improved.
-```
 
 ## Commands
 
@@ -16,7 +9,7 @@
 
    ``$t Horsham Park Train``, Anyone, Raid Lobby, "Starts a raid train channel called `Horsham Park Train`."
    ``$t "Route Name" 4:00 pm``, Anyone, Raid Lobby, "Starts a raid train channel that loads the route and start time provided."
-   ``$t "Route Name" July 4, 4:00 pm``, Anyone, Raid Lobby, "Starts a raid train channel that loads the route, start time and date provided."
+   ``$t "Route Name" July 4 4:00 pm``, Anyone, Raid Lobby, "Starts a raid train channel that loads the route, start time and date provided."
    ``$title New Name Of Train``, Raid Moderator, Raid Train Channel, "Updates the name of the raid train."
    ``$rt all``, Anyone, Raid Train Channel, "Shows all the gyms on the route."
    ``$rt up``, Anyone, Raid Train Channel, "Shows upcoming the gyms on the route."

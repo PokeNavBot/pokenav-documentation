@@ -21,19 +21,6 @@ PokeNav is a discord bot that helps discord communities coordinate in Pokemon Go
 
 It has many features, including:
 
-* Interactive Mobile App
-    * Available for Android and iOS
-    * Shows nearby raids reports reported in discord
-    * Shows a global map view of all community raids using PokeNav
-    * Trainer profile, integrations and badges
-    * Login with your discord account to view additional raid details.
-
-* Trainer Profiles
-    * Syncs across multiple services
-    * Links to your Silph Road Traveler's Card
-    * Links to Pokebattler Pokebox
-    * Links to your TrainerDex profile
-
 * Bot and scanner independent raid coordination
     * Creates private raid channels **automatically** from raid and egg screenshots
     * Creates private EX raid channels **automatically** from EX raid pass screenshots
@@ -41,6 +28,12 @@ It has many features, including:
     * Track team distribution and who has arrived
     * Update your current raid status to the rest of discord
     * Rule-based automatic notifications via discord
+
+* Trainer Profiles
+    * Syncs across multiple services
+    * Links to your Silph Road Traveler's Card
+    * Links to Pokebattler Pokebox
+    * Links to your TrainerDex profile
 
 * Research support
     * Report research rewards at pokestops
@@ -62,6 +55,14 @@ It has many features, including:
     * Beautiful pokedex pages for all released Pokemon
     * Personalized counter via Pokebattler
 
+* Interactive Mobile App
+    * Available for Android and iOS
+    * Shows nearby raids reports reported in discord
+    * Shows a global map view of all community raids using PokeNav
+    * Trainer profile, integrations and badges
+    * Login with your discord account to view additional raid details.
+
+
 * Third Party Developer Access
     * APIs and public datasets for re-publishing live raids, research and infographics
 
@@ -77,6 +78,7 @@ It has many features, including:
    trainer
    raids
    raid_trains
+   remote_raids
    research 
    trading 
    badges
