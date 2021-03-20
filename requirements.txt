@@ -4,33 +4,118 @@
 #
 #    pip-compile
 #
-alabaster==0.7.10         # via -r requirements.in, sphinx
-argh==0.26.2              # via -r requirements.in, sphinx-autobuild, watchdog
-babel==2.5.3              # via -r requirements.in, sphinx
-certifi==2018.4.16        # via -r requirements.in, requests
-chardet==3.0.4            # via -r requirements.in, requests
-commonmark==0.5.4         # via -r requirements.in, recommonmark
-docutils==0.14            # via -r requirements.in, recommonmark, sphinx
-idna==2.6                 # via -r requirements.in, requests
-imagesize==1.0.0          # via -r requirements.in, sphinx
-jinja2==2.10              # via -r requirements.in, sphinx
-livereload==2.5.2         # via -r requirements.in, sphinx-autobuild
-markupsafe==1.1.1         # via -r requirements.in, jinja2
-packaging==17.1           # via -r requirements.in
-pathtools==0.1.2          # via -r requirements.in, sphinx-autobuild, watchdog
-port-for==0.3.1           # via -r requirements.in, sphinx-autobuild
-pygments==2.2.0           # via -r requirements.in, sphinx
-pyparsing==2.2.0          # via -r requirements.in, packaging
-pytz==2018.4              # via -r requirements.in, babel
-pyyaml==5.3.1             # via -r requirements.in, sphinx-autobuild, watchdog
-recommonmark==0.4.0       # via -r requirements.in
-requests==2.24.0          # via -r requirements.in, sphinx
-six==1.11.0               # via -r requirements.in, livereload, packaging, sphinx
-snowballstemmer==1.2.1    # via -r requirements.in, sphinx
-sphinx-autobuild==0.7.1   # via -r requirements.in
-sphinx-rtd-theme==0.3.0   # via -r requirements.in
-sphinx==1.5.0             # via -r requirements.in
-sphinxcontrib-websupport==1.0.1  # via -r requirements.in
-tornado==5.0.2            # via -r requirements.in, livereload, sphinx-autobuild
-urllib3==1.25.10          # via -r requirements.in, requests
-watchdog==0.8.3           # via -r requirements.in, sphinx-autobuild
+alabaster==0.7.10
+    # via
+    #   -r requirements.in
+    #   sphinx
+argh==0.26.2
+    # via
+    #   -r requirements.in
+    #   sphinx-autobuild
+    #   watchdog
+babel==2.5.3
+    # via
+    #   -r requirements.in
+    #   sphinx
+certifi==2018.4.16
+    # via
+    #   -r requirements.in
+    #   requests
+chardet==3.0.4
+    # via
+    #   -r requirements.in
+    #   requests
+commonmark==0.5.4
+    # via
+    #   -r requirements.in
+    #   recommonmark
+docutils==0.14
+    # via
+    #   -r requirements.in
+    #   recommonmark
+    #   sphinx
+idna==2.6
+    # via
+    #   -r requirements.in
+    #   requests
+imagesize==1.0.0
+    # via
+    #   -r requirements.in
+    #   sphinx
+jinja2==2.11.3
+    # via
+    #   -r requirements.in
+    #   sphinx
+livereload==2.5.2
+    # via
+    #   -r requirements.in
+    #   sphinx-autobuild
+markupsafe==1.1.1
+    # via
+    #   -r requirements.in
+    #   jinja2
+packaging==17.1
+    # via -r requirements.in
+pathtools==0.1.2
+    # via
+    #   -r requirements.in
+    #   sphinx-autobuild
+    #   watchdog
+port-for==0.3.1
+    # via
+    #   -r requirements.in
+    #   sphinx-autobuild
+pygments==2.2.0
+    # via
+    #   -r requirements.in
+    #   sphinx
+pyparsing==2.2.0
+    # via
+    #   -r requirements.in
+    #   packaging
+pytz==2018.4
+    # via
+    #   -r requirements.in
+    #   babel
+pyyaml==5.3.1
+    # via
+    #   -r requirements.in
+    #   sphinx-autobuild
+    #   watchdog
+recommonmark==0.4.0
+    # via -r requirements.in
+requests==2.24.0
+    # via
+    #   -r requirements.in
+    #   sphinx
+six==1.11.0
+    # via
+    #   -r requirements.in
+    #   livereload
+    #   packaging
+    #   sphinx
+snowballstemmer==1.2.1
+    # via
+    #   -r requirements.in
+    #   sphinx
+sphinx-autobuild==0.7.1
+    # via -r requirements.in
+sphinx-rtd-theme==0.3.0
+    # via -r requirements.in
+sphinx==1.5.0
+    # via -r requirements.in
+sphinxcontrib-websupport==1.0.1
+    # via -r requirements.in
+tornado==5.0.2
+    # via
+    #   -r requirements.in
+    #   livereload
+    #   sphinx-autobuild
+urllib3==1.25.10
+    # via
+    #   -r requirements.in
+    #   requests
+watchdog==0.8.3
+    # via
+    #   -r requirements.in
+    #   sphinx-autobuild
