@@ -33,7 +33,6 @@ It has many features, including:
     * Syncs across multiple services
     * Links to your Silph Road Traveler's Card
     * Links to Pokebattler Pokebox
-    * Links to your TrainerDex profile
 
 * Research support
     * Report research rewards at pokestops
